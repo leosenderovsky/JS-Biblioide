@@ -1,3 +1,62 @@
+.navbar {
+  height: 100px;
+}
 
+.logo {
+  margin: 0px 20px;
+  width: 250px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-nav {
+  font-family: "Voltaire", sans-serif;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.title {
+  text-align: center;
+  font-family: "Limelight", cursive;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.subtitle {
+  font-family: "Voltaire", sans-serif;
+  font-weight: 500;
+  color: black;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 20px 0px 10px 20px;
+}
+
+.title-subsection {
+  font-family: "Voltaire", sans-serif;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin: 20px 0px 10px 20px;
+}
+
+.product-line {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 /*# sourceMappingURL=style.css.map */

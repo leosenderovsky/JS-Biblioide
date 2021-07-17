@@ -1,0 +1,22 @@
+.title-nav {
+    @include text ($font-subtitle, 500, black, center, true);
+    font-size: 1.5em;
+}
+
+.title {
+    text-align: center;
+    @include text ($font-title, 500, black, center, true);
+    font-size: 3em;
+}
+
+.subtitle {
+    @include text ($font-subtitle, 500, black, left, true);
+    font-size: 2em;
+    margin: 20px 0px 10px 20px;
+}
+
+.title-subsection {
+    @include text ($font-subtitle, 600, black, left, true);
+    font-size: 3em;
+    margin: 20px 0px 10px 20px;
+}

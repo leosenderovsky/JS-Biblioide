@@ -1,0 +1,15 @@
+@mixin text ($font, $weight, $color, $align, $transform: false) {
+    font-family: $font;
+    font-weight: $weight;
+    color: $color;
+    text-align: $align;
+
+    @if $transform {
+        text-transform: $text-transform-base;
+    }
+}
+
+@mixin flexbox ($display, $content) {
+    display: $display;
+    justify-content: $content;
+}
