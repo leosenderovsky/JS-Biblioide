@@ -2,6 +2,10 @@
   height: 100px;
 }
 
+.menu {
+  background-color: #E5DFDF;
+}
+
 .logo {
   margin: 0px 20px;
   width: 250px;
@@ -13,20 +17,33 @@
   align-items: center;
 }
 
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  background-color: #1D4D4F;
+}
+
 .title-nav {
   font-family: "Voltaire", sans-serif;
   font-weight: 500;
-  color: black;
+  color: #1D4D4F;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.5em;
+}
+.title-nav:hover {
+  font-family: "Voltaire", sans-serif;
+  font-weight: 500;
+  color: #357376;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .title {
   text-align: center;
   font-family: "Limelight", cursive;
   font-weight: 500;
-  color: black;
+  color: #1D4D4F;
   text-align: center;
   text-transform: uppercase;
   font-size: 3em;
@@ -35,7 +52,7 @@
 .subtitle {
   font-family: "Voltaire", sans-serif;
   font-weight: 500;
-  color: black;
+  color: #357376;
   text-align: left;
   text-transform: uppercase;
   font-size: 2em;
@@ -45,7 +62,7 @@
 .title-subsection {
   font-family: "Voltaire", sans-serif;
   font-weight: 600;
-  color: black;
+  color: #1D4D4F;
   text-align: left;
   text-transform: uppercase;
   font-size: 3em;
