@@ -44,9 +44,7 @@ class Libro {
         this.genero = genero;
         this.precio = parseFloat(precio);
         this.stock = true;
-    }
-    sumaIva() {
-        this.precio = this.precio * 1.21
+        this.precioIva = this.precio * 1.21;
     }
 }
 const libro1 = new Libro ("El guión", "Robert McKee", "Alba Editorial", "manual", 2900, true);
@@ -54,49 +52,33 @@ const libro2 = new Libro ("El viaje del escritor", "Christopher Vogler", "Ma Non
 const libro3 = new Libro ("Las aguas bajan turbias", "Eduardo Borrás", "Biblos", "guion", 792, true);
 const libro4 = new Libro ("Érase una vez en Hollywood", "Quentin Tarantino", "Reservoir Books", "ficcion", 3665, true);
 
-libro1.sumaIva ();
-libro2.sumaIva ();
-libro3.sumaIva ();
-libro4.sumaIva ();
 
 let nombreIngresado = prompt("Ingrese su nombre")
 alert(nombreIngresado + ", gracias por visitar nuestra librería");
 
 let generoIngresado = "";
 
-function ingresarGenero () {
-    generoIngresado = prompt(nombreIngresado + ", ingrese el género de libro por el cual desea consultar stock: \n manuales \n ensayos \n guiones \n ficciones");
-    console.log (nombreIngresado + " desea consultar por stock de " + generoIngresado);
-}
-ingresarGenero ();
+function ingresarGenero() {
+    generoIngresado = prompt(nombreIngresado + ", ingrese el género de libro por el cual desea consultar stock: \n manuales \n ensayos \n guiones \n ficciones").toLowerCase();
+    console.log(nombreIngresado + " desea consultar por stock de " + generoIngresado);
 
-let librosPorGenero ="";
-
-switch (librosPorGenero) {
+    switch (generoIngresado) {
     case "manuales":
-    case "Manuales":
-    case "MANUALES":
-        alert(nombreIngresado + " estos productos coinciden con su búsqueda de " + generoIngresado + ": \n" + libro1.titulo + "\n" + libro1.autor + "\n" + libro1.editorial + "\n Su precio es de $" + libro1.precio + "\n Su precio + IVA es de $" + libro1.sumaIva);
-        break;
+      alert(nombreIngresado + ", estos productos coinciden con su búsqueda de " + generoIngresado + ": \nTítulo: " + libro1.titulo + "\nAutor: " + libro1.autor + "\nEditorial: " + libro1.editorial + "\nPrecio: $ " + libro1.precio + "\nPrecio + IVA: $ " + libro1.precioIva);
+      break;
     case "ensayos":
-    case "Ensayos":
-    case "ENSAYOS":
-        alert(nombreIngresado + " estos productos coinciden con su búsqueda de " + generoIngresado + ": \n" + libro2.titulo + "\n" + libro2.autor + "\n" + libro2.editorial + "\n Su precio es de $" + libro2.precio + "\n Su precio + IVA es de $" + libro2.sumaIva);
-        break;
+      alert(nombreIngresado + ", estos productos coinciden con su búsqueda de " + generoIngresado + ": \nTítulo: " + libro2.titulo + "\nAutor: " + libro2.autor + "\nEditorial: " + libro2.editorial + "\nPrecio: $ " + libro2.precio + "\nPrecio + IVA: $ " + libro2.precioIva);
+      break;
     case "guiones":
-    case "Guiones":
-    case "GUIONES":
-        alert(nombreIngresado + " estos productos coinciden con su búsqueda de " + generoIngresado + ": \n" + libro3.titulo + "\n" + libro3.autor + "\n" + libro3.editorial + "\n Su precio es de $" + libro3.precio + "\n Su precio + IVA es de $" + libro3.sumaIva);
-        break;
+      alert(nombreIngresado + ", estos productos coinciden con su búsqueda de " + generoIngresado + ": \nTítulo: " + libro3.titulo + "\nAutor: " + libro3.autor + "\nEditorial: " + libro3.editorial + "\nPrecio: $ " + libro3.precio + "\nPrecio + IVA: $ " + libro3.precioIva);
+      break;
     case "ficciones":
-    case "Ficciones":
-    case "FICCIONES":
-        alert(nombreIngresado + " estos productos coinciden con su búsqueda de " + generoIngresado + ": \n" + libro4.titulo + "\n" + libro4.autor + "\n" + libro4.editorial + "\n Su precio es de $" + libro4.precio + "\n Su precio + IVA es de $" + libro4.sumaIva);
-        break;
-    default:
-        alert(nombreIngresado + " su búsqueda no se ajusta a los parámetros establecidos. Por favor, ingrese nuevamente el género de su preferencia"); 
-}
+      alert(nombreIngresado + ", estos productos coinciden con su búsqueda de " + generoIngresado + " \nTítulo: " + libro4.titulo + "\nAutor: " + libro4.autor + "\nEditorial: " + libro4.editorial + "\nPrecio: $ " + libro4.precio + "\nPrecio + IVA: $ " + libro4.precioIva);
+      break;
 
-librosPorGenero ();
+  }
+}
+ingresarGenero();
+
 
 alert(nombreIngresado + ", gracias por consultar stock de libros en nuestra librería");
