@@ -63,18 +63,22 @@ function ingresarGenero() {
     console.log(nombreIngresado + " desea consultar por stock de " + generoIngresado);
 
     switch (generoIngresado) {
-    case "manuales":
-      alert(nombreIngresado + ", estos productos coinciden con su búsqueda de " + generoIngresado + ": \nTítulo: " + libro1.titulo + "\nAutor: " + libro1.autor + "\nEditorial: " + libro1.editorial + "\nPrecio: $ " + libro1.precio + "\nPrecio + IVA: $ " + libro1.precioIva);
-      break;
-    case "ensayos":
-      alert(nombreIngresado + ", estos productos coinciden con su búsqueda de " + generoIngresado + ": \nTítulo: " + libro2.titulo + "\nAutor: " + libro2.autor + "\nEditorial: " + libro2.editorial + "\nPrecio: $ " + libro2.precio + "\nPrecio + IVA: $ " + libro2.precioIva);
-      break;
-    case "guiones":
-      alert(nombreIngresado + ", estos productos coinciden con su búsqueda de " + generoIngresado + ": \nTítulo: " + libro3.titulo + "\nAutor: " + libro3.autor + "\nEditorial: " + libro3.editorial + "\nPrecio: $ " + libro3.precio + "\nPrecio + IVA: $ " + libro3.precioIva);
-      break;
-    case "ficciones":
-      alert(nombreIngresado + ", estos productos coinciden con su búsqueda de " + generoIngresado + " \nTítulo: " + libro4.titulo + "\nAutor: " + libro4.autor + "\nEditorial: " + libro4.editorial + "\nPrecio: $ " + libro4.precio + "\nPrecio + IVA: $ " + libro4.precioIva);
-      break;
+        case "manuales":
+            alert(nombreIngresado + ", estos productos coinciden con su búsqueda de " + generoIngresado + ": \nTítulo: " + libro1.titulo + "\nAutor: " + libro1.autor + "\nEditorial: " + libro1.editorial + "\nPrecio: $ " + libro1.precio + "\nPrecio + IVA: $ " + libro1.precioIva);
+        break;
+        case "ensayos":
+            alert(nombreIngresado + ", estos productos coinciden con su búsqueda de " + generoIngresado + ": \nTítulo: " + libro2.titulo + "\nAutor: " + libro2.autor + "\nEditorial: " + libro2.editorial + "\nPrecio: $ " + libro2.precio + "\nPrecio + IVA: $ " + libro2.precioIva);
+        break;
+        case "guiones":
+            alert(nombreIngresado + ", estos productos coinciden con su búsqueda de " + generoIngresado + ": \nTítulo: " + libro3.titulo + "\nAutor: " + libro3.autor + "\nEditorial: " + libro3.editorial + "\nPrecio: $ " + libro3.precio + "\nPrecio + IVA: $ " + libro3.precioIva);
+        break;
+        case "ficciones":
+            alert(nombreIngresado + ", estos productos coinciden con su búsqueda de " + generoIngresado + " \nTítulo: " + libro4.titulo + "\nAutor: " + libro4.autor + "\nEditorial: " + libro4.editorial + "\nPrecio: $ " + libro4.precio + "\nPrecio + IVA: $ " + libro4.precioIva);
+        break;
+        default:
+            alert(nombreIngresado + ", su búsqueda no se encuadra dentro de los géneros específicados, por favor, vuelva a ingresar el género por el cual desea consultar stock");
+            ingresarGenero();
+        break;
 
   }
 }
