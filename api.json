@@ -1,0 +1,10 @@
+[
+    {
+      "id": 1,
+      "titulo": "El cine según Hitchcock",
+      "autor": "Francois Truffaut",
+      "editorial": "Alianza Editorial",
+      "precio": 1600, 
+      "thumbnailUrl": "images/tapas/el-cine-segun-hitchcock-francois-truffaut.jpg"
+    }
+  ]
