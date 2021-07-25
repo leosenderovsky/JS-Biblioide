@@ -36,7 +36,7 @@ alert(nombreIngresado + ", usted desea comprar " + resultado + " libros");*/
 
 // Desafío 5 - Entrega 21/7
 
-class Libro {
+/*class Libro {
     constructor(titulo, autor, editorial, genero, precio) {
         this.titulo = titulo;
         this.autor = autor;
@@ -85,4 +85,67 @@ function ingresarGenero() {
 ingresarGenero();
 
 
-alert(nombreIngresado + ", gracias por consultar stock de libros en nuestra librería");
+alert(nombreIngresado + ", gracias por consultar stock de libros en nuestra librería");*/
+
+
+// --------------------------
+
+// Desafío 6 - Entrega 25/7 - Arrays
+
+//CONSTRUCTOR
+
+class Libro {
+    constructor(id, titulo, autor, editorial, genero, precio) {
+        this.id = parseFloat(id);
+        this.titulo = titulo;
+        this.autor = autor;
+        this.editorial = editorial;
+        this.genero = genero;
+        this.precio = parseFloat(precio);
+        this.stock = true;
+        this.precioIva = this.precio * 1.21;
+    }
+}
+
+// ARRAY PUSH PARA SUMAR LIBROS
+
+const libros = [];
+libros.push (new Libro (23, "El cine según Hitchcock", "Francois Truffaut", "Alianza Editorial", "ensayo", 1600, true));
+libros.push (new Libro (57, "Un lugar en el mundo", "Adolfo Aristarain", "Cantaro", "guion", 490, true));
+libros.push (new Libro (68, "El guión", "Robert McKee", "Alba Editorial", "manual", 2900, true));
+libros.push (new Libro (34, "El viaje del escritor", "Christopher Vogler", "Ma Non Troppo", "ensayo", 2481, true));
+libros.push (new Libro (123, "Las aguas bajan turbias", "Eduardo Borrás", "Biblos", "guion", 792, true));
+libros.push (new Libro (305, "Érase una vez en Hollywood", "Quentin Tarantino", "Reservoir Books", "ficcion", 3665, true));
+
+for (const Libro of libros) {
+    console.log(Libro.id, Libro.titulo, Libro.precio, Libro.precioIva);
+}
+
+// ARRAY PARA TRIMEAR EL STRING
+
+if (typeof titulo == 'string')
+titulo = titulo.trim ();
+
+if (typeof autor == 'string')
+autor = autor.trim ();
+
+if (typeof editorial == 'string')
+editorial = editorial.trim ();
+
+if (typeof genero == 'string')
+genero = genero.trim ();
+
+// ARRAY PARA VER LOS LIBROS BARATOS
+
+const baratos = libros.filter(Libro => Libro.precioIva < 2500);
+console.log (baratos);
+
+// ARRAY PARA VER LOS LIBROS CAROS
+
+const caros = libros.filter(Libro => Libro.precioIva > 2500);
+console.log (caros);
+
+// ARRAY PARA VER LOS LIBROS NUEVOS
+
+const nuevos = libros.filter(Libro => Libro.id > 300);
+console.log (nuevos);
