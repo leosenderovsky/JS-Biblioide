@@ -118,22 +118,22 @@ libros.push (new Libro (123, "Las aguas bajan turbias", "Eduardo Borrás", "Bibl
 libros.push (new Libro (305, "Érase una vez en Hollywood", "Quentin Tarantino", "Reservoir Books", "ficcion", 3665, true));
 
 for (const Libro of libros) {
-    console.log(Libro.id, Libro.titulo, Libro.precio, Libro.precioIva);
+    console.log(Libro.id, Libro.titulo, Libro.autor, Libro.editorial, Libro.genero, Libro.precio, Libro.precioIva);
 }
 
 // ARRAY PARA TRIMEAR EL STRING
 
-if (typeof titulo == 'string')
-titulo = titulo.trim ();
+if (typeof Libro.titulo == 'string')
+Libro.titulo = Libro.titulo.trim ();
 
-if (typeof autor == 'string')
-autor = autor.trim ();
+if (typeof Libro.autor == 'string')
+Libro.autor = Libro.autor.trim ();
 
-if (typeof editorial == 'string')
-editorial = editorial.trim ();
+if (typeof Libro.editorial == 'string')
+Libro.editorial = Libro.editorial.trim ();
 
-if (typeof genero == 'string')
-genero = genero.trim ();
+if (typeof Libro.genero == 'string')
+Libro.genero = Libro.genero.trim ();
 
 // ARRAY PARA VER LOS LIBROS BARATOS
 
@@ -149,3 +149,32 @@ console.log (caros);
 
 const nuevos = libros.filter(Libro => Libro.id > 300);
 console.log (nuevos);
+
+
+
+// Desafío complementario - Entrega 25/7 - Ordenar un array
+
+// ORDENARLOS NUMERICAMENTE POR ID
+
+const id = [23, 57, 68, 34, 123, 305];
+function compare(a, b){
+    return a - b;
+}
+console.log ("Productos ordenados por ID: " + id.sort(compare));
+
+// ORDENARLOS NUMERICAMENTE POR PRECIO
+
+const precio = [1600, 490, 2900, 2481, 792, 3665];
+function compare(a, b){
+    return a - b;
+}
+console.log("Productos ordenados por precio: " + precio.sort(compare));
+
+// ORDENARLOS POR LONGITUD DE TITULO
+
+let titulo = ["El cine según Hitchcock", "Un lugar en el mundo", "El guión", "El viaje del escritor", "Las aguas bajan turbias", "Érase una vez en Hollywood"];
+
+titulo.sort(function(a, b) {
+    return b.length - a.length
+});
+console.log("Titulos ordenados por orden de longitud: " + titulo.sort(compare));
