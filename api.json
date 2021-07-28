@@ -1,10 +1,308 @@
 [
     {
       "id": 1,
+      "genero": "ensayo",
       "titulo": "El cine según Hitchcock",
       "autor": "Francois Truffaut",
       "editorial": "Alianza Editorial",
       "precio": 1600, 
-      "thumbnailUrl": "images/tapas/el-cine-segun-hitchcock-francois-truffaut.jpg"
-    }
+      "thumbnailUrl": "images/cover/large/el-cine-segun-hitchcock-francois-truffaut.jpg"
+    },
+    {
+      "id": 2,
+      "genero": "ensayo",
+      "titulo": "Hollywood Babilonia",
+      "autor": "Kenneth Anger",
+      "editorial": "Dell Mass Market",
+      "precio": 3693, 
+      "thumbnailUrl": "images/cover/large/hollywood-babilonia-kenneth-anger.jpg"
+    },
+    {
+      "id": 3,
+      "genero": "manual",
+      "titulo": "Montaje cinematográfico - Arte del movimiento",
+      "autor": "Rafael Sánchez",
+      "editorial": "La Crujía",
+      "precio": 800, 
+      "thumbnailUrl": "images/cover/large/montaje-cinematografico-rafael-sanchez.jpg"
+    },
+    {
+      "id": 4,
+      "genero": "ficcion",
+      "titulo": "El padrino",
+      "autor": "Mario Puzo",
+      "editorial": "B de Bolsillo",
+      "precio": 2199, 
+      "thumbnailUrl": "images/cover/large/el-padrino-mario-puzo.jpg"
+    },
+    {
+      "id": 5,
+      "genero": "manual",
+      "titulo": "El guión",
+      "autor": "Robert McKee",
+      "editorial": "Alba Editorial",
+      "precio": 2900, 
+      "thumbnailUrl": "images/cover/large/el-guion-robert-mckee.jpg"
+    },
+    {
+      "id": 6,
+      "genero": "guion",
+      "titulo": "Taxi driver",
+      "autor": "Paul Schrader",
+      "editorial": "Faber & Faber",
+      "precio": 1560, 
+      "thumbnailUrl": "images/cover/large/taxi-driver-paul-schrader.jpg"
+    },
+    {
+      "id": 7,
+      "genero": "ficcion",
+      "titulo": "El club de la lucha",
+      "autor": "Chuck Palahniuk",
+      "editorial": "Penguin Random House",
+      "precio": 3406, 
+      "thumbnailUrl": "images/cover/large/el-club-de-la-lucha-chuck-palahniuk.jpg"
+    },
+    {
+      "id": 8,
+      "genero": "ensayo",
+      "titulo": "Esculpir en el tiempo",
+      "autor": "Andrei Tarkovski",
+      "editorial": "Rialp",
+      "precio": 4829, 
+      "thumbnailUrl": "images/cover/large/esculpir-en-el-tiempo-andrei-tarkovski.jpg"
+    },
+    {
+      "id": 9,
+      "genero": "manual",
+      "titulo": "Screenplay. The Foundations of Screenwriting",
+      "autor": "Syd Field",
+      "editorial": "Random House USA",
+      "precio": 4188, 
+      "thumbnailUrl": "images/cover/large/screenplay-syd-field.jpg"
+    },
+    {
+      "id": 10,
+      "genero": "guion",
+      "titulo": "Un lugar en el mundo",
+      "autor": "Adolfo Aristarain",
+      "editorial": "Cantaro",
+      "precio": 490, 
+      "thumbnailUrl": "images/cover/large/un-lugar-en-el-mundo-adolfo-aristarain.jpg"
+    },
+    {
+      "id": 11,
+      "genero": "ensayo",
+      "titulo": "Ciudadano Welles: Conversaciones con Peter Bogdanovich",
+      "autor": "Orson Welles",
+      "editorial": "Capitan Swing",
+      "precio": 5189, 
+      "thumbnailUrl": "images/cover/large/ciudadano-welles-orson-welles.jpg"
+    },
+    {
+      "id": 12,
+      "genero": "ensayo",
+      "titulo": "Painting With Light",
+      "autor": "John Alton",
+      "editorial": "University Of California Press",
+      "precio": 7887, 
+      "thumbnailUrl": "images/cover/large/painting-with-light-john-alton.jpg"
+    },
+    {
+      "id": 13,
+      "genero": "ensayo",
+      "titulo": "La audiovisión",
+      "autor": "Michel Chion",
+      "editorial": "La Marca",
+      "precio": 2180, 
+      "thumbnailUrl": "images/cover/large/la-audiovision-michel-chion.jpg"
+    },
+    {
+      "id": 14,
+      "genero": "manual",
+      "titulo": "Screenplay. The Foundations of Screenwriting",
+      "autor": "Syd Field",
+      "editorial": "Random House USA",
+      "precio": 4188, 
+      "thumbnailUrl": "images/cover/large/screenplay-syd-field.jpg"
+    },
+    {
+      "id": 15,
+      "genero": "manual",
+      "titulo": "Salva al gato",
+      "autor": "Blake Snyder",
+      "editorial": "Alba Editorial",
+      "precio": 3400, 
+      "thumbnailUrl": "images/cover/large/salva-al-gato-blake-snyder.jpg"
+    },
+    {
+      "id": 16,
+      "genero": "guion",
+      "titulo": "Las aguas bajan turbias",
+      "autor": "Eduardo Borrás",
+      "editorial": "Biblos",
+      "precio": 792, 
+      "thumbnailUrl": "images/cover/large/las-aguas-bajan-turbias.jpg"
+    },
+    {
+      "id": 17,
+      "genero": "ficcion",
+      "titulo": "El exorcista",
+      "autor": "William Peter Blatty",
+      "editorial": "B de Bolsillo",
+      "precio": 1799, 
+      "thumbnailUrl": "images/cover/large/el-exorcista-william-peter-blatty.jpg"
+    },
+    {
+      "id": 18,
+      "genero": "ensayo",
+      "titulo": "El viaje del escritor",
+      "autor": "Christopher Vogler",
+      "editorial": "Ma Non Troppo",
+      "precio": 2481, 
+      "thumbnailUrl": "images/cover/large/el-viaje-del-escritor-christopher-vogler.jpg"
+    },
+    {
+      "id": 19,
+      "genero": "ensayo",
+      "titulo": "El héroe de las mil caras",
+      "autor": "Joseph Campbell",
+      "editorial": "Fondo Cultura Economica",
+      "precio": 6791, 
+      "thumbnailUrl": "images/cover/large/el-heroe-de-las-mil-caras-joseph-campbell.jpg"
+    },
+    {
+      "id": 20,
+      "genero": "ficcion",
+      "titulo": "El silencio de los corderos",
+      "autor": "Thomas Harris",
+      "editorial": "Debolsillo",
+      "precio": 4000, 
+      "thumbnailUrl": "images/cover/large/el-silencio-de-los-corderos-thomas-harris.jpg"
+    },
+    {
+      "id": 21,
+      "genero": "ficcion",
+      "titulo": "El resplandor",
+      "autor": "Stephen King",
+      "editorial": "Debolsillo",
+      "precio": 2199, 
+      "thumbnailUrl": "images/cover/large/el-resplandor-stephen-king.jpg"
+    },
+    {
+      "id": 22,
+      "genero": "ficcion",
+      "titulo": "La naranja mecánica",
+      "autor": "Anthony Burgess",
+      "editorial": "Minotauro",
+      "precio": 951, 
+      "thumbnailUrl": "images/cover/large/la-naranja-mecanica-anthony-burgess.jpg"
+    },
+    {
+      "id": 23,
+      "genero": "ficcion",
+      "titulo": "American Psycho",
+      "autor": "Bret Easton Ellis",
+      "editorial": "Literatura Random House",
+      "precio": 4421, 
+      "thumbnailUrl": "images/cover/large/american-psycho-bret-easton-ellis.jpg"
+    },
+    {
+      "id": 24,
+      "genero": "ensayo",
+      "titulo": "Historia del cine",
+      "autor": "Roman Gubern",
+      "editorial": "Anagrama",
+      "precio": 4921, 
+      "thumbnailUrl": "images/cover/large/historia-del-cine-roman-gubern.jpg"
+    },
+    {
+      "id": 25,
+      "genero": "ensayo",
+      "titulo": "Qué es el cine",
+      "autor": "André Bazin",
+      "editorial": "Rialp",
+      "precio": 6664, 
+      "thumbnailUrl": "images/cover/large/que-es-el-cine-andre-bazin.jpg"
+    },
+    {
+      "id": 26,
+      "genero": "ficcion",
+      "titulo": "Doctor Zhivago",
+      "autor": "Boris Pasternak",
+      "editorial": "Galaxia Gutenberg",
+      "precio": 4595, 
+      "thumbnailUrl": "images/cover/large/doctor-zhivago-boris-pasternak.jpg"
+    },
+    {
+      "id": 27,
+      "genero": "ficcion",
+      "titulo": "Psicosis",
+      "autor": "Robert Bloch",
+      "editorial": "Overlook Press",
+      "precio": 4255, 
+      "thumbnailUrl": "images/cover/large/psycho-robert-bloch.jpg"
+    },
+    {
+      "id": 28,
+      "genero": "ensayo",
+      "titulo": "Moteros tranquilos, toros salvajes: La generación que cambió Hollywood",
+      "autor": "Peter Biskind",
+      "editorial": "Anagrama",
+      "precio": 6122, 
+      "thumbnailUrl": "images/cover/large/moteros-tranquilos-toros-salvajes-peter-biskind.jpg"
+    },
+    {
+      "id": 29,
+      "genero": "manual",
+      "titulo": "Cómo convertir un buen guión en un guión excelente",
+      "autor": "Linda Seger",
+      "editorial": "Rialp",
+      "precio": 5873, 
+      "thumbnailUrl": "images/cover/large/como-convertir-un-buen-guion-linda-seger.jpg"
+    },
+    {
+      "id": 30,
+      "genero": "manual",
+      "titulo": "El cine y la puesta en escena",
+      "autor": "Jacques Aumont",
+      "editorial": "Colihue",
+      "precio": 780, 
+      "thumbnailUrl": "images/cover/large/el-cine-y-la-puesta-en-escena-jacques-aumont.jpg"
+    },
+    {
+      "id": 31,
+      "genero": "ensayo",
+      "titulo": "Cine argentino - Entre lo posible y lo deseable",
+      "autor": "Octavio Getino",
+      "editorial": "Ediciones Ciccus",
+      "precio": 1800, 
+      "thumbnailUrl": "images/cover/large/cine-argentino-posible-deseable-octavio-getino.jpg"
+    },
+    {
+      "id": 32,
+      "genero": "ensayo",
+      "titulo": "Un diccionario de films argentinos - Tomo III",
+      "autor": "Raul Manrupe, Alejandra Portela",
+      "editorial": "Corregidor",
+      "precio": 2382, 
+      "thumbnailUrl": "images/cover/large/un-diccionario-de-films-argentinos-tomo-iii-raul-manrupe-alejandra-portela.jpg"
+    },
+    {
+      "id": 33,
+      "genero": "guion",
+      "titulo": "Being John Malkovich",
+      "autor": "Charlie Kaufman",
+      "editorial": "Farrar Straus & Giroux",
+      "precio": 4344, 
+      "thumbnailUrl": "images/cover/large/being-john-malkovich-charlie-kaufman.jpg"
+    },   
+    {
+      "id": 34,
+      "genero": "ficcion",
+      "titulo": "Érase una vez en Hollywood",
+      "autor": "Quentin Tarantino",
+      "editorial": "Reservoir Books",
+      "precio": 3665, 
+      "thumbnailUrl": "images/cover/large/erase-una-vez-en-hollywood-quentin-tarantino.jpg"
+    }    
   ]
