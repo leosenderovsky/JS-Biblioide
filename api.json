@@ -118,12 +118,12 @@
     },
     {
       "id": 14,
-      "genero": "manual",
-      "titulo": "Screenplay. The Foundations of Screenwriting",
-      "autor": "Syd Field",
-      "editorial": "Random House USA",
-      "precio": 4188, 
-      "thumbnailUrl": "images/cover/large/screenplay-syd-field.jpg"
+      "genero": "ensayo",
+      "titulo": "El sentido del cine",
+      "autor": "Sergei Eisenstein",
+      "editorial": "Siglo XXI",
+      "precio": 3523, 
+      "thumbnailUrl": "images/cover/large/el-sentido-del-cine-sergei-eisenstein.jpg"
     },
     {
       "id": 15,

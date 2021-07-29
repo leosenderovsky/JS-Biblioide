@@ -4,6 +4,42 @@
   object-fit: cover;
 }
 
+.card-title {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  font-family: "Voltaire", sans-serif;
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  background-color: #357376;
+  border-color: #357376;
+}
+.btn:hover {
+  background-color: #1D4D4F;
+}
+.btn::after {
+  background-color: #6BA8A9;
+}
+
+.btn-check:active + .btn-primary,
+.btn-check:checked + .btn-primary,
+.btn-primary.active, .btn-primary:active,
+.btn-primary.dropdown-toggle {
+  border-color: #357376;
+}
+
 .navbar {
   height: 100px;
 }
