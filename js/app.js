@@ -1,4 +1,5 @@
-const items = document.getElementById('items');
+
+/*const items = document.getElementById('items');
 const templateCard = document.getElementById('template-card').content;
 const fragment = document.createDocumentFragment();
 let carrito = {}
@@ -52,4 +53,48 @@ const setCarrito = objeto => {
         cantidad: 1,
     }
     console.log(producto);
+}*/
+
+const items = document.getElementById('items');
+const templateCard = document.getElementById('template-card').content;
+const fragment = document.createDocumentFragment();
+let carrito = {}
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetchData();
+})
+
+items.addEventListener('click', e => {
+    addCarrito(e);
+})
+
+const fetchData = async () => {
+    try {
+        const res = await fetch('api.json');
+        const data = await res.json();
+        // console.log(data);
+        pintarCards(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
+const pintarCards = data => {
+    var arrayProductos = [];
+    const ensayos = arrayProductos.filter(producto => producto.genero == ensayo);
+
+    for (let producto of ensayos) {
+        
+        let contenedor = document.createElement("div");
+        document.write(`<h2>${producto.genero}</h2>`);
+        data.forEach(producto => {
+            templateCard.querySelector('h5').textContent = producto.titulo;
+            templateCard.querySelector('.card-text').textContent = producto.precio;
+            templateCard.querySelector('img').setAttribute("src", producto.thumbnailUrl);
+            templateCard.querySelector('.btn-primary').dataset.id = producto.id;
+            const clone = templateCard.cloneNode(true);
+            fragment.appendChild(clone);
+        });
+        items.appendChild(fragment);
+        document.body.appendChild(contenedor);                        
+    }
 }
