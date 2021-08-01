@@ -182,6 +182,8 @@ console.log("Titulos ordenados por orden de longitud: " + titulo.sort(compare));
 
 // Desafío 7 - Entrega 1/8 - DOM
 
+let nombreIngresado = prompt("Ingrese su nombre");
+console.log (nombreIngresado);
 class Libro {
     constructor(id, titulo, autor, editorial, genero, precio) {
         this.id = parseFloat(id);
@@ -203,7 +205,7 @@ libros.push (new Libro (123, "Las aguas bajan turbias", "Eduardo Borrás", "Bibl
 libros.push (new Libro (305, "Érase una vez en Hollywood", "Quentin Tarantino", "Reservoir Books", "ficcion", 3665, true));
 
 let titulo = document.createElement("div");
-titulo.innerHTML = "<h2>Libros recomendados</h2>"
+titulo.innerHTML = nombreIngresado + ", mirá nuestros libros recomendados:"
 titulo.className = 'title-subsection';
 document.body.appendChild(titulo);
 
