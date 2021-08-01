@@ -53,8 +53,8 @@ const setCarrito = objeto => {
         cantidad: 1,
     }
     console.log(producto);
-}*/
-
+}
+/*
 const items = document.getElementById('items');
 const templateCard = document.getElementById('template-card').content;
 const fragment = document.createDocumentFragment();
@@ -97,4 +97,6 @@ const pintarCards = data => {
         items.appendChild(fragment);
         document.body.appendChild(contenedor);                        
     }
-}
+}*/
+
+

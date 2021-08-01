@@ -8,3 +8,7 @@
 @import 'functions/extends';
 @import 'functions/mixins';
 
+.text {
+    font-family: $font-base;
+    font-size: 1em;
+    margin: 20px 0px 10px 20px;}

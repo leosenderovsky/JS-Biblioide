@@ -94,7 +94,7 @@ alert(nombreIngresado + ", gracias por consultar stock de libros en nuestra libr
 
 //CONSTRUCTOR
 
-class Libro {
+/*class Libro {
     constructor(id, titulo, autor, editorial, genero, precio) {
         this.id = parseFloat(id);
         this.titulo = titulo;
@@ -177,4 +177,42 @@ let titulo = ["El cine según Hitchcock", "Un lugar en el mundo", "El guión", "
 titulo.sort(function(a, b) {
     return b.length - a.length
 });
-console.log("Titulos ordenados por orden de longitud: " + titulo.sort(compare));
+console.log("Titulos ordenados por orden de longitud: " + titulo.sort(compare));*/
+
+
+// Desafío 7 - Entrega 1/8 - DOM
+
+class Libro {
+    constructor(id, titulo, autor, editorial, genero, precio) {
+        this.id = parseFloat(id);
+        this.titulo = titulo;
+        this.autor = autor;
+        this.editorial = editorial;
+        this.genero = genero;
+        this.precio = parseFloat(precio);
+        this.stock = true;
+        this.precioIva = this.precio * 1.21;
+    }
+}
+const libros = [];
+libros.push (new Libro (23, "El cine según Hitchcock", "Francois Truffaut", "Alianza Editorial", "ensayo", 1600, true));
+libros.push (new Libro (57, "Un lugar en el mundo", "Adolfo Aristarain", "Cantaro", "guion", 490, true));
+libros.push (new Libro (68, "El guión", "Robert McKee", "Alba Editorial", "manual", 2900, true));
+libros.push (new Libro (34, "El viaje del escritor", "Christopher Vogler", "Ma Non Troppo", "ensayo", 2481, true));
+libros.push (new Libro (123, "Las aguas bajan turbias", "Eduardo Borrás", "Biblos", "guion", 792, true));
+libros.push (new Libro (305, "Érase una vez en Hollywood", "Quentin Tarantino", "Reservoir Books", "ficcion", 3665, true));
+
+let titulo = document.createElement("div");
+titulo.innerHTML = "<h2>Libros recomendados</h2>"
+titulo.className = 'title-subsection';
+document.body.appendChild(titulo);
+
+for (const Libro of libros) {
+    let contenedor = document.createElement("div");
+    contenedor.innerHTML = `<h5> ${Libro.titulo}</h5>
+                            <h6> ${Libro.autor}</h6>
+                            <p> $ ${Libro.precio}</p>`;
+    contenedor.className = 'text';
+    document.body.appendChild(contenedor);
+
+}

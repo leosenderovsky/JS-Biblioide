@@ -8,8 +8,8 @@
 
 .title {
     text-align: center;
-    @include text ($font-title, 500, $color-1, center, true);
-    font-size: 3em;
+    @include text ($font-title, 600, $color-1, center, true);
+    font-size: 4em;
 }
 
 .subtitle {
@@ -19,7 +19,7 @@
 }
 
 .title-subsection {
-    @include text ($font-subtitle, 600, $color-1, left, true);
+    @include text ($font-subtitle, 400, $color-1, left, true);
     font-size: 3em;
     margin: 20px 0px 10px 20px;
 }
