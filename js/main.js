@@ -182,7 +182,7 @@ console.log("Titulos ordenados por orden de longitud: " + titulo.sort(compare));
 
 // Desafío 7 - Entrega 1/8 - DOM
 
-let nombreIngresado = prompt("Ingrese su nombre");
+/*let nombreIngresado = prompt("Ingrese su nombre");
 console.log (nombreIngresado);
 class Libro {
     constructor(id, titulo, autor, editorial, genero, precio) {
@@ -217,4 +217,4 @@ for (const Libro of libros) {
     contenedor.className = 'text';
     document.body.appendChild(contenedor);
 
-}
+}*/

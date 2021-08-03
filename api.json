@@ -6,7 +6,8 @@
       "autor": "Francois Truffaut",
       "editorial": "Alianza Editorial",
       "precio": 1600, 
-      "thumbnailUrl": "images/cover/large/el-cine-segun-hitchcock-francois-truffaut.jpg"
+      "thumbnailUrl": "images/cover/large/el-cine-segun-hitchcock-francois-truffaut.jpg",
+      "recomendado": true
     },
     {
       "id": 2,
@@ -15,7 +16,9 @@
       "autor": "Kenneth Anger",
       "editorial": "Dell Mass Market",
       "precio": 3693, 
-      "thumbnailUrl": "images/cover/large/hollywood-babilonia-kenneth-anger.jpg"
+      "thumbnailUrl": "images/cover/large/hollywood-babilonia-kenneth-anger.jpg",
+      "recomendado": false
+
     },
     {
       "id": 3,
@@ -24,7 +27,9 @@
       "autor": "Rafael Sánchez",
       "editorial": "La Crujía",
       "precio": 800, 
-      "thumbnailUrl": "images/cover/large/montaje-cinematografico-rafael-sanchez.jpg"
+      "thumbnailUrl": "images/cover/large/montaje-cinematografico-rafael-sanchez.jpg",
+      "recomendado": false
+
     },
     {
       "id": 4,
@@ -33,7 +38,9 @@
       "autor": "Mario Puzo",
       "editorial": "B de Bolsillo",
       "precio": 2199, 
-      "thumbnailUrl": "images/cover/large/el-padrino-mario-puzo.jpg"
+      "thumbnailUrl": "images/cover/large/el-padrino-mario-puzo.jpg",
+      "recomendado": false
+
     },
     {
       "id": 5,
@@ -42,7 +49,9 @@
       "autor": "Robert McKee",
       "editorial": "Alba Editorial",
       "precio": 2900, 
-      "thumbnailUrl": "images/cover/large/el-guion-robert-mckee.jpg"
+      "thumbnailUrl": "images/cover/large/el-guion-robert-mckee.jpg",
+      "recomendado": false
+
     },
     {
       "id": 6,
@@ -51,7 +60,9 @@
       "autor": "Paul Schrader",
       "editorial": "Faber & Faber",
       "precio": 1560, 
-      "thumbnailUrl": "images/cover/large/taxi-driver-paul-schrader.jpg"
+      "thumbnailUrl": "images/cover/large/taxi-driver-paul-schrader.jpg",
+      "recomendado": false
+
     },
     {
       "id": 7,
@@ -60,7 +71,9 @@
       "autor": "Chuck Palahniuk",
       "editorial": "Penguin Random House",
       "precio": 3406, 
-      "thumbnailUrl": "images/cover/large/el-club-de-la-lucha-chuck-palahniuk.jpg"
+      "thumbnailUrl": "images/cover/large/el-club-de-la-lucha-chuck-palahniuk.jpg",
+      "recomendado": false
+
     },
     {
       "id": 8,
@@ -69,7 +82,9 @@
       "autor": "Andrei Tarkovski",
       "editorial": "Rialp",
       "precio": 4829, 
-      "thumbnailUrl": "images/cover/large/esculpir-en-el-tiempo-andrei-tarkovski.jpg"
+      "thumbnailUrl": "images/cover/large/esculpir-en-el-tiempo-andrei-tarkovski.jpg",
+      "recomendado": false
+
     },
     {
       "id": 9,
@@ -78,7 +93,9 @@
       "autor": "Syd Field",
       "editorial": "Random House USA",
       "precio": 4188, 
-      "thumbnailUrl": "images/cover/large/screenplay-syd-field.jpg"
+      "thumbnailUrl": "images/cover/large/screenplay-syd-field.jpg",
+      "recomendado": false
+
     },
     {
       "id": 10,
@@ -87,7 +104,8 @@
       "autor": "Adolfo Aristarain",
       "editorial": "Cantaro",
       "precio": 490, 
-      "thumbnailUrl": "images/cover/large/un-lugar-en-el-mundo-adolfo-aristarain.jpg"
+      "thumbnailUrl": "images/cover/large/un-lugar-en-el-mundo-adolfo-aristarain.jpg",
+      "recomendado": true
     },
     {
       "id": 11,
@@ -96,7 +114,8 @@
       "autor": "Orson Welles",
       "editorial": "Capitan Swing",
       "precio": 5189, 
-      "thumbnailUrl": "images/cover/large/ciudadano-welles-orson-welles.jpg"
+      "thumbnailUrl": "images/cover/large/ciudadano-welles-orson-welles.jpg",
+      "recomendado": true
     },
     {
       "id": 12,
@@ -105,7 +124,9 @@
       "autor": "John Alton",
       "editorial": "University Of California Press",
       "precio": 7887, 
-      "thumbnailUrl": "images/cover/large/painting-with-light-john-alton.jpg"
+      "thumbnailUrl": "images/cover/large/painting-with-light-john-alton.jpg",
+      "recomendado": false
+
     },
     {
       "id": 13,
@@ -114,7 +135,9 @@
       "autor": "Michel Chion",
       "editorial": "La Marca",
       "precio": 2180, 
-      "thumbnailUrl": "images/cover/large/la-audiovision-michel-chion.jpg"
+      "thumbnailUrl": "images/cover/large/la-audiovision-michel-chion.jpg",
+      "recomendado": false
+
     },
     {
       "id": 14,
@@ -123,7 +146,9 @@
       "autor": "Sergei Eisenstein",
       "editorial": "Siglo XXI",
       "precio": 3523, 
-      "thumbnailUrl": "images/cover/large/el-sentido-del-cine-sergei-eisenstein.jpg"
+      "thumbnailUrl": "images/cover/large/el-sentido-del-cine-sergei-eisenstein.jpg",
+      "recomendado": false
+
     },
     {
       "id": 15,
@@ -132,7 +157,8 @@
       "autor": "Blake Snyder",
       "editorial": "Alba Editorial",
       "precio": 3400, 
-      "thumbnailUrl": "images/cover/large/salva-al-gato-blake-snyder.jpg"
+      "thumbnailUrl": "images/cover/large/salva-al-gato-blake-snyder.jpg",
+      "recomendado": false
     },
     {
       "id": 16,
@@ -141,7 +167,9 @@
       "autor": "Eduardo Borrás",
       "editorial": "Biblos",
       "precio": 792, 
-      "thumbnailUrl": "images/cover/large/las-aguas-bajan-turbias.jpg"
+      "thumbnailUrl": "images/cover/large/las-aguas-bajan-turbias.jpg",
+      "recomendado": false
+
     },
     {
       "id": 17,
@@ -150,7 +178,9 @@
       "autor": "William Peter Blatty",
       "editorial": "B de Bolsillo",
       "precio": 1799, 
-      "thumbnailUrl": "images/cover/large/el-exorcista-william-peter-blatty.jpg"
+      "thumbnailUrl": "images/cover/large/el-exorcista-william-peter-blatty.jpg",
+      "recomendado": false
+
     },
     {
       "id": 18,
@@ -159,7 +189,8 @@
       "autor": "Christopher Vogler",
       "editorial": "Ma Non Troppo",
       "precio": 2481, 
-      "thumbnailUrl": "images/cover/large/el-viaje-del-escritor-christopher-vogler.jpg"
+      "thumbnailUrl": "images/cover/large/el-viaje-del-escritor-christopher-vogler.jpg",
+      "recomendado": false
     },
     {
       "id": 19,
@@ -168,7 +199,9 @@
       "autor": "Joseph Campbell",
       "editorial": "Fondo Cultura Economica",
       "precio": 6791, 
-      "thumbnailUrl": "images/cover/large/el-heroe-de-las-mil-caras-joseph-campbell.jpg"
+      "thumbnailUrl": "images/cover/large/el-heroe-de-las-mil-caras-joseph-campbell.jpg",
+      "recomendado": false
+
     },
     {
       "id": 20,
@@ -177,7 +210,8 @@
       "autor": "Thomas Harris",
       "editorial": "Debolsillo",
       "precio": 4000, 
-      "thumbnailUrl": "images/cover/large/el-silencio-de-los-corderos-thomas-harris.jpg"
+      "thumbnailUrl": "images/cover/large/el-silencio-de-los-corderos-thomas-harris.jpg",
+      "recomendado": false
     },
     {
       "id": 21,
@@ -186,7 +220,8 @@
       "autor": "Stephen King",
       "editorial": "Debolsillo",
       "precio": 2199, 
-      "thumbnailUrl": "images/cover/large/el-resplandor-stephen-king.jpg"
+      "thumbnailUrl": "images/cover/large/el-resplandor-stephen-king.jpg",
+      "recomendado": true
     },
     {
       "id": 22,
@@ -195,7 +230,9 @@
       "autor": "Anthony Burgess",
       "editorial": "Minotauro",
       "precio": 951, 
-      "thumbnailUrl": "images/cover/large/la-naranja-mecanica-anthony-burgess.jpg"
+      "thumbnailUrl": "images/cover/large/la-naranja-mecanica-anthony-burgess.jpg",
+      "recomendado": false
+
     },
     {
       "id": 23,
@@ -204,7 +241,8 @@
       "autor": "Bret Easton Ellis",
       "editorial": "Literatura Random House",
       "precio": 4421, 
-      "thumbnailUrl": "images/cover/large/american-psycho-bret-easton-ellis.jpg"
+      "thumbnailUrl": "images/cover/large/american-psycho-bret-easton-ellis.jpg",
+      "recomendado": false
     },
     {
       "id": 24,
@@ -213,7 +251,8 @@
       "autor": "Roman Gubern",
       "editorial": "Anagrama",
       "precio": 4921, 
-      "thumbnailUrl": "images/cover/large/historia-del-cine-roman-gubern.jpg"
+      "thumbnailUrl": "images/cover/large/historia-del-cine-roman-gubern.jpg",
+      "recomendado": true
     },
     {
       "id": 25,
@@ -222,7 +261,8 @@
       "autor": "André Bazin",
       "editorial": "Rialp",
       "precio": 6664, 
-      "thumbnailUrl": "images/cover/large/que-es-el-cine-andre-bazin.jpg"
+      "thumbnailUrl": "images/cover/large/que-es-el-cine-andre-bazin.jpg",
+      "recomendado": false
     },
     {
       "id": 26,
@@ -231,7 +271,8 @@
       "autor": "Boris Pasternak",
       "editorial": "Galaxia Gutenberg",
       "precio": 4595, 
-      "thumbnailUrl": "images/cover/large/doctor-zhivago-boris-pasternak.jpg"
+      "thumbnailUrl": "images/cover/large/doctor-zhivago-boris-pasternak.jpg",
+      "recomendado": false
     },
     {
       "id": 27,
@@ -240,7 +281,8 @@
       "autor": "Robert Bloch",
       "editorial": "Overlook Press",
       "precio": 4255, 
-      "thumbnailUrl": "images/cover/large/psycho-robert-bloch.jpg"
+      "thumbnailUrl": "images/cover/large/psycho-robert-bloch.jpg",
+      "recomendado": false
     },
     {
       "id": 28,
@@ -249,7 +291,8 @@
       "autor": "Peter Biskind",
       "editorial": "Anagrama",
       "precio": 6122, 
-      "thumbnailUrl": "images/cover/large/moteros-tranquilos-toros-salvajes-peter-biskind.jpg"
+      "thumbnailUrl": "images/cover/large/moteros-tranquilos-toros-salvajes-peter-biskind.jpg",
+      "recomendado": false
     },
     {
       "id": 29,
@@ -258,7 +301,8 @@
       "autor": "Linda Seger",
       "editorial": "Rialp",
       "precio": 5873, 
-      "thumbnailUrl": "images/cover/large/como-convertir-un-buen-guion-linda-seger.jpg"
+      "thumbnailUrl": "images/cover/large/como-convertir-un-buen-guion-linda-seger.jpg",
+      "recomendado": true
     },
     {
       "id": 30,
@@ -267,7 +311,8 @@
       "autor": "Jacques Aumont",
       "editorial": "Colihue",
       "precio": 780, 
-      "thumbnailUrl": "images/cover/large/el-cine-y-la-puesta-en-escena-jacques-aumont.jpg"
+      "thumbnailUrl": "images/cover/large/el-cine-y-la-puesta-en-escena-jacques-aumont.jpg",
+      "recomendado": false
     },
     {
       "id": 31,
@@ -276,7 +321,8 @@
       "autor": "Octavio Getino",
       "editorial": "Ediciones Ciccus",
       "precio": 1800, 
-      "thumbnailUrl": "images/cover/large/cine-argentino-posible-deseable-octavio-getino.jpg"
+      "thumbnailUrl": "images/cover/large/cine-argentino-posible-deseable-octavio-getino.jpg",
+      "recomendado": true
     },
     {
       "id": 32,
@@ -285,7 +331,8 @@
       "autor": "Raul Manrupe, Alejandra Portela",
       "editorial": "Corregidor",
       "precio": 2382, 
-      "thumbnailUrl": "images/cover/large/un-diccionario-de-films-argentinos-tomo-iii-raul-manrupe-alejandra-portela.jpg"
+      "thumbnailUrl": "images/cover/large/un-diccionario-de-films-argentinos-tomo-iii-raul-manrupe-alejandra-portela.jpg",
+      "recomendado": false
     },
     {
       "id": 33,
@@ -294,7 +341,8 @@
       "autor": "Charlie Kaufman",
       "editorial": "Farrar Straus & Giroux",
       "precio": 4344, 
-      "thumbnailUrl": "images/cover/large/being-john-malkovich-charlie-kaufman.jpg"
+      "thumbnailUrl": "images/cover/large/being-john-malkovich-charlie-kaufman.jpg",
+      "recomendado": false
     },   
     {
       "id": 34,
@@ -303,6 +351,7 @@
       "autor": "Quentin Tarantino",
       "editorial": "Reservoir Books",
       "precio": 3665, 
-      "thumbnailUrl": "images/cover/large/erase-una-vez-en-hollywood-quentin-tarantino.jpg"
+      "thumbnailUrl": "images/cover/large/erase-una-vez-en-hollywood-quentin-tarantino.jpg",
+      "recomendado": false
     }    
   ]
