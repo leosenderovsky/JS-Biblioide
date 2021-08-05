@@ -97,9 +97,16 @@ const pintarCards = data => {
         document.body.appendChild(contenedor);                        
     }
 }*/
+const items = document.getElementById('items');
+const templateCardRecomendados = document.getElementById('template-card-recomendados').content;
+const templateCardNovedades = document.getElementById('template-card-novedades').content;
+const templateCardEnsayos = document.getElementById('template-card-ensayos').content;
+const templateCardManuales = document.getElementById('template-card-manuales').content;
+const templateCardGuiones = document.getElementById('template-card-guiones').content;
+const templateCardFicciones = document.getElementById('template-card-ficciones').content;
+const fragment = document.createDocumentFragment();
 
-
-const tituloRecomendados = document.getElementById("recomendados");
+const tituloRecomendados = document.getElementById("title-recomendados");
 tituloRecomendados.innerHTML = "Recomendados"
 tituloRecomendados.className = 'title-subsection';
 document.body.appendChild(tituloRecomendados);
@@ -130,15 +137,11 @@ const fetchDataRecomendados = async () => {
 
 const pintarCardsRecomendados = data => {
     data.forEach(producto => {
-        const libro = document.createElement("div");
-        libro.innerHTML = `<img src='${producto.thumbnailUrl}' alt='${producto.titulo}' />
-                            <h5> ${producto.titulo}</h5>
-                            <h6> ${producto.autor}</h6>
-                            <p> $ ${producto.precio}</p>
-                            <button class='btn-primary'>Comprar</button>
-            </div>`;
-        libro.className = 'text';
-        const clone = libro.cloneNode(true);
+        templateCardRecomendados.querySelector('h5').textContent = producto.titulo;
+        templateCardRecomendados.querySelector('.card-text').textContent = producto.precio;
+        templateCardRecomendados.querySelector('img').setAttribute("src", producto.thumbnailUrl);
+        templateCardRecomendados.querySelector('.btn-primary').dataset.id = producto.id;
+        const clone = templateCard.cloneNode(true);
         fragment.appendChild(clone);
     })
     items.appendChild(fragment);

@@ -217,4 +217,11 @@ for (const Libro of libros) {
     contenedor.className = 'text';
     document.body.appendChild(contenedor);
 
-}*/
+}
+
+let botonPrueba = document.createElement('button')
+botonPrueba.className = 'btn-outline-primary btn-lg'
+botonPrueba.innerHTML = `BOTON DE PRUEBA 1`
+botonPrueba.onclick = () => {console.log("Click")}
+botonPrueba.onmouseover = () => {console.log("Over")}
+document.body.appendChild(botonPrueba)*/
