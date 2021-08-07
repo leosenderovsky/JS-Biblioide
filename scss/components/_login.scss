@@ -1,0 +1,19 @@
+.login-container {
+    margin: 0px 40px 0px 10px;
+}
+
+.register-container {
+    margin: 30px 0px;
+}
+
+.form-control {
+    border: 2px;
+    &:active{
+        border-color:black;
+        color:black;
+    }
+    &:focus{
+        border-color:black;
+        color:black
+    }
+}

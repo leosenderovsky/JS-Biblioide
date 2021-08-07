@@ -1,7 +1,7 @@
 .card-img-top {
   max-width: 250px;
-  height: 350px;
-  object-fit: cover;
+  height: 300px;
+  object-fit: fill;
 }
 
 .card-title {
@@ -23,13 +23,16 @@
   align-items: center;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
+  color: #E5DFDF;
   background-color: #357376;
   border-color: #357376;
 }
 .btn:hover {
+  color: #E5DFDF;
   background-color: #1D4D4F;
 }
 .btn::after {
+  color: #E5DFDF;
   background-color: #6BA8A9;
 }
 
@@ -51,6 +54,11 @@ a {
 }
 
 /* Card Styles */
+.card {
+  margin: 10px;
+  border-radius: 8px;
+}
+
 .card-sl {
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -185,6 +193,16 @@ a {
   font-size: 4em;
 }
 
+.title-low {
+  text-align: center;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: 100;
+  color: #1D4D4F;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
 .subtitle {
   font-family: "Voltaire", sans-serif;
   font-weight: 500;
@@ -205,6 +223,26 @@ a {
   margin: 20px 0px 10px 20px;
 }
 
+.login-container {
+  margin: 0px 40px 0px 10px;
+}
+
+.register-container {
+  margin: 30px 0px;
+}
+
+.form-control {
+  border: 2px;
+}
+.form-control:active {
+  border-color: black;
+  color: black;
+}
+.form-control:focus {
+  border-color: black;
+  color: black;
+}
+
 .product-line {
   display: flex;
   justify-content: space-around;
@@ -216,6 +254,26 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   margin: 20px 0px 10px 20px;
+}
+
+.body {
+  width: 100%;
+}
+
+.main {
+  display: block;
+  float: left;
+  width: 75%;
+}
+
+.sidebar {
+  display: block;
+  float: right;
+  width: 25%;
+}
+
+.form-check-input {
+  background-color: #1D4D4F;
 }
 
 /*# sourceMappingURL=style.css.map */

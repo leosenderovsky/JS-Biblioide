@@ -5,6 +5,7 @@
 @import 'components/cards';
 @import 'components/header';
 @import 'components/titles';
+@import 'components/login';
 @import 'functions/extends';
 @import 'functions/mixins';
 
@@ -12,3 +13,23 @@
     font-family: $font-base;
     font-size: 1em;
     margin: 20px 0px 10px 20px;}
+
+.body {
+    width: 100%;
+}
+
+.main {
+    display: block;
+    float: left;
+    width: 75%;
+}
+
+.sidebar {
+    display: block;
+    float: right;
+    width: 25%;
+}
+
+.form-check-input {
+    background-color: $color-1;
+}

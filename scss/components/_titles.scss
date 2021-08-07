@@ -12,6 +12,12 @@
     font-size: 4em;
 }
 
+.title-low {
+    text-align: center;
+    @include text ($font-title, 100, $color-1, center, true);
+    font-size: 2em;
+}
+
 .subtitle {
     @include text ($font-subtitle, 500, $color-2, left, true);
     font-size: 2em;
