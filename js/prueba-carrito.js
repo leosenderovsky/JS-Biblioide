@@ -1,3 +1,7 @@
+const tituloRecomendados = document.getElementById('title-recomendados');
+tituloRecomendados.textContent = "Recomendados";
+tituloRecomendados.className = 'title-subsection';
+
 const itemsRecomendados = document.getElementById('itemsRecomendados');
 const templateCardRecomendados = document.getElementById('template-card-recomendados').content;
 const fragment = document.createDocumentFragment();
@@ -25,7 +29,7 @@ const fetchDataRecomendados = async () => {
 const pintarCardsRecomendados = data => {
     data.forEach(producto => {
         templateCardRecomendados.querySelector('h5').textContent = producto.titulo;
-        templateCardRecomendados.querySelector('.card-text').textContent = producto.precio;
+        templateCardRecomendados.querySelector('.price').textContent = producto.precio;
         templateCardRecomendados.querySelector('img').setAttribute("src", producto.thumbnailUrl);
         templateCardRecomendados.querySelector('.btn-primary').dataset.id = producto.id;
         const clone = templateCardRecomendados.cloneNode(true);
@@ -52,6 +56,10 @@ const setCarrito = objeto => {
     console.log(producto);
 }
 
+const tituloEnsayos = document.getElementById('title-ensayos');
+tituloEnsayos.textContent = "Ensayos";
+tituloEnsayos.className = 'title-subsection';
+
 const itemsEnsayos = document.getElementById('itemsEnsayos');
 const templateCardEnsayos = document.getElementById('template-card-ensayos').content;
 
@@ -77,7 +85,7 @@ const fetchDataEnsayos = async () => {
 const pintarCardsEnsayos = data => {
     data.forEach(producto => {
         templateCardEnsayos.querySelector('h5').textContent = producto.titulo;
-        templateCardEnsayos.querySelector('.card-text').textContent = producto.precio;
+        templateCardEnsayos.querySelector('.price').textContent = producto.precio;
         templateCardEnsayos.querySelector('img').setAttribute("src", producto.thumbnailUrl);
         templateCardEnsayos.querySelector('.btn-primary').dataset.id = producto.id;
         const clone = templateCardEnsayos.cloneNode(true);
@@ -85,6 +93,10 @@ const pintarCardsEnsayos = data => {
     })
     itemsEnsayos.appendChild(fragment);
 }
+
+const tituloManuales = document.getElementById('title-manuales');
+tituloManuales.textContent = "Manuales";
+tituloManuales.className = 'title-subsection';
 
 const itemsManuales = document.getElementById('itemsManuales');
 const templateCardManuales = document.getElementById('template-card-manuales').content;
@@ -111,7 +123,7 @@ const fetchDataManuales = async () => {
 const pintarCardsManuales = data => {
     data.forEach(producto => {
         templateCardManuales.querySelector('h5').textContent = producto.titulo;
-        templateCardManuales.querySelector('.card-text').textContent = producto.precio;
+        templateCardManuales.querySelector('.price').textContent = producto.precio;
         templateCardManuales.querySelector('img').setAttribute("src", producto.thumbnailUrl);
         templateCardManuales.querySelector('.btn-primary').dataset.id = producto.id;
         const clone = templateCardManuales.cloneNode(true);
@@ -119,6 +131,10 @@ const pintarCardsManuales = data => {
     })
     itemsManuales.appendChild(fragment);
 }
+
+const tituloGuiones = document.getElementById('title-guiones');
+tituloGuiones.textContent = "Guiones";
+tituloGuiones.className = 'title-subsection';
 
 const itemsGuiones = document.getElementById('itemsGuiones');
 const templateCardGuiones = document.getElementById('template-card-guiones').content;
@@ -145,7 +161,7 @@ const fetchDataGuiones = async () => {
 const pintarCardsGuiones = data => {
     data.forEach(producto => {
         templateCardGuiones.querySelector('h5').textContent = producto.titulo;
-        templateCardGuiones.querySelector('.card-text').textContent = producto.precio;
+        templateCardGuiones.querySelector('.price').textContent = producto.precio;
         templateCardGuiones.querySelector('img').setAttribute("src", producto.thumbnailUrl);
         templateCardGuiones.querySelector('.btn-primary').dataset.id = producto.id;
         const clone = templateCardGuiones.cloneNode(true);
@@ -153,6 +169,10 @@ const pintarCardsGuiones = data => {
     })
     itemsGuiones.appendChild(fragment);
 }
+
+const tituloFicciones = document.getElementById('title-ficciones');
+tituloFicciones.textContent = "Ficciones";
+tituloFicciones.className = 'title-subsection';
 
 const itemsFicciones = document.getElementById('itemsFicciones');
 const templateCardFicciones = document.getElementById('template-card-ficciones').content;
@@ -179,7 +199,7 @@ const fetchDataFicciones = async () => {
 const pintarCardsFicciones = data => {
     data.forEach(producto => {
         templateCardFicciones.querySelector('h5').textContent = producto.titulo;
-        templateCardFicciones.querySelector('.card-text').textContent = producto.precio;
+        templateCardFicciones.querySelector('.price').textContent = producto.precio;
         templateCardFicciones.querySelector('img').setAttribute("src", producto.thumbnailUrl);
         templateCardFicciones.querySelector('.btn-primary').dataset.id = producto.id;
         const clone = templateCardFicciones.cloneNode(true);

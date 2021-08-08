@@ -16,9 +16,6 @@
     text-transform: $text-transform-base;
 }
 
-.card-text {
-    font-family: $font-base;
-}
 
 .btn {
     width: 150px;
@@ -63,7 +60,7 @@
     .card {
         margin: 10px;
         border-radius: 8px;
-
+        width: 14rem;
     }
 
     .card-sl {
@@ -84,7 +81,6 @@
         margin-right: 20px;
         z-index: 2;
         color: #E26D5C;
-        background: #fff;
         border-radius: 100%;
         padding: 15px;
         font-size: 15px;
@@ -100,14 +96,15 @@
     .card-heading {
         font-size: 18px;
         font-weight: bold;
-        background: #fff;
         padding: 10px 15px;
     }
 
     .card-text {
+        font-family: $font-subtitle;
+        display: flex;
+        justify-content: center;
         padding: 10px 15px;
-        background: #fff;
-        font-size: 14px;
+        font-size: 1rem;
         color: #636262;
     }
 

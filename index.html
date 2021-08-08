@@ -68,18 +68,17 @@
   <main>
     <div class="body">
       <h1 class="title">Tu librería de cine</h1>
-      <div class="main">
-        <div class="row">
+      <div class="main">        
           <div class="col-12">
             <h2 id="title-recomendados"></h2>
             <div class="row" id="itemsRecomendados">
               <template id="template-card-recomendados">
                 <div class="col-4 xl-3 col-md-3">
-                  <div class="card" style="width: 14rem;">
+                  <div class="card">
                     <div class="card-body">
                       <img src=" " class="card-img-top" alt="...">
                       <h5 class="card-title">Título</h5>
-                      <p>$<span class="card-text">Precio</span></p>
+                      <p class="card-text">$ <span class="price">Precio</span></p>
                       <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                   </div>
@@ -90,11 +89,11 @@
             <div class="row" id="itemsEnsayos">
               <template id="template-card-ensayos">
                 <div class="col-4 xl-3 col-md-3">
-                  <div class="card" style="width: 14rem;">
+                  <div class="card">
                     <div class="card-body">
                       <img src=" " class="card-img-top" alt="...">
                       <h5 class="card-title">Título</h5>
-                      <p>$<span class="card-text">Precio</span></p>
+                      <p class="card-text">$ <span class="price">Precio</span></p>
                       <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                   </div>
@@ -105,11 +104,11 @@
             <div class="row" id="itemsManuales">
               <template id="template-card-manuales">
                 <div class="col-4 xl-3 col-md-3">
-                  <div class="card" style="width: 14rem;">
+                  <div class="card">
                     <div class="card-body">
                       <img src=" " class="card-img-top" alt="...">
                       <h5 class="card-title">Título</h5>
-                      <p>$<span class="card-text">Precio</span></p>
+                      <p class="card-text">$ <span class="price">Precio</span></p>
                       <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                   </div>
@@ -120,11 +119,11 @@
             <div class="row" id="itemsGuiones">
               <template id="template-card-guiones">
                 <div class="col-4 xl-3 col-md-3">
-                  <div class="card" style="width: 14rem;">
+                  <div class="card">
                     <div class="card-body">
                       <img src=" " class="card-img-top" alt="...">
                       <h5 class="card-title">Título</h5>
-                      <p>$<span class="card-text">Precio</span></p>
+                      <p class="card-text">$ <span class="price">Precio</span></p>
                       <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                   </div>
@@ -139,7 +138,7 @@
                     <div class="card-body">
                       <img src=" " class="card-img-top" alt="...">
                       <h5 class="card-title">Título</h5>
-                      <p>$<span class="card-text">Precio</span></p>
+                      <p class="card-text">$ <span class="price">Precio</span></p>
                       <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                   </div>
@@ -147,7 +146,6 @@
               </template>
             </div>
           </div>
-        </div>
         <!--<button id="boton-vercatalogo" class="btn btn-primary btn-block"></button>-->
         <h3 id="libreria" class="title-subsection">La librería</h3>
         <div>
@@ -168,15 +166,15 @@
           <div id="login-container" class="login-container col-12">
             <form id="login" class="p-5">
               <div class="form-outline mb-4">
-                <input type="username" id="login-username" class="form-control" />
+                <input type="username" id="username" class="form-control" />
                 <label class="form-label" for="form1Example1">Nombre de usuario</label>
               </div>
               <div class="form-outline mb-4">
-                <input type="email" id="login-email" class="form-control" />
+                <input type="email" id="email" class="form-control" />
                 <label class="form-label" for="form1Example1">Email</label>
               </div>
               <div class="form-outline mb-4">
-                <input type="password" id="login-password" class="form-control" />
+                <input type="password" id="password" class="form-control" />
                 <label class="form-label" for="form1Example2">Contraseña</label>
               </div>
               <div class="row mb-4">
@@ -204,6 +202,11 @@
       </div>
     </div>
   </main>
+  <footer class="footer row">
+    <div class="col-12 col-sm-4 col-lg-3 logo-footer-container"><img src="images/logo.png" loading="lazy" alt="Biblioide"
+        class="logo-footer img-fluid"></div>
+    <p class="text-footer col-12 col-sm-4 col-lg-4">©2021 todos los derechos reservados</p>
+  </footer>
   <script src="js/carrito.js"></script>
   <script src="js/prueba-carrito.js"></script>
   <script src="js/desafios.js"></script>

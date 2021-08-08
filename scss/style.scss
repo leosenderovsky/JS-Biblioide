@@ -6,6 +6,7 @@
 @import 'components/header';
 @import 'components/titles';
 @import 'components/login';
+@import 'components/footer';
 @import 'functions/extends';
 @import 'functions/mixins';
 
@@ -16,6 +17,7 @@
 
 .body {
     width: 100%;
+    min-height: calc(800vh);
 }
 
 .main {

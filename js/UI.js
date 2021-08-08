@@ -1,5 +1,5 @@
 export class UI {
-   addUser(_user) {
+   addUser(user) {
        const userAdd = document.getElementById('login-message')
        const element = document.createElement('div')
        element.innerHTML = `<div class="card text-center mb-4">
