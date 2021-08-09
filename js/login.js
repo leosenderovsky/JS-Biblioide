@@ -29,5 +29,3 @@ document.getElementById("login-message").addEventListener("click", (e) => {
   e.preventDefault();
 });
 
-
-
