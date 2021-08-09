@@ -17,7 +17,7 @@ itemsRecomendados.addEventListener('click', e => {
 
 const fetchDataRecomendados = async () => {
     try {
-        const res = await fetch('api.json');
+        const res = await fetch('/api.json');
         const response = await res.json();
         const data = response.filter((producto) => producto.recomendado === true)
         pintarCardsRecomendados(data);
@@ -73,7 +73,7 @@ itemsEnsayos.addEventListener('click', e => {
 
 const fetchDataEnsayos = async () => {
     try {
-        const res = await fetch('api.json');
+        const res = await fetch('/api.json');
         const response = await res.json();
         const data = response.filter((producto) => producto.genero === "ensayo")
         pintarCardsEnsayos(data);
@@ -111,7 +111,7 @@ itemsManuales.addEventListener('click', e => {
 
 const fetchDataManuales = async () => {
     try {
-        const res = await fetch('api.json');
+        const res = await fetch('/api.json');
         const response = await res.json();
         const data = response.filter((producto) => producto.genero === "manual")
         pintarCardsManuales(data);
@@ -149,7 +149,7 @@ itemsGuiones.addEventListener('click', e => {
 
 const fetchDataGuiones = async () => {
     try {
-        const res = await fetch('api.json');
+        const res = await fetch('/api.json');
         const response = await res.json();
         const data = response.filter((producto) => producto.genero === "guion")
         pintarCardsGuiones(data);
@@ -187,7 +187,7 @@ itemsFicciones.addEventListener('click', e => {
 
 const fetchDataFicciones = async () => {
     try {
-        const res = await fetch('api.json');
+        const res = await fetch('/api.json');
         const response = await res.json();
         const data = response.filter((producto) => producto.genero === "ficcion")
         pintarCardsFicciones(data);
