@@ -10,17 +10,23 @@ document.addEventListener("submit", function (e) {
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
+  localStorage.setItem('username', 'username.value');
+  localStorage.setItem('email', 'email.value');
+  localStorage.setItem('password', 'password.value');
   const user = new User(username, email, password);
 
   const ui = new UI();
 
   if (username === "" || email === "" || password === "") {
-  ui.showMessage("Por favor, complete todos los campos", "danger");
+    ui.showMessage("Por favor, complete todos los campos", "danger");
   }
 
-  ui.addUser(user);
-  ui.showMessage(username + ", gracias por ingresar en la plataforma", "success");
-  ui.resetForm();
+  if (username != "" && email != "" && password != "") {
+    ui.addUser(user);
+    ui.showMessage(username + ", gracias por ingresar en la plataforma", "success");
+    ui.resetForm();
+  }
+  
   });
 
 document.getElementById("login-message").addEventListener("click", (e) => {

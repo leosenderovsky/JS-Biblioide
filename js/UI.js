@@ -1,6 +1,7 @@
 export class UI {
    addUser(user) {
        const userAdd = document.getElementById('login-message')
+       /*
        const element = document.createElement('div')
        element.innerHTML = `<div class="card text-center mb-4">
        <div class="card-body">
@@ -9,7 +10,7 @@ export class UI {
        </div>
        `;
        
-       userAdd.appenchild(element);
+       userAdd.appendChild(element);*/
     }
     resetForm() {
         document.getElementById("login").reset();
