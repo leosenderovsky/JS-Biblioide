@@ -56,6 +56,44 @@ const setCarrito = objeto => {
     console.log(producto);
 }
 
+const tituloNovedades = document.getElementById('title-novedades');
+tituloNovedades.textContent = "Novedades";
+tituloNovedades.className = 'title-subsection';
+
+const itemsNovedades = document.getElementById('itemsNovedades');
+const templateCardNovedades = document.getElementById('template-card-novedades').content;
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetchDataNovedades();
+})
+
+itemsNovedades.addEventListener('click', e => {
+    addCarrito(e);
+})
+
+const fetchDataNovedades = async () => {
+    try {
+        const res = await fetch('api.json');
+        const response = await res.json();
+        const data = response.filter((producto) => producto.nuevo === true)
+        pintarCardsNovedades(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+const pintarCardsNovedades = data => {
+    data.forEach(producto => {
+        templateCardNovedades.querySelector('h5').textContent = producto.titulo;
+        templateCardNovedades.querySelector('.price').textContent = producto.precio;
+        templateCardNovedades.querySelector('img').setAttribute("src", producto.thumbnailUrl);
+        templateCardNovedades.querySelector('.btn-primary').dataset.id = producto.id;
+        const clone = templateCardNovedades.cloneNode(true);
+        fragment.appendChild(clone);
+    })
+    itemsNovedades.appendChild(fragment);
+}
+
 const tituloEnsayos = document.getElementById('title-ensayos');
 tituloEnsayos.textContent = "Ensayos";
 tituloEnsayos.className = 'title-subsection';
@@ -75,7 +113,7 @@ const fetchDataEnsayos = async () => {
     try {
         const res = await fetch('api.json');
         const response = await res.json();
-        const data = response.filter((producto) => producto.genero === "ensayo")
+        const data = response.filter((producto) => producto.genero === "ensayo" && producto.destacado === true)
         pintarCardsEnsayos(data);
     } catch (error) {
         console.log(error);
@@ -113,7 +151,7 @@ const fetchDataManuales = async () => {
     try {
         const res = await fetch('api.json');
         const response = await res.json();
-        const data = response.filter((producto) => producto.genero === "manual")
+        const data = response.filter((producto) => producto.genero === "manual" && producto.destacado === true)
         pintarCardsManuales(data);
     } catch (error) {
         console.log(error);
@@ -151,7 +189,7 @@ const fetchDataGuiones = async () => {
     try {
         const res = await fetch('api.json');
         const response = await res.json();
-        const data = response.filter((producto) => producto.genero === "guion")
+        const data = response.filter((producto) => producto.genero === "guion" && producto.destacado === true)
         pintarCardsGuiones(data);
     } catch (error) {
         console.log(error);
@@ -189,7 +227,7 @@ const fetchDataFicciones = async () => {
     try {
         const res = await fetch('api.json');
         const response = await res.json();
-        const data = response.filter((producto) => producto.genero === "ficcion")
+        const data = response.filter((producto) => producto.genero === "ficcion" && producto.destacado === true)
         pintarCardsFicciones(data);
     } catch (error) {
         console.log(error);

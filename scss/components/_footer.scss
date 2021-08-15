@@ -1,16 +1,17 @@
 footer {
     background-color: $color-4;
     text-align: center;
-    bottom: 0;
-    height: 150px;
+    margin-bottom: 0;
+    height: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
     
 }
 
 img.logo-footer {
-    margin: 0px 20px;
-    padding: 20px 0;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
     width: 250px;
 
 }
@@ -21,13 +22,14 @@ img.logo-footer {
 }
 
 .text-footer {
-    margin: 0px 20px;
-    margin-bottom: 0;
-    padding: 20px 0;
+    margin: 10px 0px 10px 0px;
+    padding: 20px 0px 20px 0px;
     font-family: $font-subtitle;
     font-weight: 500;
     font-size: 1.5em;
     color: $color-1;
     text-align: center;
+    align-content: center;
+    justify-content: center;
     padding-right: 1rem;
 }

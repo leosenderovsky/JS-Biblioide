@@ -5,33 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/8c1a91277c.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Roboto&family=Voltaire&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto&family=Voltaire&display=swap"
     rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <title>Biblioide - Catálogo - Manuales</title>
+  <title>Biblioide</title>
 </head>
-
 <body>
   <header class="menu header sticky-top">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="logo-container">
-          <a href="index.html"> <img src="images/logo.png" alt="Biblioide" class="logo" loading="lazy"></a>
+          <a href="index.html"> <img src="images/logo.png" alt="Biblioide" class="logo"></a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          
+
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active title-nav" aria-current="page" href="/index.html">Home</a>
@@ -45,7 +44,7 @@
                 <li><a class="dropdown-item title-nav" href="/ensayos.html">Ensayos</a></li>
                 <li><a class="dropdown-item title-nav" href="/manuales.html">Manuales</a></li>
                 <li><a class="dropdown-item title-nav" href="/guiones.html">Guiones</a></li>
-                <li><a class="dropdown-item title-nav" href="/ficcion.html">Ficción</a></li>
+                <li><a class="dropdown-item title-nav" href="/ficciones.html">Ficción</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -66,105 +65,160 @@
       </div>
     </nav>
   </header>
-  <h1 class="title-subsection">Manuales</h1>
-  <div class="product-line">
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+  <main>
+    <div class="body">
+      <h1 class="title">Tu librería de cine</h1>
+      <div class="main">        
+          <div class="col-12">
+            <h2 id="title-recomendados"></h2>
+            <div class="row" id="itemsRecomendados">
+              <template id="template-card-recomendados">
+                <div class="col-4 xl-3 col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <img src=" " class="card-img-top" alt="...">
+                      <h5 class="card-title">Título</h5>
+                      <p class="card-text">$ <span class="price">Precio</span></p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+            <h2 id="title-ensayos"></h2>
+            <div class="row" id="itemsEnsayos">
+              <template id="template-card-ensayos">
+                <div class="col-4 xl-3 col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <img src=" " class="card-img-top" alt="...">
+                      <h5 class="card-title">Título</h5>
+                      <p class="card-text">$ <span class="price">Precio</span></p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+            <h2 id="title-manuales"></h2>
+            <div class="row" id="itemsManuales">
+              <template id="template-card-manuales">
+                <div class="col-4 xl-3 col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <img src=" " class="card-img-top" alt="...">
+                      <h5 class="card-title">Título</h5>
+                      <p class="card-text">$ <span class="price">Precio</span></p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+            <h2 id="title-guiones"></h2>
+            <div class="row" id="itemsGuiones">
+              <template id="template-card-guiones">
+                <div class="col-4 xl-3 col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <img src=" " class="card-img-top" alt="...">
+                      <h5 class="card-title">Título</h5>
+                      <p class="card-text">$ <span class="price">Precio</span></p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+            <h2 id="title-ficciones"></h2>
+            <div class="row" id="itemsFicciones">
+              <template id="template-card-ficciones">
+                <div class="col-4 xl-3 col-md-3">
+                  <div class="card" style="width: 14rem;">
+                    <div class="card-body">
+                      <img src=" " class="card-img-top" alt="...">
+                      <h5 class="card-title">Título</h5>
+                      <p class="card-text">$ <span class="price">Precio</span></p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+        <!--<button id="boton-vercatalogo" class="btn btn-primary btn-block"></button>-->
+        <h3 id="libreria" class="title-subsection">La librería</h3>
+        <div>
+          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus aliquid, quis,
+            tenetur
+            nobis amet
+            delectus commodi facere optio, consectetur cum repudiandae adipisci? Vitae, beatae corporis. Dolore
+            voluptatem
+            consequuntur suscipit.</p>
+        </div>
+        <h3 id="donde-estamos" class="title-subsection">Dónde estamos</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0072697102623!2d-58.38652098477032!3d-34.603977680459415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5e8c947b7%3A0xa62b149b49665cdd!2sAv.%20Corrientes%201246%2C%20C1012%20CABA!5e0!3m2!1sen!2sar!4v1626524766088!5m2!1sen!2sar"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="product-line">
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
+      
+      <div class="sidebar">
+        <div class="container">
+          <div id="login-container" class="login-container">            
+            <form id="login" class="p-5">
+              <!--
+              <div class="form-outline mb-4">
+                <input type="username" id="username" class="form-control" />
+                <label class="form-label" for="form1Example1">Nombre de usuario</label>
+              </div>
+              <div class="form-outline mb-4">
+                <input type="email" id="email" class="form-control" />
+                <label class="form-label" for="form1Example1">Email</label>
+              </div>
+              <div class="form-outline mb-4">
+                <input type="password" id="password" class="form-control" />
+                <label class="form-label" for="form1Example2">Contraseña</label>
+              </div>
+              <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                    <label class="form-label" for="form1Example3">
+                      Recordarme
+                    </label>
+                  </div>
+                </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+                <div class="col text-center">
+                  <a href="registro.html" class="form-label">¿No estás registrado? Registrate acá.</a>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+            </form>-->
+            <div id="login-message"></div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </main>
+  <footer class="footer row">
+    <div class="col-12 col-sm-4 col-lg-3 logo-footer-container"><img src="images/logo.png" loading="lazy" alt="Biblioide"
+        class="logo-footer img-fluid"></div>
+    <p class="text-footer col-12 col-sm-4 col-lg-4">©2021 todos los derechos reservados</p>
+  </footer>
+  <script src="js/carrito-manuales.js"></script>
+  <script src="js/desafios.js"></script>
+  <script src="js/login.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

@@ -44,7 +44,7 @@
                 <li><a class="dropdown-item title-nav" href="/ensayos.html">Ensayos</a></li>
                 <li><a class="dropdown-item title-nav" href="/manuales.html">Manuales</a></li>
                 <li><a class="dropdown-item title-nav" href="/guiones.html">Guiones</a></li>
-                <li><a class="dropdown-item title-nav" href="/ficcion.html">Ficción</a></li>
+                <li><a class="dropdown-item title-nav" href="/ficciones.html">Ficción</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -85,7 +85,26 @@
                 </div>
               </template>
             </div>
-            <h2 id="title-ensayos"></h2>
+            <div class="pt-5">
+              <h2 id="title-novedades"></h2>
+            </div>
+            <div class="row" id="itemsNovedades">
+              <template id="template-card-novedades">
+                <div class="col-4 xl-3 col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <img src=" " class="card-img-top" alt="...">
+                      <h5 class="card-title">Título</h5>
+                      <p class="card-text">$ <span class="price">Precio</span></p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+            <div class="pt-5">
+              <a href="ensayos.html"><h2 id="title-ensayos"></h2></a>
+            </div>
             <div class="row" id="itemsEnsayos">
               <template id="template-card-ensayos">
                 <div class="col-4 xl-3 col-md-3">
@@ -100,7 +119,9 @@
                 </div>
               </template>
             </div>
-            <h2 id="title-manuales"></h2>
+            <div class="pt-5">
+            <a href="manuales.html"><h2 id="title-manuales"></h2></a>
+          </div>
             <div class="row" id="itemsManuales">
               <template id="template-card-manuales">
                 <div class="col-4 xl-3 col-md-3">
@@ -115,7 +136,9 @@
                 </div>
               </template>
             </div>
-            <h2 id="title-guiones"></h2>
+            <div class="pt-5">
+            <a href="guiones.html"><h2 id="title-guiones"></h2></a>
+          </div>
             <div class="row" id="itemsGuiones">
               <template id="template-card-guiones">
                 <div class="col-4 xl-3 col-md-3">
@@ -130,7 +153,9 @@
                 </div>
               </template>
             </div>
-            <h2 id="title-ficciones"></h2>
+            <div class="pt-5">
+            <a href="ficciones.html"><h2 id="title-ficciones"></h2></a>
+          </div>
             <div class="row" id="itemsFicciones">
               <template id="template-card-ficciones">
                 <div class="col-4 xl-3 col-md-3">
@@ -147,7 +172,9 @@
             </div>
           </div>
         <!--<button id="boton-vercatalogo" class="btn btn-primary btn-block"></button>-->
+        <div class="pt-5">
         <h3 id="libreria" class="title-subsection">La librería</h3>
+      </div>
         <div>
           <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus aliquid, quis,
             tenetur
@@ -156,7 +183,9 @@
             voluptatem
             consequuntur suscipit.</p>
         </div>
+        <div class="pt-5">
         <h3 id="donde-estamos" class="title-subsection">Dónde estamos</h3>
+      </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0072697102623!2d-58.38652098477032!3d-34.603977680459415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5e8c947b7%3A0xa62b149b49665cdd!2sAv.%20Corrientes%201246%2C%20C1012%20CABA!5e0!3m2!1sen!2sar!4v1626524766088!5m2!1sen!2sar"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -209,8 +238,7 @@
         class="logo-footer img-fluid"></div>
     <p class="text-footer col-12 col-sm-4 col-lg-4">©2021 todos los derechos reservados</p>
   </footer>
-  <script src="js/carrito.js"></script>
-  <script src="js/prueba-carrito.js"></script>
+  <script src="js/carrito-home.js"></script>
   <script src="js/desafios.js"></script>
   <script src="js/login.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -224,8 +252,6 @@
   <script>
     AOS.init();
   </script>
-
-
 </body>
 
 </html>

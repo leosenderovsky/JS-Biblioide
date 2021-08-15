@@ -8,7 +8,8 @@
       "precio": 1600, 
       "thumbnailUrl": "images/cover/large/el-cine-segun-hitchcock-francois-truffaut.jpg",
       "recomendado": true,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":false
     },
     {
       "id": 2,
@@ -19,7 +20,8 @@
       "precio": 3693, 
       "thumbnailUrl": "images/cover/large/hollywood-babilonia-kenneth-anger.jpg",
       "recomendado": false,
-      "nuevo":true
+      "nuevo":true,
+      "destacado":false
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "precio": 800, 
       "thumbnailUrl": "images/cover/large/montaje-cinematografico-rafael-sanchez.jpg",
       "recomendado": false,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":true
 
     },
     {
@@ -42,7 +45,8 @@
       "precio": 2199, 
       "thumbnailUrl": "images/cover/large/el-padrino-mario-puzo.jpg",
       "recomendado": false,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":true
 
     },
     {
@@ -54,7 +58,8 @@
       "precio": 2900, 
       "thumbnailUrl": "images/cover/large/el-guion-robert-mckee.jpg",
       "recomendado": false,
-      "nuevo":true
+      "nuevo":true,
+      "destacado":true
 
     },
     {
@@ -66,7 +71,8 @@
       "precio": 1560, 
       "thumbnailUrl": "images/cover/large/taxi-driver-paul-schrader.jpg",
       "recomendado": false,
-      "nuevo":true
+      "nuevo":true,
+      "destacado":true
     },
     {
       "id": 7,
@@ -77,7 +83,8 @@
       "precio": 3406, 
       "thumbnailUrl": "images/cover/large/el-club-de-la-lucha-chuck-palahniuk.jpg",
       "recomendado": false,
-      "nuevo": true
+      "nuevo": true,
+      "destacado":false
     },
     {
       "id": 8,
@@ -88,8 +95,8 @@
       "precio": 4829, 
       "thumbnailUrl": "images/cover/large/esculpir-en-el-tiempo-andrei-tarkovski.jpg",
       "recomendado": false,
-      "nuevo":true
-
+      "nuevo":true,
+      "destacado":false
     },
     {
       "id": 9,
@@ -100,7 +107,8 @@
       "precio": 4188, 
       "thumbnailUrl": "images/cover/large/screenplay-syd-field.jpg",
       "recomendado": false,
-      "nuevo": true
+      "nuevo": true,
+      "destacado":true
     },
     {
       "id": 10,
@@ -111,7 +119,8 @@
       "precio": 490, 
       "thumbnailUrl": "images/cover/large/un-lugar-en-el-mundo-adolfo-aristarain.jpg",
       "recomendado": true,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":true
     },
     {
       "id": 11,
@@ -122,7 +131,8 @@
       "precio": 5189, 
       "thumbnailUrl": "images/cover/large/ciudadano-welles-orson-welles.jpg",
       "recomendado": true,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":false
     },
     {
       "id": 12,
@@ -133,7 +143,8 @@
       "precio": 7887, 
       "thumbnailUrl": "images/cover/large/painting-with-light-john-alton.jpg",
       "recomendado": false,
-      "nuevo":false
+      "nuevo":false,
+      "destacado":true
     },
     {
       "id": 13,
@@ -144,8 +155,8 @@
       "precio": 2180, 
       "thumbnailUrl": "images/cover/large/la-audiovision-michel-chion.jpg",
       "recomendado": false,
-      "nuevo":false
-
+      "nuevo":false,
+      "destacado":true
     },
     {
       "id": 14,
@@ -156,8 +167,8 @@
       "precio": 3523, 
       "thumbnailUrl": "images/cover/large/el-sentido-del-cine-sergei-eisenstein.jpg",
       "recomendado": false,
-      "nuevo": false
-
+      "nuevo": false,
+      "destacado":true
     },
     {
       "id": 15,
@@ -168,7 +179,8 @@
       "precio": 3400, 
       "thumbnailUrl": "images/cover/large/salva-al-gato-blake-snyder.jpg",
       "recomendado": false,
-      "nuevo": true
+      "nuevo": true,
+      "destacado":true
     },
     {
       "id": 16,
@@ -179,8 +191,8 @@
       "precio": 792, 
       "thumbnailUrl": "images/cover/large/las-aguas-bajan-turbias.jpg",
       "recomendado": false,
-      "nuevo": false
-
+      "nuevo": false,
+      "destacado":true
     },
     {
       "id": 17,
@@ -191,8 +203,8 @@
       "precio": 1799, 
       "thumbnailUrl": "images/cover/large/el-exorcista-william-peter-blatty.jpg",
       "recomendado": false,
-      "nuevo": true
-
+      "nuevo": true,
+      "destacado":false
     },
     {
       "id": 18,
@@ -203,7 +215,8 @@
       "precio": 2481, 
       "thumbnailUrl": "images/cover/large/el-viaje-del-escritor-christopher-vogler.jpg",
       "recomendado": false,
-      "nuevo": true
+      "nuevo": true,
+      "destacado":false
     },
     {
       "id": 19,
@@ -214,7 +227,8 @@
       "precio": 6791, 
       "thumbnailUrl": "images/cover/large/el-heroe-de-las-mil-caras-joseph-campbell.jpg",
       "recomendado": false,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":false
     },
     {
       "id": 20,
@@ -225,7 +239,8 @@
       "precio": 4000, 
       "thumbnailUrl": "images/cover/large/el-silencio-de-los-corderos-thomas-harris.jpg",
       "recomendado": false,
-      "nuevo": true
+      "nuevo": true,
+      "destacado":false
     },
     {
       "id": 21,
@@ -236,7 +251,8 @@
       "precio": 2199, 
       "thumbnailUrl": "images/cover/large/el-resplandor-stephen-king.jpg",
       "recomendado": true,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":false
     },
     {
       "id": 22,
@@ -247,8 +263,8 @@
       "precio": 951, 
       "thumbnailUrl": "images/cover/large/la-naranja-mecanica-anthony-burgess.jpg",
       "recomendado": false,
-      "nuevo": false
-
+      "nuevo": false,
+      "destacado":true
     },
     {
       "id": 23,
@@ -259,7 +275,8 @@
       "precio": 4421, 
       "thumbnailUrl": "images/cover/large/american-psycho-bret-easton-ellis.jpg",
       "recomendado": false,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":true
     },
     {
       "id": 24,
@@ -270,7 +287,8 @@
       "precio": 4921, 
       "thumbnailUrl": "images/cover/large/historia-del-cine-roman-gubern.jpg",
       "recomendado": true,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":false
     },
     {
       "id": 25,
@@ -281,7 +299,8 @@
       "precio": 6664, 
       "thumbnailUrl": "images/cover/large/que-es-el-cine-andre-bazin.jpg",
       "recomendado": false,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":false
     },
     {
       "id": 26,
@@ -292,7 +311,8 @@
       "precio": 4595, 
       "thumbnailUrl": "images/cover/large/doctor-zhivago-boris-pasternak.jpg",
       "recomendado": false,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":false
     },
     {
       "id": 27,
@@ -303,7 +323,8 @@
       "precio": 4255, 
       "thumbnailUrl": "images/cover/large/psycho-robert-bloch.jpg",
       "recomendado": false,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":true
     },
     {
       "id": 28,
@@ -314,7 +335,8 @@
       "precio": 6122, 
       "thumbnailUrl": "images/cover/large/moteros-tranquilos-toros-salvajes-peter-biskind.jpg",
       "recomendado": false,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":true
     },
     {
       "id": 29,
@@ -325,7 +347,8 @@
       "precio": 5873, 
       "thumbnailUrl": "images/cover/large/como-convertir-un-buen-guion-linda-seger.jpg",
       "recomendado": true,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":false
     },
     {
       "id": 30,
@@ -336,7 +359,8 @@
       "precio": 780, 
       "thumbnailUrl": "images/cover/large/el-cine-y-la-puesta-en-escena-jacques-aumont.jpg",
       "recomendado": false,
-      "nuevo": true
+      "nuevo": true,
+      "destacado":false
     },
     {
       "id": 31,
@@ -347,7 +371,8 @@
       "precio": 1800, 
       "thumbnailUrl": "images/cover/large/cine-argentino-posible-deseable-octavio-getino.jpg",
       "recomendado": true,
-      "nuevo": false
+      "nuevo": false,
+      "destacado":false
     },
     {
       "id": 32,
@@ -358,7 +383,8 @@
       "precio": 2382, 
       "thumbnailUrl": "images/cover/large/un-diccionario-de-films-argentinos-tomo-iii-raul-manrupe-alejandra-portela.jpg",
       "recomendado": false,
-      "nuevo":true
+      "nuevo":true,
+      "destacado":false
     },
     {
       "id": 33,
@@ -369,7 +395,8 @@
       "precio": 4344, 
       "thumbnailUrl": "images/cover/large/being-john-malkovich-charlie-kaufman.jpg",
       "recomendado": false,
-      "nuevo": true
+      "nuevo": true,
+      "destacado":true
     },   
     {
       "id": 34,
@@ -380,6 +407,7 @@
       "precio": 3665, 
       "thumbnailUrl": "images/cover/large/erase-una-vez-en-hollywood-quentin-tarantino.jpg",
       "recomendado": false,
-      "nuevo":true
+      "nuevo":true,
+      "destacado":false
     }    
   ]
