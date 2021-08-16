@@ -1,7 +1,7 @@
 import { User } from "./user.js";
 import { UI } from "./UI.js";
 
-const register = document.getElementById('register-container')
+/*const register = document.getElementById('register-container')
 register.className = "register-container"
 const form = document.getElementById('register')
 form.innerHTML = `
@@ -48,9 +48,9 @@ form.innerHTML = `
           </div>
           <button type="submit" class="btn btn-primary btn-block">Ingresar</button>`
           register.appendChild(form)
-  
+  */
 
-//document.getElementById("register")
+document.getElementById("register")
 document.addEventListener("submit", function (e) {
 
   e.preventDefault();
@@ -75,18 +75,18 @@ document.addEventListener("submit", function (e) {
 
   if (name != "" && username != "" && email != "" && password != "" && phone != "" && country != "" && city != "" && address != "")
   ui.addUser(user);
-  //ui.showMessage(username + ", gracias por ingresar en la plataforma", "success");
-  //ui.resetForm();
+  ui.showMessage(username + ", gracias por ingresar en la plataforma", "success");
+  ui.resetForm();
 
-  const userRegister = document.getElementById('register')
+  /*const userRegister = document.getElementById('register')
   userRegister.className = "subtitle"
   userRegister.innerHTML = "<div>"+ username + ", gracias por registrarte en el sitio de Biblioide, pronto te enviaremos nuestras novedades</div>"    
   register.replaceChild(userRegister, form);
-
+*/
   });
-/*
+
 document.getElementById("user-message").addEventListener("click", (e) => {
   const ui = new UI();
   ui.deleteProduct(e.target);
   e.preventDefault();
-});*/
+});
