@@ -1,6 +1,8 @@
 import { User } from "./user.js";
 import { UI } from "./UI.js";
 
+const register = document.getElementById('register-container')
+register.className = "register-container"
 const form = document.getElementById('register')
 form.innerHTML = `
           <div class="form-outline mb-4">
@@ -45,6 +47,8 @@ form.innerHTML = `
             </div>
           </div>
           <button type="submit" class="btn btn-primary btn-block">Ingresar</button>`
+          register.appendChild(form)
+  
 
 //document.getElementById("register")
 document.addEventListener("submit", function (e) {
@@ -59,6 +63,8 @@ document.addEventListener("submit", function (e) {
   const city = document.getElementById('city').value;
   const address = document.getElementById('address').value;
 
+  console.log(name, username, email, password, phone, country, city, address);
+
   const user = new User(name,username, email, password, phone, country, city, address);
 
   const ui = new UI();
@@ -67,14 +73,20 @@ document.addEventListener("submit", function (e) {
   ui.showMessage("Por favor, complete todos los campos", "danger");
   }
 
-  if (name != "" || username != "" || email != "" || password != "" || phone != "" || country != "" || city != "" || address != "")
+  if (name != "" && username != "" && email != "" && password != "" && phone != "" && country != "" && city != "" && address != "")
   ui.addUser(user);
-  ui.showMessage(username + ", gracias por ingresar en la plataforma", "success");
-  ui.resetForm();
-  });
+  //ui.showMessage(username + ", gracias por ingresar en la plataforma", "success");
+  //ui.resetForm();
 
+  const userRegister = document.getElementById('register')
+  userRegister.className = "subtitle"
+  userRegister.innerHTML = "<div>"+ username + ", gracias por registrarte en el sitio de Biblioide, pronto te enviaremos nuestras novedades</div>"    
+  register.replaceChild(userRegister, form);
+
+  });
+/*
 document.getElementById("user-message").addEventListener("click", (e) => {
   const ui = new UI();
   ui.deleteProduct(e.target);
   e.preventDefault();
-});
+});*/
