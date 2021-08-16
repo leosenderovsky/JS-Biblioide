@@ -41,11 +41,15 @@
 .btn-check:checked + .btn-primary, 
 .btn-primary.active, .btn-primary:active, 
 .btn-primary.dropdown-toggle {
-    border-color: $color-2;
+    background-color: $color-2;
 
 }
 
-    /*  Helper Styles */
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+    background-color: $color-1;
+}
+
+/*  Helper Styles */
     body {
         font-family: $font-base;
         background: #f1f1f1;

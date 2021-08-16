@@ -36,7 +36,11 @@
 .btn-check:checked + .btn-primary,
 .btn-primary.active, .btn-primary:active,
 .btn-primary.dropdown-toggle {
-  border-color: #357376;
+  background-color: #357376;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+  background-color: #1D4D4F;
 }
 
 /*  Helper Styles */

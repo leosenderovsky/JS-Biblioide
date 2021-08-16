@@ -73,11 +73,13 @@ document.addEventListener("submit", function (e) {
   const username = document.getElementById('username').value;
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
+  console.log(username, email, password);
 
   localStorage.setItem('username', username.value);
   localStorage.setItem('email', email.value);
   localStorage.setItem('password', password.value);
-  const user = new User(username, email, password);
+  
+  const user = new User(username, email, password);  
 
   const ui = new UI();
 
@@ -88,13 +90,17 @@ document.addEventListener("submit", function (e) {
   if (username != "" && email != "" && password != "") {
     ui.addUser(user);
     ui.showMessage(username + ", gracias por ingresar en la plataforma", "success");    
-    ui.resetForm();
-    let userPanel = document.getElementById("login-message")
-    userPanel.innerHTML = "<div>El carrito de " + username +"</div>"  
-    element.replaceWith(userPanel)
+    //ui.resetForm();
+    const userPanel = document.getElementById('login')
+    userPanel.className = "subtitle"
+    userPanel.innerHTML = "<div>El carrito de " + username +"</div>"    
+    login.replaceChild(userPanel, element);
+
   }
   
   });
+
+  
 
 /*document.getElementById("login-message").addEventListener("click", (e) => {
   const ui = new UI();
