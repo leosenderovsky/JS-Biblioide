@@ -38,7 +38,8 @@ document.getElementById("login-message").addEventListener("click", (e) => {
 const login = document.getElementById('login-container')
 login.className = "login-container"
 const element = document.getElementById('login')
-element.innerHTML = `<div class="form-outline mb-4">
+element.innerHTML = `
+<div class="form-outline mb-4">
   <input type="username" id="username" class="form-control" />
   <label class="form-label" for="form1Example1">Nombre de usuario</label>
 </div>
