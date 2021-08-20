@@ -71,8 +71,9 @@
       <h1 class="title">Tu librería de cine</h1>
       <div class="main">
         <div class="col-12">
+          <div name="categorias" value="recomendados"></div>
           <h2 id="title-recomendados"></h2>
-          <div class="row" id="itemsRecomendados">
+          <div class="row" id="items-recomendados">
             <template id="template-card-recomendados">
               <div class="col-4 xl-3 col-md-3">
                 <div class="card">
@@ -89,7 +90,8 @@
           <div class="pt-5">
             <h2 id="title-novedades"></h2>
           </div>
-          <div class="row" id="itemsNovedades">
+          <div name="categorias" value="novedades"></div>
+          <div class="row" id="items-novedades">
             <template id="template-card-novedades">
               <div class="col-4 xl-3 col-md-3">
                 <div class="card">
@@ -108,8 +110,9 @@
               <h2 id="title-ensayos"></h2>
             </a>
           </div>
-          <div class="row" id="itemsEnsayos">
-            <template id="template-card-ensayos">
+          <div name="categorias" value="ensayos-destacados"></div>
+          <div class="row" id="items-ensayos-destacados">
+            <template id="template-card-ensayos-destacados">
               <div class="col-4 xl-3 col-md-3">
                 <div class="card">
                   <div class="card-body">
@@ -127,8 +130,9 @@
               <h2 id="title-manuales"></h2>
             </a>
           </div>
-          <div class="row" id="itemsManuales">
-            <template id="template-card-manuales">
+          <div name="categorias" value="manuales-destacados"></div>
+          <div class="row" id="items-manuales-destacados">
+            <template id="template-card-manuales-destacados">
               <div class="col-4 xl-3 col-md-3">
                 <div class="card">
                   <div class="card-body">
@@ -146,8 +150,9 @@
               <h2 id="title-guiones"></h2>
             </a>
           </div>
-          <div class="row" id="itemsGuiones">
-            <template id="template-card-guiones">
+          <div name="categorias" value="guiones-destacados"></div>
+          <div class="row" id="items-guiones-destacados">
+            <template id="template-card-guiones-destacados">
               <div class="col-4 xl-3 col-md-3">
                 <div class="card">
                   <div class="card-body">
@@ -165,8 +170,9 @@
               <h2 id="title-ficciones"></h2>
             </a>
           </div>
-          <div class="row" id="itemsFicciones">
-            <template id="template-card-ficciones">
+          <div name="categorias" value="ficciones-destacados"></div>
+          <div class="row" id="items-ficciones-destacados">
+            <template id="template-card-ficciones-destacados">
               <div class="col-4 xl-3 col-md-3">
                 <div class="card" style="width: 14rem;">
                   <div class="card-body">
@@ -247,7 +253,9 @@
         alt="Biblioide" class="logo-footer img-fluid"></div>
     <p class="text-footer col-12 col-sm-4 col-lg-4">©2021 todos los derechos reservados</p>
   </footer>
-  <script src="js/carrito.js"></script>
+<!--  <script src="js/carrito.js"></script>-->
+<!--  <script src="js/carrito-new.js"></script>-->
+  <script src="js/mostrar-productos.js"></script>
   <script src="js/desafios.js"></script>
   <script src="js/login.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
