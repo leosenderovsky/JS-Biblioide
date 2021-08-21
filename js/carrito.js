@@ -1,6 +1,7 @@
-const tituloRecomendados = document.getElementById('title-recomendados');
+/*const tituloRecomendados = document.getElementById('title-recomendados');
 
-if(tituloRecomendados == null){
+if(tituloRecomendados == 'null'){
+    console.log('No se encuentra el ID')
     break;
 }else{
     tituloRecomendados.textContent = "Recomendados";
@@ -298,7 +299,21 @@ if(itemsFicciones == null || templateCardFicciones == null){
         })
         itemsFicciones.appendChild(fragment);
     }
+}*/
+
+
+const categoria = document.getElementById('categoria').value;
+
+const titulo = document.getElementById('title-'+categoria);
+if (titulo != null) {
+    titulo.textContent = categoria.charAt(0).toUpperCase() + categoria.slice(1); //"Recomendados";
+    titulo.className = 'title-subsection';
 }
 
+let carrito = {}
+
+const items = document.getElementById('items');
+const templateCard = document.getElementById('template-card').content;
+const fragment = document.createDocumentFragment();
 
 

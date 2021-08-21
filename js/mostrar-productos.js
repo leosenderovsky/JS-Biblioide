@@ -2,8 +2,10 @@ const categorias = document.getElementsByName('categorias');
 
 categorias.forEach(categoriaDiv => {
   let categoria = categoriaDiv.getAttribute('value');
+
   //console.log(categoria);
   let titulo = document.getElementById('title-'+categoria);
+
   if (titulo != null) {
     titulo.textContent = categoria.charAt(0).toUpperCase() + categoria.slice(1);
     titulo.className = 'title-subsection';
@@ -18,10 +20,10 @@ categorias.forEach(categoriaDiv => {
     })
 
     document.addEventListener('DOMContentLoaded', () => {
-      fetchDataNovedades();
+      fetchDataProducts();
     })
 
-    let fetchDataNovedades = async () => {
+    let fetchDataProducts = async () => {
       try {
         const res = await fetch('api.json');
         const response = await res.json();
@@ -44,42 +46,42 @@ categorias.forEach(categoriaDiv => {
       items.appendChild(fragment);
     }
   }
+  const filtrarProducto = producto => {
+    /*return producto.nuevo === true;*/
+    let aplicaFiltro = false;
+    switch (categoria) {
+      case 'ensayos':
+        aplicaFiltro = producto.genero === "ensayo";
+        break;
+      case 'ensayos-destacados':
+        aplicaFiltro = producto.genero === "ensayo" && producto.destacado === true;
+        break;
+      case 'ficciones':
+        aplicaFiltro = producto.genero === "ficcion";
+        break;
+      case 'ficciones-destacados':
+        aplicaFiltro = producto.genero === "ficcion" && producto.destacado === true;
+        break;
+      case 'guiones':
+        aplicaFiltro = producto.genero === "guion";
+        break;
+      case 'guiones-destacados':
+        aplicaFiltro = producto.genero === "guion" && producto.destacado === true;
+        break;
+      case 'manuales':
+        aplicaFiltro = producto.genero === "manual";
+        break;
+      case 'manuales-destacados':
+        aplicaFiltro = producto.genero === "manual" && producto.destacado === true;
+        break;
+      case 'novedades':
+        aplicaFiltro = producto.nuevo === true;
+        break;
+      case 'recomendados':
+        aplicaFiltro = producto.recomendado === true;
+        break;
+    }
+    return aplicaFiltro;
+  }
 });
 
-const filtrarProducto = producto => {
-  return producto.nuevo === true;
-  let aplicaFiltro = false;
-  switch (categoria) {
-    case 'ensayos':
-      aplicaFiltro = producto.genero === "ensayo";
-      break;
-    case 'ensayos-destacados':
-      aplicaFiltro = producto.genero === "ensayo" && producto.destacado === true;
-      break;
-    case 'ficciones':
-      aplicaFiltro = producto.genero === "ficcion";
-      break;
-    case 'ficciones-destacados':
-      aplicaFiltro = producto.genero === "ficcion" && producto.destacado === true;
-      break;
-    case 'guiones':
-      aplicaFiltro = producto.genero === "guion";
-      break;
-    case 'guiones-destacados':
-      aplicaFiltro = producto.genero === "guion" && producto.destacado === true;
-      break;
-    case 'manuales':
-      aplicaFiltro = producto.genero === "manual";
-      break;
-    case 'manuales-destacados':
-      aplicaFiltro = producto.genero === "manual" && producto.destacado === true;
-      break;
-    case 'novedades':
-      aplicaFiltro = producto.nuevo === true;
-      break;
-    case 'recomendados':
-      aplicaFiltro = producto.recomendado === true;
-      break;
-  }
-  return aplicaFiltro;
-}
