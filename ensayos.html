@@ -18,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <title>Biblioide</title>
 </head>
+
 <body>
   <header class="menu header sticky-top">
     <nav class="navbar navbar-expand-lg">
@@ -68,46 +69,46 @@
   <main>
     <div class="body">
       <h1 class="title">Tu librería de cine</h1>
-      <div class="main">        
+      <div class="main">
         <div class="col-12">
-          <div class="pt-5">              
+          <div class="pt-5">
             <h2 id="title-ensayos"></h2>
-        </div>
-        <div name="categorias" value="ensayos"></div>
-        <div class="row" id="items-ensayos">
-          <template id="template-card-ensayos">
-            <div class="col-4 xl-3 col-md-3">
-              <div class="card">
-                <div class="card-body">
-                  <img src=" " class="card-img-top" alt="...">
-                  <h5 class="card-title">Título</h5>
-                  <p class="card-text">$ <span class="price">Precio</span></p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+          <div name="categorias" value="ensayos"></div>
+          <div class="row" id="items-ensayos">
+            <template id="template-card-ensayos">
+              <div class="col-4 xl-3 col-md-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img src=" " class="card-img-top" alt="...">
+                    <h5 class="card-title">Título</h5>
+                    <p class="card-text">$ <span class="price">Precio</span></p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </template>
+            </template>
+          </div>
+          <!--<button id="boton-vercatalogo" class="btn btn-primary btn-block"></button>-->
+          <h3 id="libreria" class="title-subsection">La librería</h3>
+          <div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus aliquid, quis,
+              tenetur
+              nobis amet
+              delectus commodi facere optio, consectetur cum repudiandae adipisci? Vitae, beatae corporis. Dolore
+              voluptatem
+              consequuntur suscipit.</p>
+          </div>
+          <h3 id="donde-estamos" class="title-subsection">Dónde estamos</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0072697102623!2d-58.38652098477032!3d-34.603977680459415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5e8c947b7%3A0xa62b149b49665cdd!2sAv.%20Corrientes%201246%2C%20C1012%20CABA!5e0!3m2!1sen!2sar!4v1626524766088!5m2!1sen!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <!--<button id="boton-vercatalogo" class="btn btn-primary btn-block"></button>-->
-        <h3 id="libreria" class="title-subsection">La librería</h3>
-        <div>
-          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus aliquid, quis,
-            tenetur
-            nobis amet
-            delectus commodi facere optio, consectetur cum repudiandae adipisci? Vitae, beatae corporis. Dolore
-            voluptatem
-            consequuntur suscipit.</p>
-        </div>
-        <h3 id="donde-estamos" class="title-subsection">Dónde estamos</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0072697102623!2d-58.38652098477032!3d-34.603977680459415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5e8c947b7%3A0xa62b149b49665cdd!2sAv.%20Corrientes%201246%2C%20C1012%20CABA!5e0!3m2!1sen!2sar!4v1626524766088!5m2!1sen!2sar"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>      
-      <div class="sidebar">
-        <div class="container">
-          <div id="login-container" class="login-container">            
-            <form id="login" class="p-5">
-              <!--
+        <div class="sidebar"><!--
+          <div class="container">
+            <div id="login-container" class="login-container">
+              <form id="login" class="p-5">
+                
               <div class="form-outline mb-4">
                 <input type="username" id="username" class="form-control" />
                 <label class="form-label" for="form1Example1">Nombre de usuario</label>
@@ -136,29 +137,30 @@
               </div>
 
               <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
-            </form>-->
-            <div id="login-message"></div>
+            </form>
+                <div id="login-message"></div>
+            </div>-->
           </div>
-        </div>
-        
-      </div>
 
-    </div>
+        </div>
+
+      </div>
   </main>
   <footer class="footer row">
-    <div class="col-12 col-sm-4 col-lg-3 logo-footer-container"><img src="images/logo.png" loading="lazy" alt="Biblioide"
-        class="logo-footer img-fluid"></div>
+    <div class="col-12 col-sm-4 col-lg-3 logo-footer-container"><img src="images/logo.png" loading="lazy"
+        alt="Biblioide" class="logo-footer img-fluid"></div>
     <p class="text-footer col-12 col-sm-4 col-lg-4">©2021 todos los derechos reservados</p>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/catalogo.js"></script>
   <script src="js/desafios.js"></script>
-  <script src="js/login.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-  integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
-</script>
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-  integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
-</script>
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+  </script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>

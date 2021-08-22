@@ -1,4 +1,4 @@
-// TOMANDO EL NOMBRE CATEGORIAS PARA LA VARIABLE CATEGORIAS
+// TOMANDO EL NOMBRE CATEGORIAS PARA LA VARIABLE CATEGORIAS CON LA QUE VOY A CLASIFICAR EL CATALOGO
 const categorias = document.getElementsByName('categorias');
 
 categorias.forEach(categoriaDiv => {
@@ -40,14 +40,27 @@ categorias.forEach(categoriaDiv => {
   let templateCard = document.getElementById('template-card-'+categoria).content;
 
   let fragment = document.createDocumentFragment();
+  
   if (items != null && templateCard != null) {
-    items.addEventListener('click', e => {
-      addCarrito(e);
+    
+    //addEventListener en JS
+    //items.addEventListener('click', e => {
+    
+    //reemplazo de addEventListener en Jquery
+    $(items).on('click', e => {
+    addCarrito(e);
     })
 
-    document.addEventListener('DOMContentLoaded', () => {
+    //addEventListener en JS
+    //document.addEventListener('DOMContentLoaded', () => {
+
+    //reemplazo de addEventListener en Jquery
+    $(document).on('DOMContentLoaded', () => {
       fetchDataProducts();
     })
+
+
+    //FETCH API.JSON DE PRODUCTOS DEL CATALOGO
 
     let fetchDataProducts = async () => {
       try {
@@ -59,6 +72,8 @@ categorias.forEach(categoriaDiv => {
         console.log(error);
       }
     }
+
+    //FOR EACH PARA PINTAR LAS CARDS CON LOS DATOS DEL JSON
 
     let pintarCards = data => {
       data.forEach(producto => {
@@ -72,6 +87,8 @@ categorias.forEach(categoriaDiv => {
       items.appendChild(fragment);
     }
   }
+
+  // FILTRADO PARA QUE ME MUESTRE EN CADA CATEGORÍA SOLAMENTE LOS PRODUCTOS QUE RESPONDEN A LAS CONDICIONES ESPECIFICADAS
   const filtrarProducto = producto => {
     /*return producto.nuevo === true;*/
     let aplicaFiltro = false;
