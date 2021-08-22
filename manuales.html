@@ -70,8 +70,11 @@
       <h1 class="title">Tu librería de cine</h1>
       <div class="main">        
           <div class="col-12">
-            <h2 id="title-manuales"></h2>
-            <div class="row" id="itemsManuales">
+            <div class="pt-5">              
+                <h2 id="title-manuales"></h2>
+            </div>
+            <div name="categorias" value="manuales"></div>
+            <div class="row" id="items-manuales">
               <template id="template-card-manuales">
                 <div class="col-4 xl-3 col-md-3">
                   <div class="card">
@@ -85,7 +88,6 @@
                 </div>
               </template>
             </div>
-          </div>
         <!--<button id="boton-vercatalogo" class="btn btn-primary btn-block"></button>-->
         <h3 id="libreria" class="title-subsection">La librería</h3>
         <div>
@@ -104,9 +106,8 @@
       
       <div class="sidebar">
         <div class="container">
-          <div id="login-container" class="login-container">            
+          <!--<div id="login-container" class="login-container">            
             <form id="login" class="p-5">
-              <!--
               <div class="form-outline mb-4">
                 <input type="username" id="username" class="form-control" />
                 <label class="form-label" for="form1Example1">Nombre de usuario</label>
@@ -135,9 +136,9 @@
               </div>
 
               <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
-            </form>-->
+            </form>
             <div id="login-message"></div>
-          </div>
+          </div>-->
         </div>
         
       </div>
@@ -149,7 +150,7 @@
         class="logo-footer img-fluid"></div>
     <p class="text-footer col-12 col-sm-4 col-lg-4">©2021 todos los derechos reservados</p>
   </footer>
-  <script src="js/carrito-manuales.js"></script>
+  <script src="js/catalogo.js"></script>
   <script src="js/desafios.js"></script>
   <script src="js/login.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"

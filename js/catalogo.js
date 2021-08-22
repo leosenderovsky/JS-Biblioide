@@ -1,18 +1,44 @@
+// TOMANDO EL NOMBRE CATEGORIAS PARA LA VARIABLE CATEGORIAS
 const categorias = document.getElementsByName('categorias');
 
 categorias.forEach(categoriaDiv => {
-  let categoria = categoriaDiv.getAttribute('value');
+    //TOMANDO EL ATRIBUTO VALOR PARA LA VARIABLE CATEGORIA EN JS
+    //let categoria = categoriaDiv.getAttribute('value');
+
+  //TOMANDO EL ATRIBUTO VALOR PARA LA VARIABLE CATEGORIA EN JQUERY
+  let categoria = $(categoriaDiv).attr('value');  
 
   //console.log(categoria);
-  let titulo = document.getElementById('title-'+categoria);
+
+    //TOMANDO EL ID TITLE+VALUE CATEGORIA PARA EL TITULO (EN JS)
+  //let titulo = document.getElementById('title-'+categoria);
+
+    //TOMANDO EL ID TITLE+VALUE CATEGORIA PARA EL TITULO (EN JQUERY)
+  let titulo = $('#title-'+categoria);
 
   if (titulo != null) {
-    titulo.textContent = categoria.charAt(0).toUpperCase() + categoria.slice(1);
-    titulo.className = 'title-subsection';
+    //APLICANDO TEXTO AL TITULO EN JS
+    //titulo.textContent = categoria.charAt(0).toUpperCase() + categoria.slice(1);
+
+    //APLICANDO TEXTO AL TITULO EN JQUERY
+    $(titulo).text(categoria.charAt(0).toUpperCase() + categoria.slice(1));
+
+    //APLICANDO CLASE AL TITULO EN JS
+    //titulo.className = 'title-subsection';
+
+    //APLICANDO CLASE AL TITULO EN JQUERY
+    $(titulo).addClass('title-subsection');
   }
 
+  //TOMANDO EL ID ITEMS+VALUE CATEGORIA PARA LOS ITEMS DEL CARRITO (EN JS)
   let items = document.getElementById('items-'+categoria);
+
+  //TOMANDO EL ID ITEMS+VALUE CATEGORIA PARA LOS ITEMS DEL CARRITO (EN JQUERY)
+  //let items = $('#items-'+categoria);
+
+  //TOMANDO EL ID TEMPLATECARD+VALUE CATEGORIA PARA LAS CARDS DEL CARRITO (EN JS)
   let templateCard = document.getElementById('template-card-'+categoria).content;
+
   let fragment = document.createDocumentFragment();
   if (items != null && templateCard != null) {
     items.addEventListener('click', e => {
@@ -84,4 +110,3 @@ categorias.forEach(categoriaDiv => {
     return aplicaFiltro;
   }
 });
-
