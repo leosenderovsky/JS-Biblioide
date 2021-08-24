@@ -13,7 +13,7 @@
 }
 
 .btn {
-  width: 150px;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +41,36 @@
 
 .btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
   background-color: #1D4D4F;
+}
+
+.btn2 {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #1D4D4F;
+  background-color: #E5DFDF;
+  border-style: solid;
+  border-color: #357376;
+  border-width: 1px;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+}
+.btn2:hover {
+  color: #E5DFDF;
+  background-color: #1D4D4F;
+}
+.btn2::after {
+  color: #E5DFDF;
+  background-color: #6BA8A9;
+}
+
+.btn-secondary {
+  background-color: #6BA8A9;
 }
 
 /*  Helper Styles */
@@ -192,6 +222,7 @@ a {
 }
 
 .title {
+  /*display: none;*/
   text-align: center;
   font-family: "Pathway Gothic One", sans-serif;
   font-weight: 600;

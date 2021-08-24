@@ -18,7 +18,7 @@
 
 
 .btn {
-    width: 150px;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +47,36 @@
 
 .btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
     background-color: $color-1;
+}
+
+.btn2 {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-base;
+    text-transform: uppercase;
+    color: $color-1;
+    background-color: $color-4;
+    border-style: solid;
+    border-color: $color-2;
+    border-width: 1px;
+    font-weight: 600;
+    font-size: 1em;
+    padding: .25rem 1rem;
+    border-radius: .25rem;
+    &:hover{
+        color: $color-4;
+        background-color: $color-1;
+    }
+    &::after{
+        color: $color-4;
+        background-color: $color-3;
+    }
+}
+
+.btn-secondary {
+    background-color: $color-3;
 }
 
 /*  Helper Styles */

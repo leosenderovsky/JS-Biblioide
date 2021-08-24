@@ -12,6 +12,7 @@
 }
 
 .title {
+    /*display: none;*/
     text-align: center;
     @include text ($font-title, 600, $color-1, center, true);
     font-size: 4em;
