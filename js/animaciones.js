@@ -1,17 +1,31 @@
 // INTENTANDO QUE SE PRODUZCA UNA ANIMACIÓN SOBRE EL BOTÓN DE LAS CARDS
-
+/*
 $(".btn").mouseover(function() {
     $(".btn").animate({
         color: '#357376',
         backgroundColor: '#E5DFDF',
     }, "slow");        
+});*/
+
+$(".card-img-top").mouseover(() => {
+    $(".btn").animate({
+        'font-size':'2em'}, 300)
 });
 
-// ANIMACIÓN DE ZOOM IN Y OUT AL H1 DEL SITIO
 
-$(".title").mouseover(() =>
-$(".title").animate({'zoom': 0.9}, 400).delay(100).animate({'zoom': 1}, 400));
+// ANIMACIÓN EN HOVER DE ZOOM IN Y OUT A LOS TITULOS DE "RECOMENDADOS" Y "NOVEDADES" DEL INDEX
 
+$("#title-recomendados").mouseover(() =>
+$("#title-recomendados").animate({'zoom': 0.9}, 400)
+                        .delay(100)
+                        .animate({'zoom': 1}, 400)                        
+);
+
+$("#title-novedades").mouseover(() =>
+$("#title-novedades").animate({'zoom': 0.9}, 400)
+                     .delay(100)
+                     .animate({'zoom': 1}, 400)                        
+);
 
 // ANIMACIÓN PARA QUE AL HACER CLICK EN EL TÍTULO DE LA CATEGORÍA EN LA HOME APAREZCA CON FADE BOTÓN DE VER MÁS 
 
@@ -35,17 +49,25 @@ $("#title-ficciones-destacados").click(() => {
 // ANIMACIÓN PARA QUE AL HACER HOVER EN EL TÍTULO DE LA CATEGORÍA EN LA HOME APAREZCA CON FADE BOTÓN DE VER MÁS 
 
 $("#title-ensayos-destacados").mouseover(() => {
-    $(".view-more-ensayos").fadeIn("slow");
+    $(".view-more-ensayos").fadeIn("slow")
+                           .delay(500)
+                           .animate({"zoom": 0.7}, 500);
 });
 
 $("#title-manuales-destacados").mouseover(() => {
-    $(".view-more-manuales").fadeIn("slow");
+    $(".view-more-manuales").fadeIn("slow")
+                            .delay(500)
+                            .animate({"zoom": 0.7}, 500);
 });
 
 $("#title-guiones-destacados").mouseover(() => {
-    $(".view-more-guiones").fadeIn("slow");
+    $(".view-more-guiones").fadeIn("slow")
+                           .delay(500)
+                           .animate({"zoom": 0.7}, 500);
 });
 
 $("#title-ficciones-destacados").mouseover(() => {
-    $(".view-more-ficciones").fadeIn("slow");
+    $(".view-more-ficciones").fadeIn("slow")
+                             .delay(500)
+                             .animate({"zoom": 0.7}, 500);
 });
