@@ -64,7 +64,7 @@ categorias.forEach(categoriaDiv => {
 
     let fetchDataProducts = async () => {
       try {
-        const res = await fetch('/api/api.json');
+        const res = await fetch('../api/api.json');
         const response = await res.json();
         const data = response.filter(filtrarProducto)
         pintarCards(data);

@@ -232,7 +232,7 @@ document.body.appendChild(botonPrueba)*/
 // DESAFÍO AJAX CON JQUERY
 // (AGREGADO UN BOTÓN QUE AL HACER CLICK MUESTRA POR AJAX TODO EL CATÁLOGO Y QUE AL VOLVER A HACER CLICK OCULTA EL CATÁLOGO Y EL BOTÓN)
 
-const json = "/api/api.json";
+const json = "../api/api.json";
 
 $("#catalogo-button").prepend('<div class="d-flex justify-content-center"><button id="boton-catalogo" class="btn2">Ver el catálogo de nuestra librería</button></div>');
 
