@@ -229,3 +229,35 @@ botonPrueba.onclick = () => {console.log("Click")}
 botonPrueba.onmouseover = () => {console.log("Over")}
 document.body.appendChild(botonPrueba)*/
 
+// DESAFÍO AJAX CON JQUERY
+// (AGREGADO UN BOTÓN QUE AL HACER CLICK MUESTRA POR AJAX TODO EL CATÁLOGO Y QUE AL VOLVER A HACER CLICK OCULTA EL CATÁLOGO Y EL BOTÓN)
+
+const json = "/api.json";
+
+$("#catalogo-button").prepend('<div class="d-flex justify-content-center"><button id="boton-catalogo" class="btn2">Ver el catálogo de nuestra librería</button></div>');
+
+$("#boton-catalogo").click (() =>{
+  $(".title").text("Nuestro catálogo");
+  $.get(json, function (respuesta, estado) {
+    if(estado === "success"){
+      let catalogo = respuesta;
+      for (const producto of catalogo){
+        $("#catalogo-main").prepend( `<div class="card">
+                                <div class="card-body">
+                              <img class="card-img-top" src="${producto.thumbnailUrl}">
+                              <h5 class="card-title">${producto.titulo}</h5>
+                              <p class="card-text">${producto.autor}</p>
+                              <p class="card-text">${producto.editorial}</p>
+                              </div>
+                              </div>`);
+      }
+    }
+  });  
+$("#boton-catalogo").replaceWith('<div class="d-flex justify-content-center"><button id="ocultar-catalogo" class="btn2">Ocultar el catálogo</button></div>');
+
+$("#ocultar-catalogo").click (() =>{
+    $(".title").text("Tu librería de cine");
+    $("#ocultar-catalogo").hide();
+    $("#catalogo-main").hide();
+})
+});

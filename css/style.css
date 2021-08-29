@@ -2,6 +2,7 @@
   max-width: 250px;
   height: 300px;
   object-fit: fill;
+  justify-content: center;
 }
 
 .card-title {
@@ -57,7 +58,7 @@
   border-width: 1px;
   font-weight: 600;
   font-size: 1em;
-  padding: 0.25rem 1rem;
+  padding: 0.1rem 1rem;
   border-radius: 0.25rem;
 }
 .btn2:hover {
