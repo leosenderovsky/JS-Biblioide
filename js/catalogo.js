@@ -36,10 +36,20 @@ categorias.forEach(categoriaDiv => {
   //TOMANDO EL ID ITEMS+VALUE CATEGORIA PARA LOS ITEMS DEL CARRITO (EN JQUERY)
   //let items = $('#items-'+categoria);
 
+  const productos = document.getElementById('productos');
+
+  const footer = document.getElementById('footer');
+
   //TOMANDO EL ID TEMPLATECARD+VALUE CATEGORIA PARA LAS CARDS DEL CARRITO (EN JS)
   let templateCard = document.getElementById('template-card-'+categoria).content;
 
+  const templateFooter = document.getElementById('template-footer').content;
+
+  const templateCarrito = document.getElementById('template-carrito').content;
+
   let fragment = document.createDocumentFragment();
+
+  let carrito = {}
   
   if (items != null && templateCard != null) {
     
@@ -87,6 +97,67 @@ categorias.forEach(categoriaDiv => {
       items.appendChild(fragment);
     }
   }
+
+  // AGREGAR PRODUCTOS AL CARRITO
+
+  const addCarrito = e => {
+    //console.log(e.target)
+    //console.log(e.target.classList.contains('btn-primary'))
+    if (e.target.classList.contains('btn-primary')) {      
+      setCarrito(e.target.parentElement)      
+    }
+    e.stopPropagation()
+  }
+
+  const setCarrito = objeto => {
+    //console.log(objeto)
+    const producto = {
+      id: objeto.querySelector('.btn-primary').dataset.id,
+      titulo: objeto.querySelector('h5').textContent,
+      precio: objeto.querySelector('.price').textContent,
+      cantidad: 1
+    }
+
+    // ADICIONARLE UNO MÁS A LA CANTIDAD DEL PRODUCTO CADA VEZ QUE APRETE COMPRAR
+
+    if(carrito.hasOwnProperty(producto.id)){
+      producto.cantidad = carrito[producto.id].cantidad + 1
+    }
+
+    carrito[producto.id] = {...producto}
+    pintarCarrito()
+  }
+
+  const pintarCarrito = () =>{
+    //console.log(carrito)
+    items.innerHTML = ''
+    Object.values(carrito).forEach(producto => {
+      templateCarrito.querySelector('th').textContent = producto.id
+      templateCarrito.querySelectorAll('td')[0].textContent = producto.titulo
+      templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
+      templateCarrito.querySelector('.btn-info').dataset.id = producto.id
+      templateCarrito.querySelector('.btn-danger').dataset.id = producto.id
+      templateCarrito.querySelector('span').textContent = producto.cantidad * producto.precio
+      const clone = templateCarrito.cloneNode(true)
+      fragment.appendChild(clone)
+    })
+    productos.appendChild(fragment)
+
+    pintarFooter()
+  }
+
+  const pintarFooter = () => {
+    footer.innerHTML = ''
+    if(Object.keys(carrito).length === 0) {
+      footer.innerHTML = `
+      <th scope="row" colspan="5">Carrito vacío</th>
+      `
+    }
+
+    const nCantidad = Object.values(carrito).reduce((acc, {cantidad}) => acc + cantidad,0)
+    //console.log(nCantidad)
+  }
+
 
   // FILTRADO PARA QUE ME MUESTRE EN CADA CATEGORÍA SOLAMENTE LOS PRODUCTOS QUE RESPONDEN A LAS CONDICIONES ESPECIFICADAS
   const filtrarProducto = producto => {
