@@ -58,201 +58,206 @@
               <a class="nav-link title-nav" href="contacto.html">Contacto</a>
             </li>
           </ul>
+          <!--
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
+          </form>-->
         </div>
       </div>
     </nav>
   </header>
   <main>
     <div class="body">
-      <h1 class="title">Tu librería de cine</h1>
-      <div id="catalogo-button">
-        <div class="row">
-            <div id="catalogo-main" class="col-4 xl-3 col-md-3">
-          </div>
-        </div>
-      </div>
-      <div class="main">
-        <h4>Mi carrito</h4>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Item</th>
-              <th scope="col">Cantidad</th>
-              <th scope="col">Acción</th>
-              <th scope="col">Total</th>
-            </tr>
-          </thead>
-          <tbody id="productos"></tbody>
-          <tfoot>
-            <tr id="footer">
-              <th scope="row" colspan="5">Carrito vacío</th>
-            </tr>
-          </tfoot>
-        </table>
-        <template id="template-footer">
-          <th scope="row" colspan="2">Total productos</th>
-          <td>10</td>
+      <h1 class="title">Tu librería de cine</h1>      
+    <div class="main">
+      <h4 class="title-subsection">Mi carrito</h4>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Libro</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Acción</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody id="productos"></tbody>
+        <tfoot>
+          <tr id="footer">
+            <th scope="row" colspan="5">Carrito vacío</th>
+          </tr>
+        </tfoot>
+      </table>
+      <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+          <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+            vaciar todo
+          </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+      </template>
+
+      <template id="template-carrito">
+        <tr>
+          <th scope="row">id</th>
+          <td>Café</td>
+          <td>1</td>
           <td>
-            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
-              vaciar todo
+            <button class="btn btn-info btn-sm">
+              +
+            </button>
+            <button class="btn btn-danger btn-sm">
+              -
             </button>
           </td>
-          <td class="font-weight-bold">$ <span>5000</span></td>
-        </template>
+          <td>$ <span>500</span></td>
+        </tr>
+      </template>
+      <div class="col-12">
+        <div name="categorias" value="recomendados"></div>
+        <h2 id="title-recomendados"></h2>
+        <div class="row" id="items-recomendados">
+          <template id="template-card-recomendados">
+            <div class="col-4 xl-3 col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src=" " class="card-img-top" alt="...">
+                  <h5 class="card-title">Título</h5>
+                  <p class="card-text">$ <span class="price">Precio</span></p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+        <div class="pt-5">
 
-        <template id="template-carrito">
-          <tr>
-            <th scope="row">id</th>
-            <td>Café</td>
-            <td>1</td>
-            <td>
-              <button class="btn btn-info btn-sm">
-                +
-              </button>
-              <button class="btn btn-danger btn-sm">
-                -
-              </button>
-            </td>
-            <td>$ <span>500</span></td>
-          </tr>
-        </template>
-        <div class="col-12">
-          <div name="categorias" value="recomendados"></div>
-          <h2 id="title-recomendados"></h2>
-          <div class="row" id="items-recomendados">
-            <template id="template-card-recomendados">
-              <div class="col-4 xl-3 col-md-3">
-                <div class="card">
-                  <div class="card-body">
-                    <img src=" " class="card-img-top" alt="...">
-                    <h5 class="card-title">Título</h5>
-                    <p class="card-text">$ <span class="price">Precio</span></p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                  </div>
-                </div>
-              </div>
-            </template>
-          </div>
-          <div class="pt-5">
-            
-          </div>
-          <div name="categorias" value="novedades"></div>
-          <h2 id="title-novedades"></h2>
-          <div class="row" id="items-novedades">
-            <template id="template-card-novedades">
-              <div class="col-4 xl-3 col-md-3">
-                <div class="card">
-                  <div class="card-body">
-                    <img src=" " class="card-img-top" alt="...">
-                    <h5 class="card-title">Título</h5>
-                    <p class="card-text">$ <span class="price">Precio</span></p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                  </div>
-                </div>
-              </div>
-            </template>
-          </div>          
-          <div name="categorias" value="ensayos-destacados"></div>
-          <div class="pt-5 d-flex">
-            <h2 id="title-ensayos-destacados" class="title-ensayos-destacados"></h2><a href="ensayos.html" class="btn2 view-more-ensayos mx-3" style="display:none;">Ver más libros de esta categoría      
-            </a>
-          </div>
-          <div class="row" id="items-ensayos-destacados">
-            <template id="template-card-ensayos-destacados">
-              <div class="col-4 xl-3 col-md-3">
-                <div class="card">
-                  <div class="card-body">
-                    <img src=" " class="card-img-top" alt="...">
-                    <h5 class="card-title">Título</h5>
-                    <p class="card-text">$ <span class="price">Precio</span></p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                  </div>
-                </div>
-              </div>
-            </template>
-          </div>
-          <div class="pt-5 d-flex">            
-              <h2 id="title-manuales-destacados"></h2><a href="manuales.html" class="btn2 view-more-manuales mx-3" style="display:none;">Ver más libros de esta categoría</a>
-          </div>
-          <div name="categorias" value="manuales-destacados"></div>
-          <div class="row" id="items-manuales-destacados">
-            <template id="template-card-manuales-destacados">
-              <div class="col-4 xl-3 col-md-3">
-                <div class="card">
-                  <div class="card-body">
-                    <img src=" " class="card-img-top" alt="...">
-                    <h5 class="card-title">Título</h5>
-                    <p class="card-text">$ <span class="price">Precio</span></p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                  </div>
-                </div>
-              </div>
-            </template>
-          </div>
-          <div class="pt-5 d-flex">            
-              <h2 id="title-guiones-destacados"></h2><a href="guiones.html" class="btn2 view-more-guiones mx-3" style="display:none;">Ver más libros de esta categoría</a>
-          </div>
-          <div name="categorias" value="guiones-destacados"></div>
-          <div class="row" id="items-guiones-destacados">
-            <template id="template-card-guiones-destacados">
-              <div class="col-4 xl-3 col-md-3">
-                <div class="card">
-                  <div class="card-body">
-                    <img src=" " class="card-img-top" alt="...">
-                    <h5 class="card-title">Título</h5>
-                    <p class="card-text">$ <span class="price">Precio</span></p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                  </div>
-                </div>
-              </div>
-            </template>
-          </div>
-          <div class="pt-5 d-flex">
-              <h2 id="title-ficciones-destacados"></h2><a href="ficciones.html" class="btn2 view-more-ficciones mx-3" style="display:none;">Ver más libros de esta categoría</a>
-          </div>
-          <div name="categorias" value="ficciones-destacados"></div>
-          <div class="row" id="items-ficciones-destacados">
-            <template id="template-card-ficciones-destacados">
-              <div class="col-4 xl-3 col-md-3">
-                <div class="card" style="width: 14rem;">
-                  <div class="card-body">
-                    <img src=" " class="card-img-top" alt="...">
-                    <h5 class="card-title">Título</h5>
-                    <p class="card-text">$ <span class="price">Precio</span></p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                  </div>
-                </div>
-              </div>
-            </template>
-          </div>
         </div>
-        <!--<button id="boton-vercatalogo" class="btn btn-primary btn-block"></button>-->
-        <div class="pt-5">
-          <h3 id="libreria" class="title-subsection">La librería</h3>
+        <div name="categorias" value="novedades"></div>
+        <h2 id="title-novedades"></h2>
+        <div class="row" id="items-novedades">
+          <template id="template-card-novedades">
+            <div class="col-4 xl-3 col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src=" " class="card-img-top" alt="...">
+                  <h5 class="card-title">Título</h5>
+                  <p class="card-text">$ <span class="price">Precio</span></p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </template>
         </div>
-        <div>
-          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus aliquid, quis,
-            tenetur
-            nobis amet
-            delectus commodi facere optio, consectetur cum repudiandae adipisci? Vitae, beatae corporis. Dolore
-            voluptatem
-            consequuntur suscipit.</p>
+        <div name="categorias" value="ensayos-destacados"></div>
+        <div class="pt-5 d-flex">
+          <h2 id="title-ensayos-destacados" class="title-ensayos-destacados"></h2><a href="ensayos.html"
+            class="btn2 view-more-ensayos mx-3" style="display:none;">Ver más libros de esta categoría
+          </a>
         </div>
-        <div class="pt-5">
-          <h3 id="donde-estamos" class="title-subsection">Dónde estamos</h3>
+        <div class="row" id="items-ensayos-destacados">
+          <template id="template-card-ensayos-destacados">
+            <div class="col-4 xl-3 col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src=" " class="card-img-top" alt="...">
+                  <h5 class="card-title">Título</h5>
+                  <p class="card-text">$ <span class="price">Precio</span></p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </template>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0072697102623!2d-58.38652098477032!3d-34.603977680459415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5e8c947b7%3A0xa62b149b49665cdd!2sAv.%20Corrientes%201246%2C%20C1012%20CABA!5e0!3m2!1sen!2sar!4v1626524766088!5m2!1sen!2sar"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="pt-5 d-flex">
+          <h2 id="title-manuales-destacados"></h2><a href="manuales.html" class="btn2 view-more-manuales mx-3"
+            style="display:none;">Ver más libros de esta categoría</a>
+        </div>
+        <div name="categorias" value="manuales-destacados"></div>
+        <div class="row" id="items-manuales-destacados">
+          <template id="template-card-manuales-destacados">
+            <div class="col-4 xl-3 col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src=" " class="card-img-top" alt="...">
+                  <h5 class="card-title">Título</h5>
+                  <p class="card-text">$ <span class="price">Precio</span></p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+        <div class="pt-5 d-flex">
+          <h2 id="title-guiones-destacados"></h2><a href="guiones.html" class="btn2 view-more-guiones mx-3"
+            style="display:none;">Ver más libros de esta categoría</a>
+        </div>
+        <div name="categorias" value="guiones-destacados"></div>
+        <div class="row" id="items-guiones-destacados">
+          <template id="template-card-guiones-destacados">
+            <div class="col-4 xl-3 col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src=" " class="card-img-top" alt="...">
+                  <h5 class="card-title">Título</h5>
+                  <p class="card-text">$ <span class="price">Precio</span></p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+        <div class="pt-5 d-flex">
+          <h2 id="title-ficciones-destacados"></h2><a href="ficciones.html" class="btn2 view-more-ficciones mx-3"
+            style="display:none;">Ver más libros de esta categoría</a>
+        </div>
+        <div name="categorias" value="ficciones-destacados"></div>
+        <div class="row" id="items-ficciones-destacados">
+          <template id="template-card-ficciones-destacados">
+            <div class="col-4 xl-3 col-md-3">
+              <div class="card" style="width: 14rem;">
+                <div class="card-body">
+                  <img src=" " class="card-img-top" alt="...">
+                  <h5 class="card-title">Título</h5>
+                  <p class="card-text">$ <span class="price">Precio</span></p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
       </div>
+      <!--<button id="boton-vercatalogo" class="btn btn-primary btn-block"></button>-->
+      <div class="pt-5">
+        <h3 id="libreria" class="title-subsection">La librería</h3>
+      </div>
+      <div>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus aliquid, quis,
+          tenetur
+          nobis amet
+          delectus commodi facere optio, consectetur cum repudiandae adipisci? Vitae, beatae corporis. Dolore
+          voluptatem
+          consequuntur suscipit.</p>
+      </div>
+      <div class="pt-5">
+        <h3 id="donde-estamos" class="title-subsection">Dónde estamos</h3>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0072697102623!2d-58.38652098477032!3d-34.603977680459415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5e8c947b7%3A0xa62b149b49665cdd!2sAv.%20Corrientes%201246%2C%20C1012%20CABA!5e0!3m2!1sen!2sar!4v1626524766088!5m2!1sen!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 
-      <div class="sidebar">        
-        <!--<div class="container">
+    <div class="sidebar">
+      <div id="catalogo-button">
+        <div class="row">
+          <div id="catalogo-main">
+          </div>
+        </div>
+      </div>
+      <!--<div class="container">
           <div id="login-container" class="login-container">
             <form id="login" class="p-5">
               <div class="form-outline mb-4">
@@ -288,7 +293,7 @@
           </div>
         </div>-->
 
-      </div>
+    </div>
 
     </div>
   </main>
@@ -297,7 +302,8 @@
         alt="Biblioide" class="logo-footer img-fluid"></div>
     <p class="text-footer col-12 col-sm-4 col-lg-4">©2021 todos los derechos reservados</p>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/animaciones.js"></script>
   <script src="js/catalogo.js"></script>
   <script src="js/desafios.js"></script>

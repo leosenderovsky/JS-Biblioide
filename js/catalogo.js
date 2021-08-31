@@ -130,7 +130,7 @@ categorias.forEach(categoriaDiv => {
 
   const pintarCarrito = () =>{
     //console.log(carrito)
-    items.innerHTML = ''
+    productos.innerHTML = ''
     Object.values(carrito).forEach(producto => {
       templateCarrito.querySelector('th').textContent = producto.id
       templateCarrito.querySelectorAll('td')[0].textContent = producto.titulo

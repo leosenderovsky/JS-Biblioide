@@ -234,7 +234,7 @@ document.body.appendChild(botonPrueba)*/
 
 const json = "api/api.json";
 
-$("#catalogo-button").prepend('<div class="d-flex justify-content-center"><button id="boton-catalogo" class="btn2">Ver el catálogo de nuestra librería</button></div>');
+$("#catalogo-button").prepend('<div class="d-flex justify-content-center"><button id="boton-catalogo" class="btn2">Ver el catálogo<br>de nuestra librería</button></div>');
 
 $("#boton-catalogo").click (() =>{
   $(".title").text("Nuestro catálogo");
@@ -242,14 +242,17 @@ $("#boton-catalogo").click (() =>{
     if(estado === "success"){
       let catalogo = respuesta;
       for (const producto of catalogo){
-        $("#catalogo-main").prepend( `<div class="card">
-                                <div class="card-body">
-                              <img class="card-img-top" src="${producto.thumbnailUrl}">
-                              <h5 class="card-title">${producto.titulo}</h5>
-                              <p class="card-text">${producto.autor}</p>
-                              <p class="card-text">${producto.editorial}</p>
-                              </div>
-                              </div>`);
+        $("#catalogo-main").prepend( `
+                                    <div class="d-flex justify-content-center">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <img class="card-img-top" src="${producto.thumbnailUrl}">
+                                                <h5 class="card-title">${producto.titulo}</h5>
+                                                <p class="card-text">${producto.autor}</p>
+                                                <p class="card-text">${producto.editorial}</p>
+                                            </div>
+                                        </div>
+                                    </div>`);
       }
     }
   });  
