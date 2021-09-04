@@ -12,6 +12,7 @@
 .card-title {
     padding: 10px 0px 0px 0px;
     display: flex;
+    text-align: center;
     justify-content: center;
     font-family: $font-subtitle;
     text-transform: $text-transform-base;
@@ -137,6 +138,7 @@
     .card-text {
         font-family: $font-subtitle;
         display: flex;
+        text-align: center;
         justify-content: center;
         padding: 10px 15px;
         font-size: 1rem;

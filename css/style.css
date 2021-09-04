@@ -8,6 +8,7 @@
 .card-title {
   padding: 10px 0px 0px 0px;
   display: flex;
+  text-align: center;
   justify-content: center;
   font-family: "Voltaire", sans-serif;
   text-transform: uppercase;
@@ -130,6 +131,7 @@ a {
 .card-text {
   font-family: "Voltaire", sans-serif;
   display: flex;
+  text-align: center;
   justify-content: center;
   padding: 10px 15px;
   font-size: 1rem;
@@ -174,8 +176,19 @@ a {
     box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
   }
 }
+.navbar > .container, .navbar > .container-fluid,
+.navbar > .container-lg, .navbar > .container-md,
+.navbar > .container-sm, .navbar > .container-xl,
+.navbar > .container-xxl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navbar {
+  display: flex;
   height: 100px;
+  justify-content: space-around;
 }
 
 .menu {
@@ -188,12 +201,14 @@ a {
 
 .logo {
   margin: 0px 20px;
-  width: 250px;
+  width: 200px;
+}
+
+#navbarSupportedContent {
+  align-items: center;
 }
 
 .navbar-nav {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -201,6 +216,31 @@ a {
 .dropdown-item:active {
   color: #fff;
   background-color: #1D4D4F;
+}
+
+.social-menu {
+  width: 15%;
+}
+.social-menu a {
+  width: 2rem;
+  color: #1D4D4F;
+  font-size: 1.5rem;
+}
+.social-menu a:hover {
+  width: 2rem;
+  color: #357376;
+}
+
+.navbar-toggler-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+@media (min-width: 401px) and (max-width: 960px) {
+  .collapsed-menu {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .title-nav {
@@ -257,6 +297,16 @@ a {
   margin: 20px 0px 10px 20px;
 }
 
+#catalogo-title {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: 600;
+  color: #1D4D4F;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  margin: 5px 0px;
+}
+
 .title-subsection {
   font-family: "Voltaire", sans-serif;
   font-weight: 400;
@@ -265,6 +315,15 @@ a {
   text-transform: uppercase;
   font-size: 3em;
   margin: 20px 0px 10px 20px;
+}
+
+.text-items {
+  font-family: "Voltaire", sans-serif;
+  font-weight: 400;
+  color: #357376;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.5em;
 }
 
 .login-container {

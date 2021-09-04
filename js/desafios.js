@@ -237,7 +237,7 @@ const json = "api/api.json";
 $("#catalogo-button").prepend('<div class="d-flex justify-content-center"><button id="boton-catalogo" class="btn2">Ver el catálogo<br>de nuestra librería</button></div>');
 
 $("#boton-catalogo").click (() =>{
-  $(".title").text("Nuestro catálogo");
+  $("#catalogo-title").text("Nuestro catálogo");
   $.get(json, function (respuesta, estado) {
     if(estado === "success"){
       let catalogo = respuesta;
@@ -245,11 +245,9 @@ $("#boton-catalogo").click (() =>{
         $("#catalogo-main").prepend( `
                                     <div class="d-flex justify-content-center">
                                         <div class="card">
-                                            <div class="card-body">
-                                                <img class="card-img-top" src="${producto.thumbnailUrl}">
+                                            <div class="card-body">                                                
                                                 <h5 class="card-title">${producto.titulo}</h5>
-                                                <p class="card-text">${producto.autor}</p>
-                                                <p class="card-text">${producto.editorial}</p>
+                                                <p class="card-text">${producto.autor}<br/>${producto.editorial}</p>
                                             </div>
                                         </div>
                                     </div>`);
@@ -259,7 +257,7 @@ $("#boton-catalogo").click (() =>{
 $("#boton-catalogo").replaceWith('<div class="d-flex justify-content-center"><button id="ocultar-catalogo" class="btn2">Ocultar el catálogo</button></div>');
 
 $("#ocultar-catalogo").click (() =>{
-    $(".title").text("Tu librería de cine");
+    $("#catalogo-title").hide();
     $("#ocultar-catalogo").hide();
     $("#catalogo-main").hide();
 })

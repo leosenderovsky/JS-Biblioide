@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Roboto&family=Voltaire&display=swap"
     rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8c1a91277c.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -21,7 +22,7 @@
 
 <body>
   <header class="menu header sticky-top">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg d-flex justify-content-around">
       <div class="container-fluid">
         <div class="logo-container">
           <a href="index.html"> <img src="images/logo.png" alt="Biblioide" class="logo"></a>
@@ -32,7 +33,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active title-nav" aria-current="page" href="index.html">Home</a>
             </li>
@@ -52,16 +53,19 @@
               <a class="nav-link title-nav" href="libreria.html">La librería</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link title-nav" href="mi-cuenta.html">Mi cuenta</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link title-nav" href="contacto.html">Contacto</a>
             </li>
           </ul>
+          <!--
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
+          </form>-->
+        </div>
+        <div class="social-menu d-flex align-items-center justify-content-evenly d-none d-lg-flex">
+          <a href="https://web.whatsapp.com/" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </nav>
@@ -72,12 +76,26 @@
       delectus commodi facere optio, consectetur cum repudiandae adipisci? Vitae, beatae corporis. Dolore voluptatem
       consequuntur suscipit.</p>
   </div>
+  <div id="catalogo-title"></div>
+  <div class="row">
+        <div id="catalogo-main" class="col-3">
+        </div>
+  </div>
+  <footer class="footer row">
+    <div class="col-12 col-sm-4 col-lg-3 logo-footer-container"><img src="images/logo.png" loading="lazy"
+        alt="Biblioide" class="logo-footer img-fluid"></div>
+    <p class="text-footer col-12 col-sm-4 col-lg-4">©2021 todos los derechos reservados</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/animaciones.js"></script>
+  <script src="js/catalogo-completo.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-  integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
-</script>
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-  integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
-</script>
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+  </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

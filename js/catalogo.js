@@ -30,6 +30,10 @@ categorias.forEach(categoriaDiv => {
     $(titulo).addClass('title-subsection');
   }
 
+  //Se establece un array con los items de compra que esten en el DOM, en el caso de no estar se crea un array vacío
+  
+  let carritoArr = JSON.parse(localStorage.getItem("compra")) || [];
+
   //TOMANDO EL ID ITEMS+VALUE CATEGORIA PARA LOS ITEMS DEL CARRITO (EN JS)
   let items = document.getElementById('items-'+categoria);
 
@@ -107,7 +111,10 @@ categorias.forEach(categoriaDiv => {
       setCarrito(e.target.parentElement)      
     }
     e.stopPropagation()
-  }
+    
+    // INTENTANDO QUE ME GUARDE LOS DATOS DEL CARRITO
+    carritoArr.push(addCarrito);
+    localStorage.setItem("compra", JSON.stringify(carritoArr));  }
 
   const setCarrito = objeto => {
     //console.log(objeto)
@@ -118,7 +125,7 @@ categorias.forEach(categoriaDiv => {
       cantidad: 1
     }
 
-    // ADICIONARLE UNO MÁS A LA CANTIDAD DEL PRODUCTO CADA VEZ QUE APRETE COMPRAR
+    // ADICIONARLE UNO MÁS A LA CANTIDAD DEL PRODUCTO CADA VEZ QUE APRIETE COMPRAR
 
     if(carrito.hasOwnProperty(producto.id)){
       producto.cantidad = carrito[producto.id].cantidad + 1
@@ -132,7 +139,7 @@ categorias.forEach(categoriaDiv => {
     //console.log(carrito)
     productos.innerHTML = ''
     Object.values(carrito).forEach(producto => {
-      templateCarrito.querySelector('th').textContent = producto.id
+      //templateCarrito.querySelector('th').textContent = producto.id
       templateCarrito.querySelectorAll('td')[0].textContent = producto.titulo
       templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
       templateCarrito.querySelector('.btn-info').dataset.id = producto.id

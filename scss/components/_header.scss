@@ -1,8 +1,19 @@
 @import '../functions/mixins';
 
+.navbar>.container, .navbar>.container-fluid, 
+.navbar>.container-lg, .navbar>.container-md, 
+.navbar>.container-sm, .navbar>.container-xl, 
+.navbar>.container-xxl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .navbar {
+    display: flex;
     height: 100px;
+    justify-content: space-around;
 }
 
 .menu {
@@ -11,17 +22,21 @@
 
 .header {
     text-align: center;
+
 }
 
 
 .logo {
     margin: 0px 20px;
-    width: 250px;
+    width: 200px;
+}
+
+#navbarSupportedContent {
+    align-items: center;
+
 }
 
 .navbar-nav {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 
 }
@@ -30,4 +45,30 @@
 .dropdown-item:active {
  color: #fff;
  background-color: $color-1;
+}
+
+.social-menu {
+    width: 15%;
+
+    a {
+        width: 2rem;
+        color:$color-1;
+        font-size: 1.5rem;  
+        &:hover {
+            width: 2rem;
+            color: $color-2;
+        }
+    }
+}
+
+.navbar-toggler-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.collapsed-menu {
+    @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+        display: flex;
+        justify-content: center;
+    }    
 }
