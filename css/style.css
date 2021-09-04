@@ -307,6 +307,25 @@ a {
   margin: 5px 0px;
 }
 
+.title-carrito {
+  font-family: "Voltaire", sans-serif;
+  font-weight: 500;
+  color: #1D4D4F;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 20px 0px 10px 20px;
+}
+
+.subtitle-carrito {
+  font-family: "Voltaire", sans-serif;
+  font-weight: 500;
+  color: #1D4D4F;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
 .title-subsection {
   font-family: "Voltaire", sans-serif;
   font-weight: 400;

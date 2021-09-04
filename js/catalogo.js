@@ -135,6 +135,7 @@ categorias.forEach(categoriaDiv => {
     pintarCarrito()
   }
 
+  // PINTAMOS EL CARRITO
   const pintarCarrito = () =>{
     //console.log(carrito)
     productos.innerHTML = ''
@@ -153,17 +154,29 @@ categorias.forEach(categoriaDiv => {
     pintarFooter()
   }
 
+  // PINTAMOS EL FOOTER DEL CARRITO
   const pintarFooter = () => {
     footer.innerHTML = ''
     if(Object.keys(carrito).length === 0) {
       footer.innerHTML = `
-      <th scope="row" colspan="5">Carrito vacío</th>
+      <th scope="row" colspan="5">El carrito está vacío</th>
       `
     }
 
+    // ACUMULADOR DE PRODUCTOS EN EL CARRITO    
     const nCantidad = Object.values(carrito).reduce((acc, {cantidad}) => acc + cantidad,0)
-    //console.log(nCantidad)
-  }
+    const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio, 0)
+    //console.log(nPrecio)
+
+    templateFooter.querySelectorAll('td')[0].textContent = nCantidad
+    templateFooter.querySelector('span').textContent = nPrecio
+
+    const clone = templateFooter.cloneNode(true)
+    fragment.appendChild(clone)
+    footer.appendChild(fragment)
+
+
+  } 
 
 
   // FILTRADO PARA QUE ME MUESTRE EN CADA CATEGORÍA SOLAMENTE LOS PRODUCTOS QUE RESPONDEN A LAS CONDICIONES ESPECIFICADAS

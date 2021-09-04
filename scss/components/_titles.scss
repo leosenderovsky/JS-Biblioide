@@ -37,6 +37,17 @@
     margin: 5px 0px;
 }
 
+.title-carrito {
+    @include text ($font-subtitle, 500, $color-1, left, true);
+    font-size: 2em;
+    margin: 20px 0px 10px 20px;
+}
+
+.subtitle-carrito {
+    @include text ($font-subtitle, 500, $color-1, center, true);
+    font-size: 1.5em;
+}
+
 .title-subsection {
     @include text ($font-subtitle, 400, $color-1, left, true);
     font-size: 3em;
