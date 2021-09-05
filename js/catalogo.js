@@ -30,10 +30,6 @@ categorias.forEach(categoriaDiv => {
     $(titulo).addClass('title-subsection');
   }
 
-  //Se establece un array con los items de compra que esten en el DOM, en el caso de no estar se crea un array vacío
-  
-  let carritoArr = JSON.parse(localStorage.getItem("compra")) || [];
-
   //TOMANDO EL ID ITEMS+VALUE CATEGORIA PARA LOS ITEMS DEL CARRITO (EN JS)
   let items = document.getElementById('items-'+categoria);
 
@@ -71,6 +67,16 @@ categorias.forEach(categoriaDiv => {
     //reemplazo de addEventListener en Jquery
     $(document).on('DOMContentLoaded', () => {
       fetchDataProducts();
+
+      //RECUPERAMOS DEL LOCAL STORAGE LOS PRODUCTOS CON LA KEY "CARRITO"
+      if(localStorage.getItem('carrito')) {
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        pintarCarrito()
+      }
+    })
+
+    $(productos).on('click', e => {
+      btnAccion(e)
     })
 
 
@@ -110,11 +116,8 @@ categorias.forEach(categoriaDiv => {
     if (e.target.classList.contains('btn-primary')) {      
       setCarrito(e.target.parentElement)      
     }
-    e.stopPropagation()
-    
-    // INTENTANDO QUE ME GUARDE LOS DATOS DEL CARRITO
-    carritoArr.push(addCarrito);
-    localStorage.setItem("compra", JSON.stringify(carritoArr));  }
+    e.stopPropagation() 
+  }
 
   const setCarrito = objeto => {
     //console.log(objeto)
@@ -152,6 +155,9 @@ categorias.forEach(categoriaDiv => {
     productos.appendChild(fragment)
 
     pintarFooter()
+
+    //GUARDAMOS LOS PRODUCTOS EN EL LOCAL STORAGE CON LA KEY "CARRITO"
+    localStorage.setItem('carrito', JSON.stringify(carrito))
   }
 
   // PINTAMOS EL FOOTER DEL CARRITO
@@ -159,8 +165,9 @@ categorias.forEach(categoriaDiv => {
     footer.innerHTML = ''
     if(Object.keys(carrito).length === 0) {
       footer.innerHTML = `
-      <th scope="row" colspan="5">El carrito está vacío</th>
+      <th scope="row" colspan="0" class="subtitle-carrito">Carrito vacío</th>
       `
+      return
     }
 
     // ACUMULADOR DE PRODUCTOS EN EL CARRITO    
@@ -175,9 +182,41 @@ categorias.forEach(categoriaDiv => {
     fragment.appendChild(clone)
     footer.appendChild(fragment)
 
-
+    const btnVaciarCarrito = document.getElementById('vaciar-carrito')
+    btnVaciarCarrito.addEventListener('click', () => {
+      carrito = {}
+      pintarCarrito()
+    })
   } 
 
+  const btnAccion = e => {
+    
+    //AUMENTAMOS LA CANTIDAD DE X PRODUCTO EN EL CARRITO
+    if(e.target.classList.contains('btn-info')) {
+
+      const producto = carrito[e.target.dataset.id]
+      producto.cantidad++
+
+      carrito[e.target.dataset.id] = {...producto}
+      pintarCarrito()
+    }
+
+    //DISMINUIMOS LA CANTIDAD DE X PRODUCTO EN EL CARRITO
+    if(e.target.classList.contains('btn-danger')) {
+
+      const producto = carrito[e.target.dataset.id]
+      producto.cantidad--
+
+      //SACAMOS EL PRODUCTO DEL CARRITO SI LA CANTIDAD ES IGUAL A CERO
+      if(producto.cantidad === 0) {
+        delete carrito[e.target.dataset.id]
+      }
+      pintarCarrito()
+    }
+
+    e.stopPropagation()
+
+  }
 
   // FILTRADO PARA QUE ME MUESTRE EN CADA CATEGORÍA SOLAMENTE LOS PRODUCTOS QUE RESPONDEN A LAS CONDICIONES ESPECIFICADAS
   const filtrarProducto = producto => {
