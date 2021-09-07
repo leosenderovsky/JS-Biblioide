@@ -73,51 +73,64 @@
     <div class="body">
       <h1 class="title">Tu librería de cine</h1>
       <div class="main">
-        <h4 class="title-subsection">Mi carrito</h4>
-        <table class="table">
-          <thead>
-            <tr>
-              <!--<th scope="col" class="subtitle">#</th>-->
-              <th scope="col" class="title-carrito">Libro</th>
-              <th scope="col" class="title-carrito">Cantidad</th>
-              <th scope="col" class="title-carrito">Acción</th>
-              <th scope="col" class="title-carrito">Total</th>
-            </tr>
-          </thead>
-          <tbody id="productos" class="text-items"></tbody>
-          <tfoot>
-            <tr id="footer">
-              <th scope="row" colspan="0" class="subtitle-carrito">Carrito vacío</th>
-            </tr>
-          </tfoot>
-        </table>
-        <template id="template-footer">
-          <th scope="row" class="subtitle-carrito">Total productos</th>
-          <td class="subtitle-carrito">10</td>
-          <td>
-            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
-              vaciar todo
-            </button>
-          </td>
-          <td class="subtitle-carrito">$ <span>5000</span></td>
-        </template>
-  
-        <template id="template-carrito">
-          <tr>
-            <!--<th scope="row">id</th>-->
-            <td>Café</td>
-            <td>1</td>
+        <div class="carrito-container">
+          <h4 class="title-section-carrito">Mi carrito</h4>
+          <table class="table">
+            <thead>
+              <tr>
+                <!--<th scope="col" class="subtitle">#</th>-->
+                <th scope="col" class="title-carrito">Libro</th>
+                <th scope="col" class="title-carrito">Cantidad</th>
+                <th scope="col" class="title-carrito">Acción</th>
+                <th scope="col" class="title-carrito">Total</th>
+              </tr>
+            </thead>
+            <tbody id="productos" class="text-items"></tbody>
+            <tfoot class="text-items">
+              <tr id="footer">
+                <td scope="row" colspan="0" class="subtitle-carrito">Carrito vacío</td>
+              </tr>
+              <tr id="comprar">
+                <th scope="row"></th>
+            <td></td>
+            <td></td>
             <td>
-              <button class="btn btn-info btn-sm">
-                +
-              </button>
-              <button class="btn btn-danger btn-sm">
-                -
+            <button class="btn btn-danger btn-sm" id="btn-comprar">
+              Comprar
+            </button>
+            </td>
+              </tr>
+            </tfoot>
+          </table>
+          <template id="template-carrito">
+            <tr>
+              <!--<th scope="row">id</th>-->
+              <td>Café</td>
+              <td>1</td>
+              <td>
+                <button class="btn btn-info btn-sm">
+                  +
+                </button>
+                <button class="btn btn-danger btn-sm">
+                  -
+                </button>
+              </td>
+              <td>$ <span>500</span></td>
+            </tr>
+          </template>
+          <template id="template-footer">
+            <th class="subtitle-carrito">Total productos</th>
+            <td class="subtitle-carrito">10</td>
+            <td>
+              <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                vaciar todo
               </button>
             </td>
-            <td>$ <span>500</span></td>
-          </tr>
-        </template>        
+            <td class="subtitle-carrito">$ <span>5000</span></td>           
+          </template>
+          <template id="template-comprar">
+          </template>          
+        </div>        
           <div class="col-12">
             <div class="pt-5">              
                 <h2 id="title-manuales"></h2>
@@ -152,7 +165,7 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0072697102623!2d-58.38652098477032!3d-34.603977680459415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5e8c947b7%3A0xa62b149b49665cdd!2sAv.%20Corrientes%201246%2C%20C1012%20CABA!5e0!3m2!1sen!2sar!4v1626524766088!5m2!1sen!2sar"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-      
+    </div>      
       <div class="sidebar">
         <div class="container">
           <!--<div id="login-container" class="login-container">            

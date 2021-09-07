@@ -40,12 +40,16 @@ categorias.forEach(categoriaDiv => {
 
   const footer = document.getElementById('footer');
 
+  const comprar = document.getElementById('comprar')
+
   //TOMANDO EL ID TEMPLATECARD+VALUE CATEGORIA PARA LAS CARDS DEL CARRITO (EN JS)
   let templateCard = document.getElementById('template-card-'+categoria).content;
 
   const templateFooter = document.getElementById('template-footer').content;
 
   const templateCarrito = document.getElementById('template-carrito').content;
+
+  //const btnComprar = document.getElementById('template-comprar').content;
 
   let fragment = document.createDocumentFragment();
 
@@ -111,8 +115,6 @@ categorias.forEach(categoriaDiv => {
   // AGREGAR PRODUCTOS AL CARRITO
 
   const addCarrito = e => {
-    //console.log(e.target)
-    //console.log(e.target.classList.contains('btn-primary'))
     if (e.target.classList.contains('btn-primary')) {      
       setCarrito(e.target.parentElement)      
     }
@@ -120,7 +122,6 @@ categorias.forEach(categoriaDiv => {
   }
 
   const setCarrito = objeto => {
-    //console.log(objeto)
     const producto = {
       id: objeto.querySelector('.btn-primary').dataset.id,
       titulo: objeto.querySelector('h5').textContent,
@@ -156,6 +157,8 @@ categorias.forEach(categoriaDiv => {
 
     pintarFooter()
 
+    pintarBtnComprar()
+
     //GUARDAMOS LOS PRODUCTOS EN EL LOCAL STORAGE CON LA KEY "CARRITO"
     localStorage.setItem('carrito', JSON.stringify(carrito))
   }
@@ -182,12 +185,43 @@ categorias.forEach(categoriaDiv => {
     fragment.appendChild(clone)
     footer.appendChild(fragment)
 
+    // VACIAR CARRITO
     const btnVaciarCarrito = document.getElementById('vaciar-carrito')
     btnVaciarCarrito.addEventListener('click', () => {
       carrito = {}
       pintarCarrito()
     })
+    
   } 
+
+  // PINTAMOS EL BOTON COMPRAR AL AGREGAR CUALQUIER PRODUCTO AL CARRITO
+  const pintarBtnComprar = () => {
+    if(Object.keys(carrito).length === 0) {
+      comprar.innerHTML = ''      
+    }else{
+      comprar.innerHTML = `
+    <th scope="row"></th>
+          <td></td>
+          <td></td>
+          <td>
+          <button class="btn btn-danger btn-sm" id="btn-comprar">
+            Comprar
+          </button>
+          </td>
+    `
+    }
+
+    const btnComprar = document.getElementById('btn-comprar')
+    btnComprar.addEventListener('click', () => {
+      if(window.confirm('Para comprar registrate acá')){
+        window.location.href='registro.html';
+      }
+    })
+    
+    return 
+
+  }
+  
 
   const btnAccion = e => {
     
@@ -217,7 +251,7 @@ categorias.forEach(categoriaDiv => {
     e.stopPropagation()
 
   }
-
+  
   // FILTRADO PARA QUE ME MUESTRE EN CADA CATEGORÍA SOLAMENTE LOS PRODUCTOS QUE RESPONDEN A LAS CONDICIONES ESPECIFICADAS
   const filtrarProducto = producto => {
     /*return producto.nuevo === true;*/

@@ -275,6 +275,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   font-size: 4em;
+  padding: 30px;
 }
 
 .title-low {
@@ -307,10 +308,20 @@ a {
   margin: 5px 0px;
 }
 
+.title-section-carrito {
+  font-family: "Voltaire", sans-serif;
+  font-weight: 400;
+  color: #E5DFDF;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin: 20px 0px 10px 20px;
+}
+
 .title-carrito {
   font-family: "Voltaire", sans-serif;
   font-weight: 500;
-  color: #1D4D4F;
+  color: #E5DFDF;
   text-align: left;
   text-transform: uppercase;
   font-size: 2em;
@@ -320,8 +331,8 @@ a {
 .subtitle-carrito {
   font-family: "Voltaire", sans-serif;
   font-weight: 500;
-  color: #1D4D4F;
-  text-align: center;
+  color: #E5DFDF;
+  text-align: left;
   text-transform: uppercase;
   font-size: 1.5em;
 }
@@ -339,7 +350,7 @@ a {
 .text-items {
   font-family: "Voltaire", sans-serif;
   font-weight: 400;
-  color: #357376;
+  color: #E5DFDF;
   text-align: left;
   text-transform: uppercase;
   font-size: 1.5em;
@@ -363,6 +374,24 @@ a {
 .form-control:focus {
   border-color: black;
   color: black;
+}
+
+.btn-sm {
+  margin: 10px 0px;
+  background-color: #E5DFDF;
+  color: #1D4D4F;
+}
+
+.carrito-container {
+  margin-top: 10px;
+  padding: 10px 20px 0px 20px;
+  margin-left: 5px;
+  background-color: #357376;
+  border-radius: 12px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 1px 1px 5px black;
 }
 
 footer {

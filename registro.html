@@ -23,7 +23,7 @@
 
 <body>
   <header class="menu header sticky-top">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg d-flex justify-content-around">
       <div class="container-fluid">
         <div class="logo-container">
           <a href="index.html"> <img src="images/logo.png" alt="Biblioide" class="logo"></a>
@@ -34,7 +34,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active title-nav" aria-current="page" href="index.html">Home</a>
             </li>
@@ -54,23 +54,84 @@
               <a class="nav-link title-nav" href="libreria.html">La librería</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link title-nav" href="mi-cuenta.html">Mi cuenta</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link title-nav" href="contacto.html">Contacto</a>
             </li>
-          </ul>
+          </ul>          
+          <!--
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
+          </form>-->
+        </div>
+        <div class="social-menu d-flex align-items-center justify-content-evenly d-none d-lg-flex">
+          <a href="https://web.whatsapp.com/" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </nav>
   </header>
   <main>
+    <div class="carrito-container">
+      <h4 class="title-section-carrito">Mi carrito</h4>
+      <table class="table">
+        <thead>
+          <tr>
+            <!--<th scope="col" class="subtitle">#</th>-->
+            <th scope="col" class="title-carrito">Libro</th>
+            <th scope="col" class="title-carrito">Cantidad</th>
+            <th scope="col" class="title-carrito">Acción</th>
+            <th scope="col" class="title-carrito">Total</th>
+          </tr>
+        </thead>
+        <tbody id="productos" class="text-items"></tbody>
+        <tfoot class="text-items">
+          <tr id="footer">
+            <td scope="row" colspan="0" class="subtitle-carrito">Carrito vacío</td>
+          </tr>
+          <tr id="comprar">
+            <th scope="row"></th>
+        <td></td>
+        <td></td>
+        <td>
+        <button class="btn btn-danger btn-sm" id="btn-comprar">
+          Comprar
+        </button>
+        </td>
+          </tr>
+        </tfoot>
+      </table>
+      <template id="template-carrito">
+        <tr>
+          <!--<th scope="row">id</th>-->
+          <td>Café</td>
+          <td>1</td>
+          <td>
+            <button class="btn btn-info btn-sm">
+              +
+            </button>
+            <button class="btn btn-danger btn-sm">
+              -
+            </button>
+          </td>
+          <td>$ <span>500</span></td>
+        </tr>
+      </template>
+      <template id="template-footer">
+        <th class="subtitle-carrito">Total productos</th>
+        <td class="subtitle-carrito">10</td>
+        <td>
+          <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+            vaciar todo
+          </button>
+        </td>
+        <td class="subtitle-carrito">$ <span>5000</span></td>           
+      </template>
+      <template id="template-comprar">
+      </template>          
+    </div>
     <h1 class="title">Registrate en Biblioide</h1>
-      <h2 class="title-low">y conocé nuestras novedades</h2>
+      <h2 class="title-low">y comprá los libros que quieras</h2>
     <div class="row justify-content-center">
       <div id="register-container" class="register-container col-xl-6 col-md-8">
         <form id="register" class="bg-white rounded-5 shadow-5-strong p-5">
@@ -86,10 +147,10 @@
             <input type="email" id="email" class="form-control" required />
             <label for="email" class="form-label">Email</label>
           </div>
-          <div class="form-outline mb-4">
+          <!--<div class="form-outline mb-4">
             <input type="password" id="password" class="form-control" required />
             <label for="password" class="form-label">Contraseña</label>
-          </div>
+          </div>-->
           <div class="form-outline mb-4">
             <label class="form-label">Teléfono</label>
             <input id="phone" type="tel" name="phone" />-->            
@@ -167,8 +228,10 @@
   <script>
     AOS.init();
   </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/catalogo.js"></script>
   <script src="js/registro.js" type="module"></script>
-  <script src="js/desafios.js"></script>
   <script src="js/pais.js"></script>
 </body>
 
