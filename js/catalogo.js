@@ -291,3 +291,15 @@ categorias.forEach(categoriaDiv => {
     return aplicaFiltro;
   }
 });
+
+$("#cerrar-carrito").click (() =>{
+  $(".table").toggle();
+  $("#cerrar-carrito").switchClass('fa-window-close', 'fa-plus-square');
+});
+
+$("#ampliar-carrito").click (() =>{
+  $(".table").show();
+  $("#ampliar-carrito").attr('id', 'cerrar-carrito');
+  $(".fa-plus-square").attr('class', 'fas fa-window-close');
+});
+
