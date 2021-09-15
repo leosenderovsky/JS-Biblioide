@@ -33,7 +33,7 @@
 }
 
 #catalogo-title {
-    @include text ($font-title, 600, $color-1, center, true);
+    @include text ($font-subtitle, 600, $color-1, center, true);
     font-size: 2.5em;
     margin: 5px 0px;
 }

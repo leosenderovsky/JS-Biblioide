@@ -299,7 +299,7 @@ a {
 }
 
 #catalogo-title {
-  font-family: "Pathway Gothic One", sans-serif;
+  font-family: "Voltaire", sans-serif;
   font-weight: 600;
   color: #1D4D4F;
   text-align: center;
@@ -401,7 +401,7 @@ a {
   justify-content: space-between;
 }
 
-.fa-window-close,
+.fa-minus-square,
 .fa-plus-square {
   color: #fff;
   font-size: 2em;
@@ -473,6 +473,27 @@ img.logo-footer {
 
 .form-check-input {
   background-color: #1D4D4F;
+}
+
+.libreria-body-container {
+  margin-bottom: 30px;
+}
+
+.libreria-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  margin: 20px 0px 10px 20px;
+  text-align: justify;
+}
+
+.libreria-img {
+  width: 100%;
+}
+
+.mapa {
+  width: 100%;
+  height: 90%;
+  margin: 20px 0px 10px 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

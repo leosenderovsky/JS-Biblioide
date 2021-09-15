@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto&family=Voltaire&display=swap"
     rel="stylesheet">
-  <script src="https://kit.fontawesome.com/8c1a91277c.js" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    <script src="https://kit.fontawesome.com/8c1a91277c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -55,7 +55,7 @@
             <li class="nav-item">
               <a class="nav-link title-nav" href="contacto.html">Contacto</a>
             </li>
-          </ul>
+          </ul>          
           <!--
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -75,7 +75,11 @@
       <h1 class="title">Tu librería de cine</h1>
       <div class="main">
         <div class="carrito-container">
-          <h4 class="title-section-carrito">Mi carrito</h4>
+          <div class="carrito-header">
+            <h4 class="title-section-carrito">Mi carrito</h4>
+            <i id="achicar-carrito" class="fas fa-minus-square"></i>
+          <i id="ampliar-carrito" class="fas fa-plus-square" style="display:none"></i>
+          </div>
           <table class="table">
             <thead>
               <tr>
@@ -131,44 +135,43 @@
           </template>
           <template id="template-comprar">
           </template>          
-        </div>        
+        </div>
+        <div class="col-12">
           <div class="col-12">
-            <div class="col-12">
-              <div class="pt-5">              
-                <h2 id="title-ensayos"></h2>
-            </div>
-            <div name="categorias" value="ensayos"></div>
-            <div class="row" id="items-ensayos">
-              <template id="template-card-ensayos">
-                <div class="col-4 xl-3 col-md-3">
-                  <div class="card">
-                    <div class="card-body">
-                      <img src=" " class="card-img-top" alt="...">
-                      <h5 class="card-title">Título</h5>
-                      <p class="card-text">$ <span class="price">Precio</span></p>
-                      <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
+            <div class="pt-5">              
+              <h2 id="title-ensayos"></h2>
+          </div>
+          <div name="categorias" value="ensayos"></div>
+          <div class="row" id="items-ensayos">
+            <template id="template-card-ensayos">
+              <div class="col-4 xl-3 col-md-3">
+                <div class="card">
+                  <div class="card-body">
+                    <img src=" " class="card-img-top" alt="...">
+                    <h5 class="card-title">Título</h5>
+                    <p class="card-text">$ <span class="price">Precio</span></p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
-              </template>
-            </div>
-        <!--<button id="boton-vercatalogo" class="btn btn-primary btn-block"></button>-->
-        <h3 id="libreria" class="title-subsection">La librería</h3>
-        <div>
-          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus aliquid, quis,
-            tenetur
-            nobis amet
-            delectus commodi facere optio, consectetur cum repudiandae adipisci? Vitae, beatae corporis. Dolore
-            voluptatem
-            consequuntur suscipit.</p>
-        </div>
-        <h3 id="donde-estamos" class="title-subsection">Dónde estamos</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0072697102623!2d-58.38652098477032!3d-34.603977680459415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5e8c947b7%3A0xa62b149b49665cdd!2sAv.%20Corrientes%201246%2C%20C1012%20CABA!5e0!3m2!1sen!2sar!4v1626524766088!5m2!1sen!2sar"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </template>
+          </div>
+      <!--<button id="boton-vercatalogo" class="btn btn-primary btn-block"></button>-->
+      <h3 id="libreria" class="title-subsection">La librería</h3>
+      <div>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus aliquid, quis,
+          tenetur
+          nobis amet
+          delectus commodi facere optio, consectetur cum repudiandae adipisci? Vitae, beatae corporis. Dolore
+          voluptatem
+          consequuntur suscipit.</p>
       </div>
-      <div class="sidebar">
-        <!--
+      <h3 id="donde-estamos" class="title-subsection">Dónde estamos</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0072697102623!2d-58.38652098477032!3d-34.603977680459415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5e8c947b7%3A0xa62b149b49665cdd!2sAv.%20Corrientes%201246%2C%20C1012%20CABA!5e0!3m2!1sen!2sar!4v1626524766088!5m2!1sen!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+        <div class="sidebar"><!--
           <div class="container">
             <div id="login-container" class="login-container">
               <form id="login" class="p-5">
@@ -204,11 +207,11 @@
             </form>
                 <div id="login-message"></div>
             </div>-->
+          </div>
+
+        </div>
+
       </div>
-
-    </div>
-
-    </div>
   </main>
   <footer class="footer row">
     <div class="col-12 col-sm-4 col-lg-3 logo-footer-container"><img src="images/logo.png" loading="lazy"
@@ -217,7 +220,7 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="js/catalogo.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/desafios.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
     integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">

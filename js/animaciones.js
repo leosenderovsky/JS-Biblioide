@@ -50,24 +50,16 @@ $("#title-ficciones-destacados").click(() => {
 
 $("#title-ensayos-destacados").mouseover(() => {
     $(".view-more-ensayos").fadeIn("slow")
-                           .delay(500)
-                           .animate({"zoom": 0.7}, 500);
 });
 
 $("#title-manuales-destacados").mouseover(() => {
     $(".view-more-manuales").fadeIn("slow")
-                            .delay(500)
-                            .animate({"zoom": 0.7}, 500);
 });
 
 $("#title-guiones-destacados").mouseover(() => {
     $(".view-more-guiones").fadeIn("slow")
-                           .delay(500)
-                           .animate({"zoom": 0.7}, 500);
 });
 
 $("#title-ficciones-destacados").mouseover(() => {
     $(".view-more-ficciones").fadeIn("slow")
-                             .delay(500)
-                             .animate({"zoom": 0.7}, 500);
 });

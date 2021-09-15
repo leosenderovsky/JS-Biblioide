@@ -78,8 +78,8 @@
         <div class="carrito-container">
           <div class="carrito-header">
           <h4 class="title-section-carrito">Mi carrito</h4>
-          <i id="cerrar-carrito" class="fas fa-window-close"></i>
-          <i id="ampliar-carrito" class="fas fa-plus-suare" style="display:none"></i>
+          <i id="achicar-carrito" class="fas fa-minus-square"></i>
+          <i id="ampliar-carrito" class="fas fa-plus-square" style="display:none"></i>
         </div>
           <table class="table">
             <thead>
@@ -251,23 +251,16 @@
           </template>
         </div>
         <!--<button id="boton-vercatalogo" class="btn btn-primary btn-block"></button>-->
-        <div class="pt-5">
-          <h3 id="libreria" class="title-subsection">La librería</h3>
-        </div>
-        <div>
-          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus aliquid, quis,
-            tenetur
-            nobis amet
-            delectus commodi facere optio, consectetur cum repudiandae adipisci? Vitae, beatae corporis. Dolore
-            voluptatem
-            consequuntur suscipit.</p>
-        </div>
-        <div class="pt-5">
-          <h3 id="donde-estamos" class="title-subsection">Dónde estamos</h3>
-        </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0072697102623!2d-58.38652098477032!3d-34.603977680459415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5e8c947b7%3A0xa62b149b49665cdd!2sAv.%20Corrientes%201246%2C%20C1012%20CABA!5e0!3m2!1sen!2sar!4v1626524766088!5m2!1sen!2sar"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="libreria-body-container">
+          <h1 class="title-subsection">La librería</h1>
+        <div id="libreria-description">
+  </div>
+  <div class="pt-5">
+    <h3 id="donde-estamos" class="title-subsection">Dónde estamos</h3>
+  </div>
+  <div id="donde-estamos-description">
+  </div>
+</div>
       </div>
 
       <div class="sidebar">
@@ -326,7 +319,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/animaciones.js"></script>
-  <script src="js/catalogo.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/libreria.js"></script>
   <script src="js/desafios.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
     integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
