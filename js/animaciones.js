@@ -1,18 +1,3 @@
-// INTENTANDO QUE SE PRODUZCA UNA ANIMACIÓN SOBRE EL BOTÓN DE LAS CARDS
-/*
-$(".btn").mouseover(function() {
-    $(".btn").animate({
-        color: '#357376',
-        backgroundColor: '#E5DFDF',
-    }, "slow");        
-});*/
-
-$(".card-img-top").mouseover(() => {
-    $(".btn").animate({
-        'font-size':'2em'}, 300)
-});
-
-
 // ANIMACIÓN EN HOVER DE ZOOM IN Y OUT A LOS TITULOS DE "RECOMENDADOS" Y "NOVEDADES" DEL INDEX
 
 $("#title-recomendados").mouseover(() =>

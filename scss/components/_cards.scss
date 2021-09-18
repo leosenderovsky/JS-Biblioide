@@ -81,7 +81,6 @@
     background-color: $color-3;
 }
 
-/*  Helper Styles */
     body {
         font-family: $font-base;
         background: #f1f1f1;
@@ -91,7 +90,6 @@
         text-decoration: none;
     }
 
-    /* Card Styles */
 
     .card {
         margin: 10px;
@@ -186,4 +184,8 @@
             transform: scale(0.9);
             box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
         }
+    }
+
+    .card-body {
+        align-content: center;
     }

@@ -17,8 +17,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <title>Biblioide</title>
+  <title>Biblioide - Ficciones</title>
 </head>
+
 <body>
   <header class="menu header sticky-top">
     <nav class="navbar navbar-expand-lg d-flex justify-content-around">
@@ -54,7 +55,7 @@
             <li class="nav-item">
               <a class="nav-link title-nav" href="contacto.html">Contacto</a>
             </li>
-          </ul>          
+          </ul>
           <!--
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -77,7 +78,7 @@
           <div class="carrito-header">
             <h4 class="title-section-carrito">Mi carrito</h4>
             <i id="achicar-carrito" class="fas fa-minus-square"></i>
-          <i id="ampliar-carrito" class="fas fa-plus-square" style="display:none"></i>
+            <i id="ampliar-carrito" class="fas fa-plus-square" style="display:none"></i>
           </div>
           <table class="table">
             <thead>
@@ -96,13 +97,13 @@
               </tr>
               <tr id="comprar">
                 <th scope="row"></th>
-            <td></td>
-            <td></td>
-            <td>
-            <button class="btn btn-danger btn-sm" id="btn-comprar">
-              Comprar
-            </button>
-            </td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="btn btn-danger btn-sm" id="btn-comprar">
+                    Comprar
+                  </button>
+                </td>
               </tr>
             </tfoot>
           </table>
@@ -130,20 +131,20 @@
                 vaciar todo
               </button>
             </td>
-            <td class="subtitle-carrito">$ <span>5000</span></td>           
+            <td class="subtitle-carrito">$ <span>5000</span></td>
           </template>
           <template id="template-comprar">
-          </template>          
-        </div>        
+          </template>
+        </div>
+        <div class="col-12">
           <div class="col-12">
-            <div class="col-12">
-              <div class="pt-5">              
-                <h2 id="title-ficciones"></h2>
+            <div class="pt-5">
+              <h2 id="title-ficciones"></h2>
             </div>
             <div name="categorias" value="ficciones"></div>
             <div class="row" id="items-ficciones">
               <template id="template-card-ficciones">
-                <div class="col-4 xl-3 col-md-3">
+                <div class="col-12 col-md-6 col-xl-3">
                   <div class="card">
                     <div class="card-body">
                       <img src=" " class="card-img-top" alt="...">
@@ -155,23 +156,10 @@
                 </div>
               </template>
             </div>
-        <!--<button id="boton-vercatalogo" class="btn btn-primary btn-block"></button>-->
-        <h3 id="libreria" class="title-subsection">La librería</h3>
-        <div>
-          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus aliquid, quis,
-            tenetur
-            nobis amet
-            delectus commodi facere optio, consectetur cum repudiandae adipisci? Vitae, beatae corporis. Dolore
-            voluptatem
-            consequuntur suscipit.</p>
-        </div>
-        <h3 id="donde-estamos" class="title-subsection">Dónde estamos</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0072697102623!2d-58.38652098477032!3d-34.603977680459415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5e8c947b7%3A0xa62b149b49665cdd!2sAv.%20Corrientes%201246%2C%20C1012%20CABA!5e0!3m2!1sen!2sar!4v1626524766088!5m2!1sen!2sar"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>      
-      <div class="sidebar">
-        <!--
+            <!--<button id="boton-vercatalogo" class="btn btn-primary btn-block"></button>-->
+
+            <div class="sidebar">
+              <!--
         <div class="container">
           <div id="login-container" class="login-container">            
             <form id="login" class="p-5">
@@ -207,15 +195,17 @@
             </form>
             <div id="login-message"></div>
           </div>-->
-        </div>
-        
-      </div>
+            </div>
 
+          </div>
+
+        </div>
+      </div>
     </div>
   </main>
   <footer class="footer row">
-    <div class="col-12 col-sm-4 col-lg-3 logo-footer-container"><img src="images/logo.png" loading="lazy" alt="Biblioide"
-        class="logo-footer img-fluid"></div>
+    <div class="col-12 col-sm-4 col-lg-3 logo-footer-container"><img src="images/logo.png" loading="lazy"
+        alt="Biblioide" class="logo-footer img-fluid"></div>
     <p class="text-footer col-12 col-sm-4 col-lg-4">©2021 todos los derechos reservados</p>
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -223,11 +213,11 @@
   <script src="js/main.js"></script>
   <script src="js/desafios.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-  integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
-</script>
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-  integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
-</script>
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+  </script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>

@@ -11,7 +11,10 @@
 
 
 .navbar {
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     height: 100px;
     justify-content: space-around;
 }
@@ -38,7 +41,11 @@
 
 .navbar-nav {
     align-items: center;
-
+    display: flex;
+    flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
 
 .dropdown-item.active,

@@ -75,7 +75,6 @@
   background-color: #6BA8A9;
 }
 
-/*  Helper Styles */
 body {
   font-family: "Roboto", sans-serif;
   background: #f1f1f1;
@@ -85,7 +84,6 @@ a {
   text-decoration: none;
 }
 
-/* Card Styles */
 .card {
   margin: 10px;
   border-radius: 8px;
@@ -176,6 +174,10 @@ a {
     box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
   }
 }
+.card-body {
+  align-content: center;
+}
+
 .navbar > .container, .navbar > .container-fluid,
 .navbar > .container-lg, .navbar > .container-md,
 .navbar > .container-sm, .navbar > .container-xl,
@@ -186,7 +188,10 @@ a {
 }
 
 .navbar {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   height: 100px;
   justify-content: space-around;
 }
@@ -210,6 +215,11 @@ a {
 
 .navbar-nav {
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 
 .dropdown-item.active,
@@ -306,6 +316,11 @@ a {
   text-transform: uppercase;
   font-size: 2.5em;
   margin: 5px 0px;
+}
+@media (max-width: 400px) {
+  #catalogo-title {
+    display: none;
+  }
 }
 
 .title-section-carrito {
@@ -431,7 +446,7 @@ img.logo-footer {
 
 .text-footer {
   margin: 10px 0px 10px 0px;
-  padding: 20px 0px 20px 0px;
+  padding: 30px 0px 20px 0px;
   font-family: "Voltaire", sans-serif;
   font-weight: 500;
   font-size: 1.5em;
@@ -482,18 +497,25 @@ img.logo-footer {
 .libreria-text {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
-  margin: 20px 0px 10px 20px;
+  margin: 20px 0px 10px 10px;
   text-align: justify;
 }
 
 .libreria-img {
   width: 100%;
+  margin: 20px 0px 10px 20px;
 }
 
 .mapa {
   width: 100%;
   height: 90%;
   margin: 20px 0px 10px 20px;
+}
+
+@media (max-width: 400px) {
+  #catalogo-button {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

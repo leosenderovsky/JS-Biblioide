@@ -253,12 +253,13 @@ $("#boton-catalogo").click (() =>{
                                     </div>`);
       }
     }
-  });  
-$("#boton-catalogo").replaceWith('<div class="d-flex justify-content-center"><button id="ocultar-catalogo" class="btn2">Ocultar el catálogo</button></div>');
+  });
+    $("#boton-catalogo").replaceWith('<div class="d-flex justify-content-center"><button id="ocultar-catalogo" class="btn2">Ocultar el catálogo</button></div>');
 
 $("#ocultar-catalogo").click (() =>{
     $("#catalogo-title").hide();
-    $("#ocultar-catalogo").hide();
+    $("#boton-catalogo").toggle();
+    $("#ocultar-catalogo").toggle();
     $("#catalogo-main").hide();
 })
 });

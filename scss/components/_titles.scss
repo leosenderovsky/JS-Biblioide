@@ -36,6 +36,9 @@
     @include text ($font-subtitle, 600, $color-1, center, true);
     font-size: 2.5em;
     margin: 5px 0px;
+    @media (max-width: $bp-mobile) {
+        display: none;
+    }
 }
 
 .title-section-carrito {
