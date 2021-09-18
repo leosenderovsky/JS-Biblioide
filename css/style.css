@@ -606,4 +606,10 @@ img.logo-footer {
   border-color: lightgray;
 }
 
+.alert {
+  background-color: #E5DFDF;
+  border-width: 1px;
+  border-color: black;
+}
+
 /*# sourceMappingURL=style.css.map */

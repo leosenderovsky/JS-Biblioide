@@ -331,5 +331,3 @@ ampliarCarrito.addEventListener('click', () => {
     $("#ampliar-carrito").css("display", "none");
 
 }); 
-
-
