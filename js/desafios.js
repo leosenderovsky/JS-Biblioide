@@ -234,7 +234,7 @@ document.body.appendChild(botonPrueba)*/
 
 const json = "api/api.json";
 
-$("#catalogo-button").prepend('<div class="d-flex justify-content-center"><button id="boton-catalogo" class="btn2">Ver el catálogo<br>de nuestra librería</button></div>');
+$("#catalogo-button").prepend('<div class="d-flex justify-content-center"><div id="boton-catalogo" class="btn2">Ver el catálogo<br>de nuestra librería</div></div>');
 
 $("#boton-catalogo").click (() =>{
   $("#catalogo-title").text("Nuestro catálogo");

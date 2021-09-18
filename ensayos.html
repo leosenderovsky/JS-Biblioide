@@ -19,7 +19,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <title>Biblioide - Ensayos</title>
 </head>
-
 <body>
   <header class="menu header sticky-top">
     <nav class="navbar navbar-expand-lg d-flex justify-content-around">
@@ -27,9 +26,9 @@
         <div class="logo-container">
           <a href="index.html"> <img src="images/logo.png" alt="Biblioide" class="logo"></a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -78,7 +77,7 @@
           <div class="carrito-header">
             <h4 class="title-section-carrito">Mi carrito</h4>
             <i id="achicar-carrito" class="fas fa-minus-square"></i>
-          <i id="ampliar-carrito" class="fas fa-plus-square" style="display:none"></i>
+            <i id="ampliar-carrito" class="fas fa-plus-square" style="display:none"></i>
           </div>
           <table class="table">
             <thead>
@@ -93,17 +92,17 @@
             <tbody id="productos" class="text-items"></tbody>
             <tfoot class="text-items">
               <tr id="footer">
-                <td scope="row" colspan="0" class="subtitle-carrito">Carrito vacío</td>
+                <td scope="row" colspan="0" class="subtitle-carrito no-border">Carrito vacío</td>
               </tr>
               <tr id="comprar">
-                <th scope="row"></th>
-            <td></td>
-            <td></td>
-            <td>
-            <button class="btn btn-danger btn-sm" id="btn-comprar">
-              Comprar
-            </button>
-            </td>
+                <th scope="row" class="no-border"></th>
+                <td class="no-border"></td>
+                <td class="no-border"></td>
+                <td class="no-border">
+                  <button class="btn btn-danger btn-sm" id="btn-comprar">
+                    Comprar
+                  </button>
+                </td>
               </tr>
             </tfoot>
           </table>
@@ -124,17 +123,17 @@
             </tr>
           </template>
           <template id="template-footer">
-            <th class="subtitle-carrito">Total productos</th>
-            <td class="subtitle-carrito">10</td>
-            <td>
+            <th class="subtitle-carrito no-border">Total productos</th>
+            <td class="subtitle-carrito no-border">10</td>
+            <td class="no-border">
               <button class="btn btn-danger btn-sm" id="vaciar-carrito">
                 vaciar todo
               </button>
             </td>
-            <td class="subtitle-carrito">$ <span>5000</span></td>           
+            <td class="subtitle-carrito no-border">$ <span>5000</span></td>
           </template>
           <template id="template-comprar">
-          </template>          
+          </template>
         </div>
         <div class="col-12">
           <div class="col-12">
@@ -150,7 +149,7 @@
                     <img src=" " class="card-img-top" alt="...">
                     <h5 class="card-title">Título</h5>
                     <p class="card-text">$ <span class="price">Precio</span></p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <a href="#" class="btn3 btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>

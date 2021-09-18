@@ -3,7 +3,8 @@
 .navbar>.container, .navbar>.container-fluid, 
 .navbar>.container-lg, .navbar>.container-md, 
 .navbar>.container-sm, .navbar>.container-xl, 
-.navbar>.container-xxl {
+.navbar>.container-xxl {    
+    background-color: $color-4;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,8 +25,10 @@
 }
 
 .header {
+    width: 100%;
+    background-color: $color-4;
     text-align: center;
-
+    z-index: 100;
 }
 
 
@@ -34,15 +37,10 @@
     width: 200px;
 }
 
-#navbarSupportedContent {
-    align-items: center;
-
-}
-
 .navbar-nav {
     align-items: center;
     display: flex;
-    flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
+    flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;

@@ -54,8 +54,8 @@
 }
 
 .subtitle-carrito {
-    @include text ($font-subtitle, 500, $color-4, left, true);
-    font-size: 1.5em;
+    @include text ($font-subtitle, 400, $color-4, left, true);
+    font-size: 1.3em;
 }
 
 .title-subsection {

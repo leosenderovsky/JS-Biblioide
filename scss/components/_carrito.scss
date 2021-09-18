@@ -9,7 +9,7 @@
     height: 100%;
     margin-top: 10px;
     padding: 0px 20px 0px 20px;
-    margin-left: 5px;
+    margin: 0px 5px;
     background-color: $color-2;
     border-radius:12px;
     border-color: black;
@@ -28,4 +28,47 @@
     color: #fff;
     font-size: 2em;
     margin: 20px 10px 0px 20px;
+}
+
+
+@media (max-width: $bp-tablet-max) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+tr {
+  margin: 0 0 1rem 0;
+}
+
+    td {
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .subtitle-carrito {
+        @include text ($font-subtitle, 400, $color-4, center, true);
+        font-size: 1.3em;
+    }
+}
+
+.no-border {
+    border: 0;
 }

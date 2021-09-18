@@ -28,9 +28,9 @@
         <div class="logo-container">
           <a href="index.html"> <img src="images/logo.png" alt="Biblioide" class="logo"></a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -75,8 +75,8 @@
     <h1 class="title">Contactanos</h1>
       <h2 class="title-low">y consultá por los libros que más te interesan</h2>
     <div class="row justify-content-center">
-      <div id="register-container" class="register-container col-xl-6 col-md-8">
-        <form id="register" class="bg-white rounded-5 shadow-5-strong p-5">
+      <div id="contact-container" class="contact-container col-xl-6 col-md-8">
+        <form id="contact" class="bg-white rounded-5 shadow-5-strong p-5">
           <div class="form-outline mb-4">
             <input type="name" id="name" class="form-control" required />
             <label for="name" class="form-label">Nombre y apellido</label>
@@ -86,26 +86,22 @@
             <label for="email" class="form-label">Email</label>
           </div>          
           <div class="form-outline mb-4">
-            <select id="country-dropdown" name="country" class="form-control">
-            </select>
-            <label class="form-label">País</label>
+            <input type="country" id="country" class="form-control"/>
+            <label for="country" class="form-label">País</label>
           </div>
-          <div class="form-outline mb-4">
+          <div class="form-outline mb-4 field-border">
             <input type="text" id="city" class="form-control"/>
-            <label class="form-label">Ciudad</label>
+            <label for="city" class="form-label">Ciudad</label>
           </div>
-          <div class="form-outline mb-4">
-            <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-            <label class="form-label" for="form4Example3">¿Qué libros estás buscando?</label>
+          <div class="form-outline mb-4 field-border">
+            <textarea class="form-control" id="libro-search" rows="4"></textarea>
+            <label class="form-label" for="libro-search">¿Qué libros estás buscando?</label>
           </div>
-          <div class="form-outline mb-4">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
-              <label class="form-check-label" for="form1Example3">Deseo suscribirme al newsletter
-              </label>
-            </div>
+          <div class="form-outline mb-4 field-border">
+            <textarea class="form-control" id="mensaje" rows="4"></textarea>
+            <label class="form-label" for="mensaje">Dejanos otras consultas acá</label>
           </div>
-          <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+          <button type="submit" class="btn btn-primary btn-block">Enviar</button>
         </form>
       </div>
     </div>
@@ -131,7 +127,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/pais.js"></script>
+  <script src="js/contacto.js" type="module"></script>
   <script>
     AOS.init();
   </script>

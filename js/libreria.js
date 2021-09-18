@@ -1,13 +1,13 @@
 // TEXTO DESCRIPTIVO DE LA LIBRERÍA
 
 $("#libreria-description").append(`<div class="row">
-                                <div class="col-12 col-xl-3 text-center"><img src="images/notting-hill.jpg" class="libreria-img"></img></div>
+                                <div class="col-12 col-xl-3"><img src="images/notting-hill.jpg" class="libreria-img"></img></div>
                                 <div class="col-12 col-xl-8 libreria-text">Somos una librería especializada en libros de cine.<br> 
                                 Abrimos en 1998, en pleno Microcentro de la Ciudad de Buenos Aires.<br> 
                         Tenemos un catálogo en constante crecimiento, libros de consumo popular y algunos incunables, para el paladar de los académicos 
 y los más exquisitos.<br> 
 Contamos con libros de ficción, ensayos de distintas temáticas, manuales de todos los rubros técnicos, y guiones de grandes películas.<br>
-Consultá nuestro catálogo. Si no tenemos algún libro, preguntanos y lo conseguimos.<br></div>
+Consultá nuestro catálogo. Si no tenemos algún libro, <a href="contacto.html">preguntanos y lo conseguimos.</a><br></div>
 </div>
 `);
 

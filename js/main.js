@@ -128,15 +128,14 @@ categorias.forEach(categoriaDiv => {
 
   const addCarrito = e => {
     if (e.target.classList.contains('btn-primary')) {      
+      openCarrito()
       setCarrito(e.target.parentElement)
-      openCarrito()      
     }
     e.stopPropagation() 
   }
 
   const openCarrito = () => {
-
-    if (document.getElementById("ampliar-carrito").style.display == "") {
+    if (document.getElementById("ampliar-carrito").classList.display == "") {
       ampliarCarrito()
     }
   }
@@ -188,7 +187,7 @@ categorias.forEach(categoriaDiv => {
     footer.innerHTML = ''
     if(Object.keys(carrito).length === 0) {
       footer.innerHTML = `
-      <th scope="row" colspan="0" class="subtitle-carrito">Carrito vacío</th>
+      <th scope="row" colspan="0" class="subtitle-carrito no-border">Carrito vacío</th>
       `
       return
     }
@@ -196,7 +195,6 @@ categorias.forEach(categoriaDiv => {
     // ACUMULADOR DE PRODUCTOS EN EL CARRITO    
     const nCantidad = Object.values(carrito).reduce((acc, {cantidad}) => acc + cantidad,0)
     const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio, 0)
-    //console.log(nPrecio)
 
     templateFooter.querySelectorAll('td')[0].textContent = nCantidad
     templateFooter.querySelector('span').textContent = nPrecio
@@ -220,10 +218,10 @@ categorias.forEach(categoriaDiv => {
       comprar.innerHTML = ''      
     }else{
       comprar.innerHTML = `
-    <th scope="row"></th>
-          <td></td>
-          <td></td>
-          <td>
+    <th scope="row" class="no-border"></th>
+          <td class="no-border"></td>
+          <td class="no-border"></td>
+          <td class="no-border">
           <button class="btn btn-danger btn-sm" id="btn-comprar">
             Comprar
           </button>

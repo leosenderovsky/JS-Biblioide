@@ -21,8 +21,6 @@
 
 .btn {
     width: auto;
-    display: flex;
-    justify-content: center;
     align-items: center;
     font-family: $font-base;
     text-transform: uppercase;
@@ -54,17 +52,39 @@
 .btn2 {
     width: auto;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     font-family: $font-base;
     text-transform: uppercase;
-    color: $color-1;
     background-color: $color-4;
     border-style: solid;
-    border-color: $color-2;
     border-width: 1px;
-    font-weight: 600;
+    color: $color-1;
+    border-color: $color-1;    
+    font-weight: 500;
     font-size: 1em;
+    padding: .10rem 1rem;
+    border-radius: .25rem;
+    &:hover{
+        color: $color-4;
+        background-color: $color-2;
+    }
+    &::after{
+        color: $color-4;
+        background-color: $color-3;
+    }
+}
+
+.btn3 {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-base;
+    text-transform: uppercase;
+    color: $color-4;
+    background-color: $color-2;
     padding: .10rem 1rem;
     border-radius: .25rem;
     &:hover{
