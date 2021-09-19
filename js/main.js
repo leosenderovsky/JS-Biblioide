@@ -133,14 +133,10 @@ categorias.forEach(categoriaDiv => {
   }
 
   const openCarrito = () => {
-    if(setCarrito.length != 0 && $(".table").hide()) {
+    if(($(".table").hide()) && (setCarrito.length != 0)) {
       $(".table").toggle();
-      $("#ampliar-carrito").toggle();
-      $("#achicar-carrito").toggle();
-      $("#ampliar-carrito").css("display", "none");
-    }else if(setCarrito.length != 0 && $(".table").show()) {
       $("#achicar-carrito").show();
-      $("#ampliar-carrito").css("display", "none");
+      $("#ampliar-carrito").hide();
     }
   }
 
@@ -231,10 +227,9 @@ categorias.forEach(categoriaDiv => {
           </button>
           </td>
     `
-    }
+    }    
 
-    const btnComprar = document.getElementById('btn-comprar')
-    btnComprar.addEventListener('click', () => {
+    $("#btn-comprar").on('click', e => {
       if(window.confirm('Para confirmar la compra registrate acá')){
         window.location.href='registro.html';
       }

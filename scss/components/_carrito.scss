@@ -40,11 +40,32 @@
     justify-content: space-between;
 }
 
+.carrito-title {
+    display: flex;
+    width: auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;    
+}
+
 .fa-minus-square,
 .fa-plus-square {
     color: #fff;
     font-size: 2em;
     margin: 20px 10px 0px 20px;
+    @media (max-width: $bp-mobile) {
+        font-size: 1.5em;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+.fa-shopping-cart {
+    color: #fff;
+    font-size: 2.5em;
+    margin: 20px 0px 0px 10px;
+    @media (max-width: $bp-mobile) {
+        font-size: 2em;
+    }
 }
 
 

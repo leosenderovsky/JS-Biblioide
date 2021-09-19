@@ -19,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <title>Biblioide</title>
 </head>
+
 <body>
   <header class="menu header sticky-top">
     <nav class="navbar navbar-expand-lg d-flex justify-content-around">
@@ -26,8 +27,9 @@
         <div class="logo-container">
           <a href="index.html"> <img src="images/logo.png" alt="Biblioide" class="logo"></a>
         </div>
-        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -74,9 +76,14 @@
       <div class="main">
         <div class="carrito-container" data-aos="flip-up">
           <div class="carrito-header">
-            <h4 class="title-section-carrito">Mi carrito</h4>
-            <i id="achicar-carrito" class="fas fa-minus-square"></i>
-            <i id="ampliar-carrito" class="fas fa-plus-square" style="display:none"></i>
+            <div class="carrito-title">
+              <i class="fas fa-shopping-cart"></i>
+              <h4 class="title-section-carrito">Mi carrito</h4>
+            </div>
+            <div id="min-max-icon">
+              <i id="achicar-carrito" class="fas fa-minus-square"></i>
+              <i id="ampliar-carrito" class="fas fa-plus-square" style="display:none"></i>
+            </div>
           </div>
           <table class="table">
             <thead>
@@ -172,8 +179,9 @@
         </div>
         <div name="categorias" value="ensayos-destacados"></div>
         <div class="pt-5 d-flex">
-          <h2 id="title-ensayos-destacados" class="title-ensayos-destacados" data-aos="fade-up"></h2><a href="ensayos.html"
-            class="btn2 view-more-ensayos mx-3" style="display:none;">Ver más libros de esta categoría
+          <h2 id="title-ensayos-destacados" class="title-ensayos-destacados" data-aos="fade-up"></h2><a
+            href="ensayos.html" class="btn2 view-more-ensayos mx-3" style="display:none;">Ver más libros de esta
+            categoría
           </a>
         </div>
         <div class="row" id="items-ensayos-destacados">
@@ -191,8 +199,8 @@
           </template>
         </div>
         <div class="pt-5 d-flex">
-          <h2 id="title-manuales-destacados" data-aos="fade-up"></h2><a href="manuales.html" class="btn2 view-more-manuales mx-3"
-            style="display:none;">Ver más libros de esta categoría</a>
+          <h2 id="title-manuales-destacados" data-aos="fade-up"></h2><a href="manuales.html"
+            class="btn2 view-more-manuales mx-3" style="display:none;">Ver más libros de esta categoría</a>
         </div>
         <div name="categorias" value="manuales-destacados"></div>
         <div class="row" id="items-manuales-destacados">
@@ -210,8 +218,8 @@
           </template>
         </div>
         <div class="pt-5 d-flex">
-          <h2 id="title-guiones-destacados" data-aos="fade-up"></h2><a href="guiones.html" class="btn2 view-more-guiones mx-3"
-            style="display:none;">Ver más libros de esta categoría</a>
+          <h2 id="title-guiones-destacados" data-aos="fade-up"></h2><a href="guiones.html"
+            class="btn2 view-more-guiones mx-3" style="display:none;">Ver más libros de esta categoría</a>
         </div>
         <div name="categorias" value="guiones-destacados"></div>
         <div class="row" id="items-guiones-destacados">
@@ -229,8 +237,8 @@
           </template>
         </div>
         <div class="pt-5 d-flex">
-          <h2 id="title-ficciones-destacados" data-aos="fade-up"></h2><a href="ficciones.html" class="btn2 view-more-ficciones mx-3"
-            style="display:none;">Ver más libros de esta categoría</a>
+          <h2 id="title-ficciones-destacados" data-aos="fade-up"></h2><a href="ficciones.html"
+            class="btn2 view-more-ficciones mx-3" style="display:none;">Ver más libros de esta categoría</a>
         </div>
         <div name="categorias" value="ficciones-destacados"></div>
         <div class="row" id="items-ficciones-destacados">
@@ -307,7 +315,7 @@
 
     </div>
   </main>
-  <footer class="footer row" data-aos="fade-up">
+  <footer class="footer row">
     <div class="col-12 col-sm-4 col-lg-3 logo-footer-container"><img src="images/logo.png" loading="lazy"
         alt="Biblioide" class="logo-footer img-fluid"></div>
     <p class="text-footer col-12 col-sm-4 col-lg-4">©2021 todos los derechos reservados</p>

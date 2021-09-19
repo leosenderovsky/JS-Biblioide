@@ -335,6 +335,13 @@ a {
   text-align: center;
   text-transform: uppercase;
   font-size: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 400px) {
+  .title-low {
+    width: 90%;
+  }
 }
 
 .subtitle {
@@ -364,22 +371,27 @@ a {
 
 .title-section-carrito {
   font-family: "Voltaire", sans-serif;
-  font-weight: 400;
-  color: #E5DFDF;
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 3em;
-  margin: 20px 0px 10px 20px;
-}
-
-.title-carrito {
-  font-family: "Voltaire", sans-serif;
   font-weight: 500;
   color: #E5DFDF;
   text-align: left;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 2.5em;
   margin: 20px 0px 10px 20px;
+}
+@media (max-width: 400px) {
+  .title-section-carrito {
+    font-size: 2em;
+  }
+}
+
+.title-carrito {
+  font-family: "Voltaire", sans-serif;
+  font-weight: 400;
+  color: #E5DFDF;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 20px 0px 10px 0px;
 }
 
 .subtitle-carrito {
@@ -474,11 +486,37 @@ a {
   justify-content: space-between;
 }
 
+.carrito-title {
+  display: flex;
+  width: auto;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
 .fa-minus-square,
 .fa-plus-square {
   color: #fff;
   font-size: 2em;
   margin: 20px 10px 0px 20px;
+}
+@media (max-width: 400px) {
+  .fa-minus-square,
+.fa-plus-square {
+    font-size: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+.fa-shopping-cart {
+  color: #fff;
+  font-size: 2.5em;
+  margin: 20px 0px 0px 10px;
+}
+@media (max-width: 400px) {
+  .fa-shopping-cart {
+    font-size: 2em;
+  }
 }
 
 @media (max-width: 960px) {
@@ -627,16 +665,37 @@ img.logo-footer {
   margin: 20px 20px 10px 10px;
   text-align: justify;
 }
+@media (max-width: 960px) {
+  .libreria-text {
+    width: 90%;
+    text-align: justify;
+    margin: 10px 10px;
+  }
+}
 
 .libreria-img {
   width: 100%;
   margin: 20px 20px 10px 20px;
+}
+@media (max-width: 960px) {
+  .libreria-img {
+    width: 90%;
+    justify-content: center;
+    text-align: justify;
+  }
 }
 
 .mapa {
   width: 100%;
   height: 90%;
   margin: 20px 20px 10px 20px;
+}
+@media (max-width: 960px) {
+  .mapa {
+    width: 90%;
+    justify-content: center;
+    text-align: justify;
+  }
 }
 
 @media (max-width: 400px) {
