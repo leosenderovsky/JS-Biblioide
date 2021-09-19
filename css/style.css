@@ -314,6 +314,11 @@ a {
   font-size: 4em;
   padding: 30px;
 }
+@media (max-width: 400px) {
+  .title {
+    font-size: 3em;
+  }
+}
 
 .title2 {
   /*display: none;*/
@@ -503,8 +508,6 @@ a {
   .fa-minus-square,
 .fa-plus-square {
     font-size: 1.5em;
-    margin-top: auto;
-    margin-bottom: auto;
   }
 }
 
