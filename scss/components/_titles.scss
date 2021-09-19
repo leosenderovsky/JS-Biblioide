@@ -6,7 +6,7 @@
         
     }
     &:active{
-        @include text ($font-subtitle, 500, $color-4, center, true);
+        @include text ($font-subtitle, 500, $color-2, center, true);
     }
     
 }

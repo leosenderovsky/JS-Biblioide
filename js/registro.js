@@ -19,19 +19,14 @@ document.addEventListener("submit", function (e) {
   const ui = new UI();
 
   if (name === "" || email === "" || phone === "" || country === "" || city === "" || address === "") {
-  ui.showMessage("Por favor, complete todos los campos", "danger");
+    ui.showMessage("Por favor, complete todos los campos", "danger");
   }
 
-  if (name != "" && email != "" && phone != "" && country != "" && city != "" && address != "")
-  ui.addUser(user);
-  ui.showMessage(name + ", gracias por comprar en Bibloide, te va a llegar la factura para abonar a " + email + ".", "success");
-  ui.resetForm();
-
-  /*const userRegister = document.getElementById('register')
-  userRegister.className = "subtitle"
-  userRegister.innerHTML = "<div>"+ username + ", gracias por registrarte en el sitio de Biblioide, pronto te enviaremos nuestras novedades</div>"    
-  register.replaceChild(userRegister, form);
-*/
+  if (name != "" && email != "" && phone != "" && country != "" && city != "" && address != "") {
+    ui.addUser(user);
+    ui.showMessage("Gracias " + name + " por comprar en Bibloide, te va a llegar la orden de compra para abonar a " + email + ".", "success");
+    ui.resetForm();
+  }
   });
 
 document.getElementById("user-message").addEventListener("click", (e) => {

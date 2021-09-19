@@ -231,7 +231,7 @@ categorias.forEach(categoriaDiv => {
 
     const btnComprar = document.getElementById('btn-comprar')
     btnComprar.addEventListener('click', () => {
-      if(window.confirm('Para comprar registrate acá')){
+      if(window.confirm('Para confirmar la compra registrate acá')){
         window.location.href='registro.html';
       }
     })

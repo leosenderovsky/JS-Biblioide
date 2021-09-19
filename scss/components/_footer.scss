@@ -5,14 +5,15 @@ footer {
     height: auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    align-content: center;
     width: 100%;
     
 }
 
 img.logo-footer {
     margin: 10px 0px 10px 0px;
-    padding: 10px 0px 10px 0px;
-    width: 250px;
+    width: 150px;
 
 }
 
@@ -23,10 +24,9 @@ img.logo-footer {
 
 .text-footer {
     margin: 10px 0px 10px 0px;
-    padding: 30px 0px 20px 0px;
     font-family: $font-subtitle;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: $color-1;
     text-align: center;
     align-content: center;

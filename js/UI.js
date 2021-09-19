@@ -1,16 +1,6 @@
 export class UI {
    addUser(user) {
-       const userAdd = document.getElementById('login-message')
-       /*
-       const element = document.createElement('div')
-       element.innerHTML = `<div class="card text-center mb-4">
-       <div class="card-body">
-       <strong>Ya estás logueado, bienvenido a Biblioide</strong>
-       </div>
-       </div>
-       `;
-       
-       userAdd.appendChild(element);*/
+       const userAdd = document.getElementById('user-message')
     }
     resetForm() {
         document.getElementById("register").reset();
@@ -21,8 +11,8 @@ export class UI {
         div.className = `alert alert-${cssClass} mt-2 text-center font-weight-bold`;
         div.appendChild(document.createTextNode(message));
     
-        const container = document.querySelector("#register-container");
-        const app = document.querySelector("#register");
+        const container = document.querySelector("#shop-container");
+        const app = document.querySelector("#register-container");
     
         container.insertBefore(div, app);        
     
