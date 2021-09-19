@@ -6,12 +6,17 @@
 }
 
 .card-title {
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
   display: flex;
   text-align: center;
   justify-content: center;
   font-family: "Voltaire", sans-serif;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 100%;
+  object-fit: scale-down;
+  max-height: 3.2em;
+  max-width: 100%;
 }
 
 .btn {
@@ -151,8 +156,8 @@ a {
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 10px 15px;
-  font-size: 1rem;
+  padding: 5px 15px;
+  font-size: 100%;
   color: #636262;
 }
 
@@ -196,6 +201,8 @@ a {
 }
 .card-body {
   align-content: center;
+  height: 80%;
+  overflow: hidden;
 }
 
 .navbar > .container, .navbar > .container-fluid,
@@ -306,6 +313,18 @@ a {
   text-transform: uppercase;
   font-size: 4em;
   padding: 30px;
+}
+
+.title2 {
+  /*display: none;*/
+  text-align: center;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: 600;
+  color: #1D4D4F;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4em;
+  padding-top: 30px;
 }
 
 .title-low {
@@ -431,6 +450,13 @@ a {
   border-width: 0px;
   box-shadow: 1px 1px 5px black;
 }
+@media (max-width: 960px) {
+  .carrito-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .carrito-container-register {
   padding: 0px 20px 0px 20px;
@@ -456,7 +482,7 @@ a {
 }
 
 @media (max-width: 960px) {
-  table, thead, tbody, th, td, tr {
+  table, thead, tbody, tfoot, th, td, tr {
     display: block;
   }
 
@@ -495,9 +521,19 @@ a {
     text-transform: uppercase;
     font-size: 1.3em;
   }
+
+  .no-display {
+    display: none;
+  }
 }
 .no-border {
   border: 0;
+}
+
+@media (max-width: 960px) {
+  .only-desktop {
+    display: none;
+  }
 }
 
 footer {

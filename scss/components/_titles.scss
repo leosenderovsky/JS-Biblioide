@@ -19,6 +19,14 @@
     padding: 30px;
 }
 
+.title2 {
+    /*display: none;*/
+    text-align: center;
+    @include text ($font-title, 600, $color-1, center, true);
+    font-size: 4em;
+    padding-top: 30px;
+}
+
 .title-low {
     text-align: center;
     @include text ($font-title, 100, $color-1, center, true);

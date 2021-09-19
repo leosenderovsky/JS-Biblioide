@@ -10,12 +10,17 @@
 }
 
 .card-title {
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
     display: flex;
     text-align: center;
     justify-content: center;
     font-family: $font-subtitle;
     text-transform: $text-transform-base;
+    font-weight: bold;
+    font-size: 100%;
+    object-fit: scale-down;
+    max-height: 3.2em;
+    max-width: 100%;
 }
 
 
@@ -158,8 +163,8 @@
         display: flex;
         text-align: center;
         justify-content: center;
-        padding: 10px 15px;
-        font-size: 1rem;
+        padding: 5px 15px;
+        font-size: 100%;
         color: #636262;
     }
 
@@ -208,4 +213,6 @@
 
     .card-body {
         align-content: center;
+        height: 80%;
+        overflow: hidden;
     }

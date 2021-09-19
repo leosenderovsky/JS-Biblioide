@@ -37,9 +37,7 @@ categorias.forEach(categoriaDiv => {
     if(categoria.includes(destacados)) {
       titulo.text(categoria.slice(0, -11))
     }
-  }
-
-  
+  } 
   
 
   //TOMANDO EL ID ITEMS+VALUE CATEGORIA PARA LOS ITEMS DEL CARRITO (EN JS)
@@ -135,8 +133,14 @@ categorias.forEach(categoriaDiv => {
   }
 
   const openCarrito = () => {
-    if (document.getElementById("ampliar-carrito").classList.display == "") {
-      ampliarCarrito()
+    if(setCarrito.length != 0 && $(".table").hide()) {
+      $(".table").toggle();
+      $("#ampliar-carrito").toggle();
+      $("#achicar-carrito").toggle();
+      $("#ampliar-carrito").css("display", "none");
+    }else if(setCarrito.length != 0 && $(".table").show()) {
+      $("#achicar-carrito").show();
+      $("#ampliar-carrito").css("display", "none");
     }
   }
 
@@ -218,9 +222,9 @@ categorias.forEach(categoriaDiv => {
       comprar.innerHTML = ''      
     }else{
       comprar.innerHTML = `
-    <th scope="row" class="no-border"></th>
-          <td class="no-border"></td>
-          <td class="no-border"></td>
+    <th scope="row" class="no-border no-display"></th>
+          <td class="no-border no-display"></td>
+          <td class="no-border no-display"></td>
           <td class="no-border">
           <button class="btn btn-danger btn-sm" id="btn-comprar">
             Comprar
