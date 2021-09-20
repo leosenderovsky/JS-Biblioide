@@ -259,7 +259,7 @@ $("#boton-catalogo").click (() =>{
 $("#ocultar-catalogo").click (() =>{
     $("#catalogo-title").hide();
     $("#boton-catalogo").toggle();
-    $("#ocultar-catalogo").toggle();
+    $("#ocultar-catalogo").toggle();    
     $("#catalogo-main").hide();
 })
 });

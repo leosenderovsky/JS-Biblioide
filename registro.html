@@ -126,7 +126,6 @@
               <!--<th scope="col" class="subtitle">#</th>-->
               <th scope="col" class="title-carrito">Libro</th>
               <th scope="col" class="title-carrito">Cantidad</th>
-              <th scope="col" class="title-carrito">Acción</th>
               <th scope="col" class="title-carrito">Total</th>
             </tr>
           </thead>
@@ -141,30 +140,15 @@
           <tr>
             <!--<th scope="row">id</th>-->
             <td>Café</td>
-            <td>1</td>
-            <td>
-              <button class="btn btn-info btn-sm">
-                +
-              </button>
-              <button class="btn btn-danger btn-sm">
-                -
-              </button>
-            </td>
+            <td>1</td>            
             <td>$ <span>500</span></td>
           </tr>
         </template>
         <template id="template-footer">
           <th class="subtitle-carrito no-border">Total productos</th>
-          <td class="subtitle-carrito no-border">10</td>
-          <td class="no-border">
-            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
-              vaciar todo
-            </button>
-          </td>
+          <td class="subtitle-carrito no-border">10</td>          
           <td class="subtitle-carrito no-border">$ <span>5000</span></td>
-        </template>
-        <template id="template-comprar">
-        </template>
+        </template>        
       </div>
     </div>
       <div id="user-message"></div>
@@ -240,7 +224,7 @@
   </script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
+  <script src="js/checkout.js"></script>
   <script src="js/registro.js" type="module"></script>
 </body>
 
