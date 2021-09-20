@@ -31,4 +31,37 @@ fetch(url)
   )  
   .catch(function(err) {  
     console.error('Fetch Error -', err);  
+});
+
+/* $(document).ready(function(){
+    $.get('https://restfulcountries.com/api/v1/countries?fetch_type=slim',function(countries){
+
+        $.each(countries.data,function(key,value){
+            $('#country-select')
+                .append($("<option></option>")
+                    .attr("value", value.name)
+                    .text(value.name));
+        });
+    });
+});
+
+function initStates(){
+  //Get selected country name
+  let country=$("#country-select").val();
+
+  //Remove previous loaded states
+  $('#state-select option:gt(0)').remove();
+  $('#district-select option:gt(0)').remove();
+
+  //Call restful countries states endpoint
+  $.get('https://restfulcountries.com/api/v1/countries/'+country+'/states?fetch_type=slim',function(states){
+
+      //Loop through returned result and populate states select
+      $.each(states.data,function(key,value){
+          $('#state-select')
+              .append($("<option></option>")
+                  .attr("value", value.name)
+                  .text(value.name));
+      });
   });
+} */

@@ -229,11 +229,36 @@ categorias.forEach(categoriaDiv => {
     `
     }    
 
-    $("#btn-comprar").on('click', e => {
+    /* $("#btn-comprar").on('click', e => {
       if(window.confirm('Para confirmar la compra registrate acá')){
         window.location.href='registro.html';
       }
+    }) */
+
+    $("#btn-comprar").on('click', e => {
+      Swal.fire({
+        title: 'Confirmá tu compra',
+        text: "Para confirmarla, registrate acá",
+        icon: 'warning',
+        showCancelButton: true,
+        cancelButtonText: 'Cancelar',
+        confirmButtonColor: '#1D4D4F',
+        cancelButtonColor: '#6BA8A9',
+        confirmButtonText: 'Confirmar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          /* Swal.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+          ) */
+          window.location.href='registro.html';
+        }
+      })
+
     })
+
+    
     
     return 
 
