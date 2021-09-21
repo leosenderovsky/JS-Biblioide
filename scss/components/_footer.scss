@@ -4,16 +4,15 @@ footer {
     margin-bottom: 0;
     height: auto;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     align-content: center;
     width: 100%;
-    
+    justify-content: space-evenly;
 }
 
 img.logo-footer {
     margin: 10px 0px 10px 0px;
-    width: 150px;
+    width: 50%;
 
 }
 
@@ -28,8 +27,6 @@ img.logo-footer {
     font-weight: 500;
     font-size: 1.2em;
     color: $color-1;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    padding-right: 1rem;
+    justify-items: center;
+    padding: 10px 0px;
 }

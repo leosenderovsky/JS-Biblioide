@@ -75,7 +75,7 @@
     <h1 class="title2" data-aos="fade-up">Registrate en Biblioide</h1>
     <h2 class="title-low" data-aos="fade-up">y comprá los libros que quieras</h2>
     <div id="shop-container" class="row justify-content-around" data-aos="flip-up">
-      <div id="register-container" class="register-container col-xl-7 col-md-8 col-sm-8">
+      <div id="register-container" class="register-container col-xl-6 col-md-8 col-sm-8 mx-4">
         <form id="register" class="bg-white rounded-5 shadow-5-strong p-5">
           <div class="form-outline mb-4 p-1">
             <input type="name" id="name" class="form-control" required />
@@ -87,7 +87,7 @@
           </div>          
           <div class="form-outline mb-4 p-1">
             <label class="form-label">Teléfono</label>
-            <input id="phone" type="tel" name="phone" />           
+            <input type="tel" id="phone" name="phone" class="form-control" />           
             <!--<input type="submit" class="btn" value="Verificar" />-->
             </div>
           <div class="form-outline mb-4 p-1">
@@ -112,13 +112,13 @@
           <button type="submit" class="btn btn-primary btn-block" id="btn-submit">Ingresar</button>
         </form>
       </div>
-      <div class="carrito-container-register col-xl-4 col-md-8 col-sm-8">
+      <div class="carrito-container-register col-xl-4 col-md-8 col-sm-8 mx-4">
         <div class="carrito-header">
           <div class="carrito-title">
             <i class="fas fa-shopping-cart"></i>
             <h4 class="title-section-carrito">Estás por comprar</h4>
           </div>
-          <i id="achicar-carrito" class="fas fa-minus-square d-xl-none"></i>
+          <i id="achicar-carrito" class="fas fa-minus-square d-none"></i>
           <i id="ampliar-carrito" class="fas fa-plus-square" style="display:none"></i>
         </div>
         <table class="table">
@@ -173,10 +173,14 @@
           </div>
     </div>
   </main>
-  <footer class="footer row">
-    <div class="col-12 col-sm-4 col-lg-3 logo-footer-container"><img src="images/logo.png" loading="lazy"
+  <footer class="footer">
+    <div class="row justify-content-evenly">
+    <div class="col-12 col-sm-6 col-lg-6 logo-footer-container"><img src="images/logo.png" loading="lazy"
         alt="Biblioide" class="logo-footer img-fluid"></div>
-    <p class="text-footer col-12 col-sm-4 col-lg-4">©2021 todos los derechos reservados</p>
+    <div class="col-12 col-sm-6 col-lg-6">
+    <p class="text-footer">©2021 todos los derechos reservados</p>
+    </div>
+  </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <script>
